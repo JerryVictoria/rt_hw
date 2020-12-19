@@ -26,57 +26,26 @@ uint8_t val;
 void* pinger_job ()
 {
    // pok_ret_t ret;
-   int count = 0;
    while (1)
    {
-      if (count % 100000 == 0) //(count == 0)
-      {
-         // printf("P1T1: begin of task, count1= %d.\n", count);
-         printf("P1T1: begin of task.\n");
 
-      }
-      count++;
-      
-      // printf ("P1T1: I will signal semaphores\n");
-      // ret = pok_sem_signal (sid);
-      // printf ("P1T1: pok_sem_signal, ret=%d\n", ret);
-      // pok_thread_sleep (2000000);
    }
 }
 
 void* pinger_job2 ()
 {
-   // pok_ret_t ret;
-   int count2 = 0;
    while (1)
    {
-      if (count2 % 100000 == 0) //(count2 == 0)
-      {
-         // printf("P1T2: begin of task, count2= %d.\n", count2);
-         printf("P1T2: begin of task.\n");
-      }
-      count2++;
-      // printf("P1T2: begin of task\n");
-   //    printf ("P1T2: I will wait for the semaphores\n");
-   //    ret = pok_sem_wait (sid, 0);
-   //    printf ("P1T2: pok_sem_wait, ret=%d\n", ret);
-   //    ret = pok_sem_wait (sid, 0);
-   //    printf ("P1T2: pok_sem_wait, ret=%d\n", ret);
-   //    pok_thread_sleep (2000000);
+     
    }
 }
 
 void* pinger_job3 () {
 
-   int count3 = 0;
    while (1)
    {
-      if (count3 % 100000 == 0)  //(count3 == 0)
-      {
-         // printf("P1T3: begin of task, count3= %d.\n", count3);
-         printf("P1T3: begin of task.\n");
-      }
-      count3++;
+      
    }
+
    
 }

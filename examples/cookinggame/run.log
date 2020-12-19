@@ -9,14 +9,13 @@ Booting from Floppy...
 GRUB Loading stage2............[01;01H[2J
     GNU GRUB  version 0.94  (639K lower / 129920K upper memory)[04;02H┌─────────────────────────────────────────────────────────────────────────┐[05;02H│[05;76H│[06;02H│[06;76H│[07;02H│[07;76H│[08;02H│[08;76H│[09;02H│[09;76H│[10;02H│[10;76H│[11;02H│[11;76H│[12;02H│[12;76H│[13;02H│[13;76H│[14;02H│[14;76H│[15;02H│[15;76H│[16;02H│[16;76H│[17;02H└─────────────────────────────────────────────────────────────────────────┘
       Use the ↑ and ↓ keys to select which entry is highlighted.
-      Press enter to boot the selected OS, 'e'[19;46H[19;47H to edit the
-      commands before booting, or 'c' for a command-line.[05;78H [05;03H[0;30;47m PolyORB Kernel                                                          [06;03H[0m                                                                         [07;03H                                                                         [08;03H                                                                         [09;03H                                                                         [10;03H                                                                         [11;03H                                                                         [12;03H                                                                         [13;03H                                                                         [14;03H                                                                         [15;03H                                                                         [16;03H                                                                         [16;78H [01;01H[2J  Booting 'PolyORB Kernel'
+      Press enter t[19;19H[19;20Ho boot the selected OS, 'e' to edit the
+      commands before booting, or 'c' for a command-line.[05;78H [05;03H[0;30;47m PolyORB Kernel                                                          [06;03H[0m                                                                         [07;03H                                                                         [08;03H                                                                         [09;03H                                                                         [10;03H                                                                         [11;03H                                                                         [12;03H                                                                         [13;03H                                                                         [14;03H                        [14;26H[14;27H                                                 [15;03H                                                                         [16;03H                                                                         [16;78H [01;01H[2J  Booting 'PolyORB Kernel'
 
 root   (hd0,0)
  Filesystem type is fat, partition type 0x6
 kernel /pok.elf
-   [Multiboot-elf, <0x100000:0x27000:0x0>, <0x127000:0xb4:0x0>, shtab=0x128488,
- entry=0x10311f
+   [Multiboot-elf, <0x100000:0x27294:0x0>, shtab=0x128488, entry=0x10323b
 pok_sched_slots_allocation: 0 
 POK kernel initialized
 [P1] pok_sem_create return=0, mid=0
@@ -26,107 +25,127 @@ POK kernel initialized
 [P1] pok_thread_create (hamburger) return=0
 [P1] pok_thread_create (soup) return=0
 [P1] pok_thread_create (noodle) return=0
-time: 9965739, now: 1, A
+time: 9974958, now: 1, A
 time: 18438000, now: 2, B
-time: 27657000, now: 3, A
-time: 36876000, now: 4, B
-time: 46095000, now: 5, E
-time: 55314000, now: 6, A
-time: 64533000, now: 7, B
+time: 27657000, now: 3, B
+time: 36876000, now: 4, C
+time: 37475235, now: 4, D
+time: 46095000, now: 5, D
+time: 55314000, now: 6, E
+time: 64533000, now: 7, IDLE THREAD
 time: 73752000, now: 8, C
-time: 74148417, now: 8, E
-time: 82971000, now: 9, A
-time: 92190000, now: 10, B
-time: 101409000, now: 11, C
-time: 101704008, now: 11, D
-time: 110628000, now: 12, E
-time: 119847000, now: 13, A
-time: 129066000, now: 14, B
-time: 138285000, now: 15, C
-time: 138580008, now: 15, D
-time: 147504000, now: 16, E
-time: 156723000, now: 17, A
-time: 165942000, now: 18, B
+time: 73752000, now: 8, D
+time: 82971000, now: 9, D
+time: 92190000, now: 10, E
+time: 101409000, now: 11, A
+time: 110628000, now: 12, B
+time: 119847000, now: 13, B
+time: 129066000, now: 14, C
+time: 129278037, now: 14, E
+time: 138285000, now: 15, IDLE THREAD
+time: 147504000, now: 16, C
+time: 147504000, now: 16, D
+time: 156723000, now: 17, D
+time: 165942000, now: 18, E
 time: 175161000, now: 19, A
 time: 184380000, now: 20, B
-time: 193599000, now: 21, E
-time: 202818000, now: 22, A
-time: 212037000, now: 23, B
+time: 193599000, now: 21, B
+time: 202818000, now: 22, C
+time: 203039256, now: 22, E
+time: 212037000, now: 23, IDLE THREAD
 time: 221256000, now: 24, C
-time: 221569446, now: 24, E
-time: 230475000, now: 25, A
-time: 239694000, now: 26, B
-time: 248913000, now: 27, C
-time: 249208008, now: 27, D
-time: 258132000, now: 28, E
-time: 267351000, now: 29, A
-time: 276570000, now: 30, B
-time: 285789000, now: 31, C
-time: 286102446, now: 31, D
-time: 295008000, now: 32, E
-time: 304227000, now: 33, A
-time: 313446000, now: 34, B
-time: 322665000, now: 35, A
-time: 331884000, now: 36, B
-time: 341103000, now: 37, E
-time: 350322000, now: 38, A
-time: 359541000, now: 39, B
-time: 368760000, now: 40, C
-time: 369091884, now: 40, E
-time: 377979000, now: 41, A
-time: 387198000, now: 42, B
+time: 221256000, now: 24, D
+time: 230475000, now: 25, D
+time: 239694000, now: 26, E
+time: 248913000, now: 27, A
+time: 258132000, now: 28, B
+time: 267351000, now: 29, B
+time: 276570000, now: 30, C
+time: 276782037, now: 30, E
+time: 285789000, now: 31, IDLE THREAD
+time: 295008000, now: 32, C
+time: 295008000, now: 32, D
+time: 304227000, now: 33, D
+time: 313446000, now: 34, IDLE THREAD
+time: 322665000, now: 35, E
+time: 331884000, now: 36, A
+time: 341103000, now: 37, B
+time: 350322000, now: 38, B
+time: 359541000, now: 39, C
+time: 359955855, now: 39, IDLE THREAD
+time: 368760000, now: 40, D
+time: 377979000, now: 41, D
+time: 387198000, now: 42, E
 time: 396417000, now: 43, C
-time: 396712008, now: 43, D
-time: 405636000, now: 44, E
-time: 414855000, now: 45, A
-time: 424074000, now: 46, B
-time: 433293000, now: 47, C
-time: 433597227, now: 47, D
-time: 442512000, now: 48, E
-time: 451731000, now: 49, A
-time: 460950000, now: 50, B
-time: 470169000, now: 51, A
-time: 479388000, now: 52, B
-time: 488607000, now: 53, E
+time: 396417000, now: 43, IDLE THREAD
+time: 405636000, now: 44, IDLE THREAD
+time: 414855000, now: 45, E
+time: 424074000, now: 46, A
+time: 433293000, now: 47, B
+time: 442512000, now: 48, B
+time: 451731000, now: 49, C
+time: 451915380, now: 49, D
+time: 460950000, now: 50, D
+time: 470169000, now: 51, E
+time: 479388000, now: 52, C
+time: 479388000, now: 52, IDLE THREAD
+time: 488607000, now: 53, IDLE THREAD
 time: 497826000, now: 54, A
 time: 507045000, now: 55, B
-time: 516264000, now: 56, C
-time: 516568227, now: 56, E
-time: 525483000, now: 57, A
-time: 534702000, now: 58, B
-time: 543921000, now: 59, C
-time: 544280541, now: 59, D
+time: 516264000, now: 56, B
+time: 525483000, now: 57, C
+time: 525667380, now: 57, D
+time: 534702000, now: 58, D
+time: 543921000, now: 59, E
+time: 553140000, now: 60, C
 time: 553140000, now: 60, E
-time: 562359000, now: 61, A
-time: 571578000, now: 62, B
-time: 580797000, now: 63, C
-time: 581082789, now: 63, D
-time: 590016000, now: 64, E
-time: 599235000, now: 65, A
-time: 608454000, now: 66, B
-time: 617673000, now: 67, A
-time: 626892000, now: 68, B
-time: 636111000, now: 69, E
-time: 645330000, now: 70, A
-time: 654549000, now: 71, B
-time: 663768000, now: 72, C
-time: 664053789, now: 72, E
-time: 672987000, now: 73, A
+time: 562359000, now: 61, IDLE THREAD
+time: 571578000, now: 62, IDLE THREAD
+time: 580797000, now: 63, A
+time: 590016000, now: 64, B
+time: 599235000, now: 65, B
+time: 608454000, now: 66, C
+time: 608988702, now: 66, D
+time: 617673000, now: 67, D
+time: 626892000, now: 68, E
+time: 636111000, now: 69, C
+time: 636111000, now: 69, IDLE THREAD
+time: 645330000, now: 70, E
+time: 654549000, now: 71, IDLE THREAD
+time: 663768000, now: 72, A
+time: 672987000, now: 73, B
 time: 682206000, now: 74, B
 time: 691425000, now: 75, C
-time: 691756884, now: 75, D
-time: 700644000, now: 76, E
-time: 709863000, now: 77, A
-time: 719082000, now: 78, B
-time: 728301000, now: 79, C
-time: 728596008, now: 79, D
-time: 737520000, now: 80, E
-time: 746739000, now: 81, A
-time: 755958000, now: 82, B
+time: 691932045, now: 75, D
+time: 700644000, now: 76, D
+time: 709863000, now: 77, E
+time: 719082000, now: 78, IDLE THREAD
+time: 728301000, now: 79, IDLE THREAD
+time: 737520000, now: 80, C
+time: 737520000, now: 80, D
+time: 746739000, now: 81, D
+time: 755958000, now: 82, E
 time: 765177000, now: 83, A
 time: 774396000, now: 84, B
-time: 783615000, now: 85, E
-time: 792834000, now: 86, A
-time: 802053000, now: 87, B
+time: 783615000, now: 85, B
+time: 792834000, now: 86, C
+time: 793018380, now: 86, E
+time: 802053000, now: 87, IDLE THREAD
+time: 811272000, now: 88, C
+time: 811272000, now: 88, D
+time: 820491000, now: 89, D
+time: 829710000, now: 90, E
+time: 838929000, now: 91, A
+time: 848148000, now: 92, B
+time: 857367000, now: 93, B
+time: 866586000, now: 94, C
+time: 866816475, now: 94, IDLE THREAD
+time: 875805000, now: 95, E
+time: 885024000, now: 96, C
+time: 885024000, now: 96, D
+time: 894243000, now: 97, D
+time: 903462000, now: 98, IDLE THREAD
+time: 912681000, now: 99, A
+time: 921900000, now: 100, B
 QEMU: Terminated
 

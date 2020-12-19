@@ -22,6 +22,8 @@
 #include <types.h>
 #include "activity.h"
 
+#define ONE_SCHED_TIME 9219000
+
 uint8_t sid;
 
 int main ()
@@ -35,8 +37,8 @@ int main ()
 
   tattr.priority = 42;
   tattr.entry = pinger_job;
-  tattr.period   = 2000000;
-  tattr.deadline = 1000000;
+  tattr.period   = 20 * ONE_SCHED_TIME;
+  tattr.deadline = 10 * ONE_SCHED_TIME;
   tattr.time_capacity = 1;
 
   ret = pok_thread_create(&tid , &tattr);
@@ -44,8 +46,8 @@ int main ()
 
   tattr.priority = 42;
   tattr.entry = pinger_job2;
-  tattr.period   = 1000000;
-  tattr.deadline = 500000;
+  tattr.period   = 10 * ONE_SCHED_TIME;
+  tattr.deadline = 5 * ONE_SCHED_TIME;
   tattr.time_capacity = 1;
 
   ret = pok_thread_create(&tid , &tattr);
@@ -53,8 +55,8 @@ int main ()
 
   tattr.priority = 42;
   tattr.entry = pinger_job3;
-  tattr.period   = 1000000;
-  tattr.deadline = 200000;
+  tattr.period   = 10 * ONE_SCHED_TIME;
+  tattr.deadline = 2 * ONE_SCHED_TIME;
   tattr.time_capacity = 1;
 
   ret = pok_thread_create(&tid , &tattr);
