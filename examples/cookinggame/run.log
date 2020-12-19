@@ -1,0 +1,75 @@
+c[?7l[2J[0mSeaBIOS (version 1.13.0-1ubuntu1)
+
+
+iPXE (http://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+07F8CA10+07ECCA10 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from Floppy...
+GRUB Loading stage2............[01;01H[2J
+    GNU GRUB  version 0.94  (639K lower / 129920K upper memory)[04;02H┌─────────────────────────────────────────────────────────────────────────┐[05;02H│[05;76H│[06;02H│[06;76H│[07;02H│[07;76H│[08;02H│[08;76H│[09;02H│[09;76H│[10;02H│[10;76H│[11;02H│[11;76H│[12;02H│[12;76H│[13;02H│[13;76H│[14;02H│[14;76H│[15;02H│[15;76H│[16;02H│[16;76H│[17;02H└─────────────────────────────────────────────────────────────────────────┘
+      Use the ↑ and ↓ keys to select which entry is highlighted.
+      Press enter to boot the selected OS, 'e' to edit the[19;58H
+      commands before booting, or 'c' for a command-line.[05;78H [05;03H[0;30;47m PolyORB Kernel                                                          [06;03H[0m                                                                         [07;03H                                                                         [08;03H                                                                         [09;03H                                                                         [10;03H                                                                         [11;03H                                                                         [12;03H                                                                         [13;03H                                                                         [14;03H                                                                         [15;03H                                                                         [16;03H                                                                         [16;78H [01;01H[2J  Booting 'PolyORB Kernel'
+
+root   (hd0,0)
+ Filesystem type is fat, partition type 0x6
+kernel /pok.elf
+   [Multiboot-elf, <0x100000:0x27154:0x0>, shtab=0x128488, entry=0x103186]
+
+
+pok_sched_slots_allocation: 0 
+POK kernel initialized
+[P1] pok_sem_create return=0, mid=0
+[P1] pok_sem_create return=0, mid=0
+[P1] pok_thread_create (bread) return=0
+[P1] pok_thread_create (fired_chicken) return=0
+[P1] pok_thread_create (hamburger) return=0
+[P1] pok_thread_create (soup) return=0
+[P1] pok_thread_create (noodle) return=0
+time: 9799797, now: 1, A
+time: 18438000, now: 2, B
+time: 27657000, now: 3, A
+time: 36876000, now: 4, B
+time: 46095000, now: 5, E
+time: 55314000, now: 6, A
+time: 64533000, now: 7, B
+time: 73752000, now: 8, C
+time: 74028570, now: 8, E
+time: 82971000, now: 9, A
+time: 92190000, now: 10, B
+time: 101409000, now: 11, C
+time: 101611818, now: 11, D
+time: 110628000, now: 12, E
+time: 119847000, now: 13, A
+time: 129066000, now: 14, B
+time: 138285000, now: 15, C
+time: 138515475, now: 15, D
+time: 147504000, now: 16, E
+time: 156723000, now: 17, A
+time: 165942000, now: 18, B
+time: 175161000, now: 19, A
+time: 184380000, now: 20, B
+time: 193599000, now: 21, E
+time: 202818000, now: 22, A
+time: 212037000, now: 23, B
+time: 221256000, now: 24, C
+time: 221440380, now: 24, E
+time: 230475000, now: 25, A
+time: 239694000, now: 26, B
+time: 248913000, now: 27, C
+time: 249078942, now: 27, D
+time: 258132000, now: 28, E
+time: 267351000, now: 29, A
+time: 276570000, now: 30, B
+time: 285789000, now: 31, C
+time: 285964161, now: 31, D
+time: 295008000, now: 32, E
+time: 304227000, now: 33, A
+time: 313446000, now: 34, B
+time: 322665000, now: 35, A
+time: 331884000, now: 36, B
+time: 341103000, now: 37, E
+time: 350322000, now: 38, A
+QEMU: Terminated
+

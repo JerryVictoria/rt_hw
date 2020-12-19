@@ -1,0 +1,311 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(arch.lo)
+                              main.o (pok_do_syscall)
+/home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+                              main.o (pok_thread_create)
+/home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+                              main.o (printf)
+
+Merging program properties
+
+
+Allocating common symbols
+Common symbol       size              file
+
+pok_allocator_memspace
+                    0x8000            /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+errno               0x4               /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+val                 0x2               activity.o
+pok_allocator_spaces
+                    0x4b0             /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+sid                 0x2               main.o
+
+Discarded input sections
+
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0x8 activity.o
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 activity.o
+ .note.gnu.property
+                0x0000000000000000       0x1c activity.o
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(arch.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+ .text.__x86.get_pc_thunk.bp
+                0x0000000000000000        0x4 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000000000                . = 0x0
+                0x0000000000000000                __partition_begin = .
+
+.text           0x0000000000000000     0x15de
+ *(.text)
+ .text          0x0000000000000000      0x13a main.o
+                0x0000000000000000                main
+ .text          0x000000000000013a      0x156 activity.o
+                0x000000000000013a                pinger_job
+                0x0000000000000190                pinger_job2
+                0x0000000000000209                job4
+                0x0000000000000236                job3
+                0x0000000000000263                job2
+ .text          0x0000000000000290       0x1c /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(arch.lo)
+                0x0000000000000290                pok_arch_idle
+                0x0000000000000297                pok_do_syscall
+ .text          0x00000000000002ac      0x987 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+                0x00000000000002ac                pok_allocator_print_spaces
+                0x000000000000031c                pok_allocator_allocate
+                0x00000000000004ff                pok_allocator_delete_space
+                0x0000000000000563                pok_allocator_merge_space
+                0x000000000000064c                pok_allocator_free
+                0x0000000000000745                pok_time_gettick
+                0x0000000000000799                pok_time_get
+                0x00000000000007ad                __pok_partition_start
+                0x00000000000007cf                pok_sem_create
+                0x0000000000000854                pok_sem_signal
+                0x00000000000008bf                pok_sem_status
+                0x00000000000008c9                pok_sem_wait
+                0x0000000000000944                pok_thread_create
+                0x0000000000000998                pok_thread_attr_init
+                0x00000000000009e7                pok_thread_period
+                0x0000000000000a3b                pok_thread_sleep
+                0x0000000000000a8f                pok_thread_status
+                0x0000000000000ae3                pok_thread_yield
+                0x0000000000000b37                pok_thread_delayed_start
+                0x0000000000000b8b                pok_thread_set_priority
+                0x0000000000000bdf                pok_thread_resume
+ .text          0x0000000000000c33      0x9ab /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+                0x0000000000000f4e                vprintf
+                0x00000000000010b4                printf
+                0x00000000000010d0                itoa
+                0x0000000000001195                atoi
+                0x00000000000011dc                memcpy
+                0x000000000000120c                memset
+                0x0000000000001234                memcmp
+                0x000000000000127d                strcmp
+                0x00000000000012c3                strncmp
+                0x0000000000001322                strcpy
+                0x0000000000001358                strncpy
+                0x000000000000138c                streq
+                0x0000000000001424                strlen
+                0x0000000000001446                __udivdi3
+                0x000000000000150d                __umoddi3
+                0x000000000000153a                rand
+                0x0000000000001575                free
+                0x0000000000001596                malloc
+                0x00000000000015b7                calloc
+
+.text.__x86.get_pc_thunk.bx
+                0x00000000000015de        0x4
+ .text.__x86.get_pc_thunk.bx
+                0x00000000000015de        0x4 main.o
+                0x00000000000015de                __x86.get_pc_thunk.bx
+
+.iplt           0x00000000000015e2        0x0
+ .iplt          0x00000000000015e2        0x0 main.o
+
+.text.__x86.get_pc_thunk.si
+                0x00000000000015e2        0x4
+ .text.__x86.get_pc_thunk.si
+                0x00000000000015e2        0x4 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+                0x00000000000015e2                __x86.get_pc_thunk.si
+
+.text.__x86.get_pc_thunk.bp
+                0x00000000000015e6        0x4
+ .text.__x86.get_pc_thunk.bp
+                0x00000000000015e6        0x4 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+                0x00000000000015e6                __x86.get_pc_thunk.bp
+
+.text.__x86.get_pc_thunk.ax
+                0x00000000000015ea        0x4
+ .text.__x86.get_pc_thunk.ax
+                0x00000000000015ea        0x4 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+                0x00000000000015ea                __x86.get_pc_thunk.ax
+
+.text.__x86.get_pc_thunk.di
+                0x00000000000015ee        0x4
+ .text.__x86.get_pc_thunk.di
+                0x00000000000015ee        0x4 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+                0x00000000000015ee                __x86.get_pc_thunk.di
+
+.rodata         0x00000000000015f4       0x11
+ *(.rodata)
+ .rodata        0x00000000000015f4       0x11 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.rodata.str1.4  0x0000000000001608      0x357
+ .rodata.str1.4
+                0x0000000000001608       0x76 main.o
+ *fill*         0x000000000000167e        0x2 
+ .rodata.str1.4
+                0x0000000000001680       0xb4 activity.o
+ .rodata.str1.4
+                0x0000000000001734      0x22b /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+
+.eh_frame       0x0000000000001960      0xab0
+ .eh_frame      0x0000000000001960       0x70 main.o
+ .eh_frame      0x00000000000019d0      0x118 activity.o
+                                        0x144 (size before relaxing)
+ .eh_frame      0x0000000000001ae8       0x30 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(arch.lo)
+                                         0x60 (size before relaxing)
+ .eh_frame      0x0000000000001b18      0x438 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+                                        0x5cc (size before relaxing)
+ .eh_frame      0x0000000000001f50      0x4c0 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+                                        0x668 (size before relaxing)
+
+.rodata.str1.1  0x0000000000002410        0x6
+ .rodata.str1.1
+                0x0000000000002410        0x6 activity.o
+
+.note.gnu.property
+                0x0000000000002418       0x1c
+ .note.gnu.property
+                0x0000000000002418       0x1c main.o
+
+.rel.dyn        0x0000000000002434        0x0
+ .rel.got       0x0000000000002434        0x0 main.o
+ .rel.iplt      0x0000000000002434        0x0 main.o
+ .rel.text      0x0000000000002434        0x0 main.o
+
+.data           0x0000000000002440     0x8590
+ *(.data)
+ .data          0x0000000000002440        0x0 main.o
+ .data          0x0000000000002440        0x0 activity.o
+ .data          0x0000000000002440        0x0 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(arch.lo)
+ .data          0x0000000000002440        0x0 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+ .data          0x0000000000002440        0x4 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+ *(.bss)
+ .bss           0x0000000000002444        0x0 main.o
+ .bss           0x0000000000002444        0x0 activity.o
+ .bss           0x0000000000002444        0x0 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(arch.lo)
+ .bss           0x0000000000002444        0x8 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+                0x0000000000002444                pok_allocator_initialized
+                0x0000000000002448                pok_allocator_used_spaces
+ *fill*         0x000000000000244c       0x14 
+ .bss           0x0000000000002460       0x84 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+ *(COMMON)
+ COMMON         0x00000000000024e4        0x2 main.o
+                0x00000000000024e4                sid
+ COMMON         0x00000000000024e6        0x2 activity.o
+                0x00000000000024e6                val
+ *fill*         0x00000000000024e8       0x18 
+ COMMON         0x0000000000002500     0x84d0 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+                0x0000000000002500                pok_allocator_memspace
+                0x000000000000a500                errno
+                0x000000000000a520                pok_allocator_spaces
+                0x000000000000a9d0                __partition_end = .
+LOAD main.o
+LOAD activity.o
+LOAD /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a
+LOAD /home/tjw/pok/examples/semaphores/pr1/../../..//libpok//libpok.a
+OUTPUT(pr1.elf elf32-i386)
+
+.got            0x000000000000a9d0        0x0
+ .got           0x000000000000a9d0        0x0 main.o
+
+.got.plt        0x000000000000a9d0        0xc
+ .got.plt       0x000000000000a9d0        0xc main.o
+                0x000000000000a9d0                _GLOBAL_OFFSET_TABLE_
+
+.igot.plt       0x000000000000a9dc        0x0
+ .igot.plt      0x000000000000a9dc        0x0 main.o
+
+.data.rel.ro.local
+                0x000000000000a9e0       0x6c
+ .data.rel.ro.local
+                0x000000000000a9e0       0x6c /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_info     0x0000000000000000     0x52be
+ .debug_info    0x0000000000000000      0x452 main.o
+ .debug_info    0x0000000000000452      0x351 activity.o
+ .debug_info    0x00000000000007a3      0x35a /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_info    0x0000000000000afd     0x2fde /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_info    0x0000000000003adb     0x17e3 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_abbrev   0x0000000000000000     0x1ebb
+ .debug_abbrev  0x0000000000000000      0x11b main.o
+ .debug_abbrev  0x000000000000011b      0x100 activity.o
+ .debug_abbrev  0x000000000000021b      0x135 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_abbrev  0x0000000000000350      0xeea /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_abbrev  0x000000000000123a      0xc81 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_loc      0x0000000000000000     0x13bc
+ .debug_loc     0x0000000000000000       0x83 main.o
+ .debug_loc     0x0000000000000083       0x95 activity.o
+ .debug_loc     0x0000000000000118       0x41 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_loc     0x0000000000000159      0x10f /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_loc     0x0000000000000268     0x1154 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_aranges  0x0000000000000000      0x4b0
+ .debug_aranges
+                0x0000000000000000       0x20 main.o
+ .debug_aranges
+                0x0000000000000020       0x20 activity.o
+ .debug_aranges
+                0x0000000000000040       0x40 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_aranges
+                0x0000000000000080      0x218 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_aranges
+                0x0000000000000298      0x218 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_line     0x0000000000000000     0x2675
+ .debug_line    0x0000000000000000      0x215 main.o
+ .debug_line    0x0000000000000215      0x2da activity.o
+ .debug_line    0x00000000000004ef      0x114 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_line    0x0000000000000603     0x1011 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_line    0x0000000000001614     0x1061 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_str      0x0000000000000000     0x13ae
+ .debug_str     0x0000000000000000      0x917 main.o
+                                        0x95b (size before relaxing)
+ .debug_str     0x0000000000000917       0x70 activity.o
+                                        0x44b (size before relaxing)
+ .debug_str     0x0000000000000987       0x73 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(arch.lo)
+                                        0x98b (size before relaxing)
+ .debug_str     0x00000000000009fa      0x6b8 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+                                       0x80e9 (size before relaxing)
+ .debug_str     0x00000000000010b2      0x2fc /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+                                       0x1b11 (size before relaxing)
+
+.comment        0x0000000000000000       0x2a
+ .comment       0x0000000000000000       0x2a main.o
+                                         0x2b (size before relaxing)
+ .comment       0x000000000000002a       0x2b activity.o
+ .comment       0x000000000000002a       0xac /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(arch.lo)
+ .comment       0x000000000000002a      0x637 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+ .comment       0x000000000000002a      0x2db /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 activity.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(arch.lo)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(core.lo)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_ranges   0x0000000000000000       0x60
+ .debug_ranges  0x0000000000000000       0x60 /home/tjw/pok/examples/semaphores/pr1/../../..//libpok/libpok.a(libc.lo)

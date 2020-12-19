@@ -1,0 +1,301 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(arch.lo)
+                              main.o (pok_do_syscall)
+/home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+                              main.o (pok_thread_create)
+/home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+                              main.o (printf)
+
+Merging program properties
+
+
+Allocating common symbols
+Common symbol       size              file
+
+pok_allocator_memspace
+                    0x8000            /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+errno               0x4               /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+pok_allocator_spaces
+                    0x4b0             /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+
+Discarded input sections
+
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0x8 activity.o
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 activity.o
+ .note.gnu.property
+                0x0000000000000000       0x1c activity.o
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(arch.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+ .text.__x86.get_pc_thunk.bp
+                0x0000000000000000        0x4 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000000000                . = 0x0
+                0x0000000000000000                __partition_begin = .
+
+.text           0x0000000000000000     0x1542
+ *(.text)
+ .text          0x0000000000000000      0x128 main.o
+                0x0000000000000000                main
+ .text          0x0000000000000128       0xcc activity.o
+                0x0000000000000128                jobA4
+                0x0000000000000162                jobB3
+                0x000000000000019c                jobC2
+ .text          0x00000000000001f4       0x1c /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(arch.lo)
+                0x00000000000001f4                pok_arch_idle
+                0x00000000000001fb                pok_do_syscall
+ .text          0x0000000000000210      0x987 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+                0x0000000000000210                pok_allocator_print_spaces
+                0x0000000000000280                pok_allocator_allocate
+                0x0000000000000463                pok_allocator_delete_space
+                0x00000000000004c7                pok_allocator_merge_space
+                0x00000000000005b0                pok_allocator_free
+                0x00000000000006a9                pok_time_gettick
+                0x00000000000006fd                pok_time_get
+                0x0000000000000711                __pok_partition_start
+                0x0000000000000733                pok_sem_create
+                0x00000000000007b8                pok_sem_signal
+                0x0000000000000823                pok_sem_status
+                0x000000000000082d                pok_sem_wait
+                0x00000000000008a8                pok_thread_create
+                0x00000000000008fc                pok_thread_attr_init
+                0x000000000000094b                pok_thread_period
+                0x000000000000099f                pok_thread_sleep
+                0x00000000000009f3                pok_thread_status
+                0x0000000000000a47                pok_thread_yield
+                0x0000000000000a9b                pok_thread_delayed_start
+                0x0000000000000aef                pok_thread_set_priority
+                0x0000000000000b43                pok_thread_resume
+ .text          0x0000000000000b97      0x9ab /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+                0x0000000000000eb2                vprintf
+                0x0000000000001018                printf
+                0x0000000000001034                itoa
+                0x00000000000010f9                atoi
+                0x0000000000001140                memcpy
+                0x0000000000001170                memset
+                0x0000000000001198                memcmp
+                0x00000000000011e1                strcmp
+                0x0000000000001227                strncmp
+                0x0000000000001286                strcpy
+                0x00000000000012bc                strncpy
+                0x00000000000012f0                streq
+                0x0000000000001388                strlen
+                0x00000000000013aa                __udivdi3
+                0x0000000000001471                __umoddi3
+                0x000000000000149e                rand
+                0x00000000000014d9                free
+                0x00000000000014fa                malloc
+                0x000000000000151b                calloc
+
+.text.__x86.get_pc_thunk.bx
+                0x0000000000001542        0x4
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000001542        0x4 main.o
+                0x0000000000001542                __x86.get_pc_thunk.bx
+
+.iplt           0x0000000000001546        0x0
+ .iplt          0x0000000000001546        0x0 main.o
+
+.text.__x86.get_pc_thunk.si
+                0x0000000000001546        0x4
+ .text.__x86.get_pc_thunk.si
+                0x0000000000001546        0x4 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+                0x0000000000001546                __x86.get_pc_thunk.si
+
+.text.__x86.get_pc_thunk.bp
+                0x000000000000154a        0x4
+ .text.__x86.get_pc_thunk.bp
+                0x000000000000154a        0x4 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+                0x000000000000154a                __x86.get_pc_thunk.bp
+
+.text.__x86.get_pc_thunk.ax
+                0x000000000000154e        0x4
+ .text.__x86.get_pc_thunk.ax
+                0x000000000000154e        0x4 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+                0x000000000000154e                __x86.get_pc_thunk.ax
+
+.text.__x86.get_pc_thunk.di
+                0x0000000000001552        0x4
+ .text.__x86.get_pc_thunk.di
+                0x0000000000001552        0x4 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+                0x0000000000001552                __x86.get_pc_thunk.di
+
+.rodata         0x0000000000001558       0x11
+ *(.rodata)
+ .rodata        0x0000000000001558       0x11 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.rodata.str1.4  0x000000000000156c      0x2a3
+ .rodata.str1.4
+                0x000000000000156c       0x76 main.o
+ *fill*         0x00000000000015e2        0x2 
+ .rodata.str1.4
+                0x00000000000015e4      0x22b /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+
+.eh_frame       0x0000000000001810      0xa2c
+ .eh_frame      0x0000000000001810       0x70 main.o
+ .eh_frame      0x0000000000001880       0x94 activity.o
+                                         0xc0 (size before relaxing)
+ .eh_frame      0x0000000000001914       0x30 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(arch.lo)
+                                         0x60 (size before relaxing)
+ .eh_frame      0x0000000000001944      0x438 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+                                        0x5cc (size before relaxing)
+ .eh_frame      0x0000000000001d7c      0x4c0 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+                                        0x668 (size before relaxing)
+
+.rodata.str1.1  0x000000000000223c        0x8
+ .rodata.str1.1
+                0x000000000000223c        0x8 activity.o
+
+.note.gnu.property
+                0x0000000000002244       0x1c
+ .note.gnu.property
+                0x0000000000002244       0x1c main.o
+
+.rel.dyn        0x0000000000002260        0x0
+ .rel.got       0x0000000000002260        0x0 main.o
+ .rel.iplt      0x0000000000002260        0x0 main.o
+ .rel.text      0x0000000000002260        0x0 main.o
+
+.data           0x0000000000002260     0x8590
+ *(.data)
+ .data          0x0000000000002260        0x0 main.o
+ .data          0x0000000000002260        0x0 activity.o
+ .data          0x0000000000002260        0x0 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(arch.lo)
+ .data          0x0000000000002260        0x0 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+ .data          0x0000000000002260        0x4 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+ *(.bss)
+ .bss           0x0000000000002264        0x0 main.o
+ .bss           0x0000000000002264        0x0 activity.o
+ .bss           0x0000000000002264        0x0 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(arch.lo)
+ .bss           0x0000000000002264        0x8 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+                0x0000000000002264                pok_allocator_initialized
+                0x0000000000002268                pok_allocator_used_spaces
+ *fill*         0x000000000000226c       0x14 
+ .bss           0x0000000000002280       0x84 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+ *(COMMON)
+ *fill*         0x0000000000002304       0x1c 
+ COMMON         0x0000000000002320     0x84d0 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+                0x0000000000002320                pok_allocator_memspace
+                0x000000000000a320                errno
+                0x000000000000a340                pok_allocator_spaces
+                0x000000000000a7f0                __partition_end = .
+LOAD main.o
+LOAD activity.o
+LOAD /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a
+LOAD /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok//libpok.a
+OUTPUT(pr1.elf elf32-i386)
+
+.got            0x000000000000a7f0        0xc
+ .got           0x000000000000a7f0        0xc main.o
+
+.got.plt        0x000000000000a7fc        0xc
+ .got.plt       0x000000000000a7fc        0xc main.o
+                0x000000000000a7fc                _GLOBAL_OFFSET_TABLE_
+
+.igot.plt       0x000000000000a808        0x0
+ .igot.plt      0x000000000000a808        0x0 main.o
+
+.data.rel.ro.local
+                0x000000000000a820       0x6c
+ .data.rel.ro.local
+                0x000000000000a820       0x6c /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_info     0x0000000000000000     0x50be
+ .debug_info    0x0000000000000000      0x440 main.o
+ .debug_info    0x0000000000000440      0x163 activity.o
+ .debug_info    0x00000000000005a3      0x35a /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_info    0x00000000000008fd     0x2fde /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_info    0x00000000000038db     0x17e3 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_abbrev   0x0000000000000000     0x1e49
+ .debug_abbrev  0x0000000000000000      0x108 main.o
+ .debug_abbrev  0x0000000000000108       0xa1 activity.o
+ .debug_abbrev  0x00000000000001a9      0x135 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_abbrev  0x00000000000002de      0xeea /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_abbrev  0x00000000000011c8      0xc81 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_loc      0x0000000000000000     0x1390
+ .debug_loc     0x0000000000000000       0x83 main.o
+ .debug_loc     0x0000000000000083       0x69 activity.o
+ .debug_loc     0x00000000000000ec       0x41 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_loc     0x000000000000012d      0x10f /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_loc     0x000000000000023c     0x1154 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_aranges  0x0000000000000000      0x4b0
+ .debug_aranges
+                0x0000000000000000       0x20 main.o
+ .debug_aranges
+                0x0000000000000020       0x20 activity.o
+ .debug_aranges
+                0x0000000000000040       0x40 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_aranges
+                0x0000000000000080      0x218 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_aranges
+                0x0000000000000298      0x218 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_line     0x0000000000000000     0x25c9
+ .debug_line    0x0000000000000000      0x221 main.o
+ .debug_line    0x0000000000000221      0x222 activity.o
+ .debug_line    0x0000000000000443      0x114 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_line    0x0000000000000557     0x1011 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_line    0x0000000000001568     0x1061 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_str      0x0000000000000000     0x13a8
+ .debug_str     0x0000000000000000      0x920 main.o
+                                        0x964 (size before relaxing)
+ .debug_str     0x0000000000000920       0x34 activity.o
+                                        0x196 (size before relaxing)
+ .debug_str     0x0000000000000954       0x73 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(arch.lo)
+                                        0x98b (size before relaxing)
+ .debug_str     0x00000000000009c7      0x6e5 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+                                       0x80e9 (size before relaxing)
+ .debug_str     0x00000000000010ac      0x2fc /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+                                       0x1b11 (size before relaxing)
+
+.comment        0x0000000000000000       0x2a
+ .comment       0x0000000000000000       0x2a main.o
+                                         0x2b (size before relaxing)
+ .comment       0x000000000000002a       0x2b activity.o
+ .comment       0x000000000000002a       0xac /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(arch.lo)
+ .comment       0x000000000000002a      0x637 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+ .comment       0x000000000000002a      0x2db /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 activity.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(arch.lo)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(core.lo)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_ranges   0x0000000000000000       0x60
+ .debug_ranges  0x0000000000000000       0x60 /home/tjw/pok/examples/policy-wrr-testcase/pr1/../../..//libpok/libpok.a(libc.lo)

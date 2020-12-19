@@ -1,0 +1,305 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(arch.lo)
+                              main.o (pok_do_syscall)
+/home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+                              main.o (pok_sem_create)
+/home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+                              main.o (printf)
+
+Merging program properties
+
+
+Allocating common symbols
+Common symbol       size              file
+
+pok_allocator_memspace
+                    0x8000            /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+sid2                0x2               main.o
+errno               0x4               /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+pok_allocator_spaces
+                    0x4b0             /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+sid1                0x2               main.o
+
+Discarded input sections
+
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0x8 activity.o
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 activity.o
+ .note.gnu.property
+                0x0000000000000000       0x1c activity.o
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(arch.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+ .text.__x86.get_pc_thunk.bp
+                0x0000000000000000        0x4 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000000000                . = 0x0
+                0x0000000000000000                __partition_begin = .
+
+.text           0x0000000000000000     0x165f
+ *(.text)
+ .text          0x0000000000000000      0x26c main.o
+                0x0000000000000000                main
+ .text          0x000000000000026c       0xa5 activity.o
+                0x000000000000026c                bread
+                0x0000000000000297                fired_chicken
+                0x00000000000002c2                hamburger
+                0x0000000000000305                soup
+                0x000000000000030b                noodle
+ .text          0x0000000000000311       0x1c /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(arch.lo)
+                0x0000000000000311                pok_arch_idle
+                0x0000000000000318                pok_do_syscall
+ .text          0x000000000000032d      0x987 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+                0x000000000000032d                pok_allocator_print_spaces
+                0x000000000000039d                pok_allocator_allocate
+                0x0000000000000580                pok_allocator_delete_space
+                0x00000000000005e4                pok_allocator_merge_space
+                0x00000000000006cd                pok_allocator_free
+                0x00000000000007c6                pok_time_gettick
+                0x000000000000081a                pok_time_get
+                0x000000000000082e                __pok_partition_start
+                0x0000000000000850                pok_sem_create
+                0x00000000000008d5                pok_sem_signal
+                0x0000000000000940                pok_sem_status
+                0x000000000000094a                pok_sem_wait
+                0x00000000000009c5                pok_thread_create
+                0x0000000000000a19                pok_thread_attr_init
+                0x0000000000000a68                pok_thread_period
+                0x0000000000000abc                pok_thread_sleep
+                0x0000000000000b10                pok_thread_status
+                0x0000000000000b64                pok_thread_yield
+                0x0000000000000bb8                pok_thread_delayed_start
+                0x0000000000000c0c                pok_thread_set_priority
+                0x0000000000000c60                pok_thread_resume
+ .text          0x0000000000000cb4      0x9ab /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+                0x0000000000000fcf                vprintf
+                0x0000000000001135                printf
+                0x0000000000001151                itoa
+                0x0000000000001216                atoi
+                0x000000000000125d                memcpy
+                0x000000000000128d                memset
+                0x00000000000012b5                memcmp
+                0x00000000000012fe                strcmp
+                0x0000000000001344                strncmp
+                0x00000000000013a3                strcpy
+                0x00000000000013d9                strncpy
+                0x000000000000140d                streq
+                0x00000000000014a5                strlen
+                0x00000000000014c7                __udivdi3
+                0x000000000000158e                __umoddi3
+                0x00000000000015bb                rand
+                0x00000000000015f6                free
+                0x0000000000001617                malloc
+                0x0000000000001638                calloc
+
+.text.__x86.get_pc_thunk.bx
+                0x000000000000165f        0x4
+ .text.__x86.get_pc_thunk.bx
+                0x000000000000165f        0x4 main.o
+                0x000000000000165f                __x86.get_pc_thunk.bx
+
+.iplt           0x0000000000001663        0x0
+ .iplt          0x0000000000001663        0x0 main.o
+
+.text.__x86.get_pc_thunk.si
+                0x0000000000001663        0x4
+ .text.__x86.get_pc_thunk.si
+                0x0000000000001663        0x4 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+                0x0000000000001663                __x86.get_pc_thunk.si
+
+.text.__x86.get_pc_thunk.bp
+                0x0000000000001667        0x4
+ .text.__x86.get_pc_thunk.bp
+                0x0000000000001667        0x4 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+                0x0000000000001667                __x86.get_pc_thunk.bp
+
+.text.__x86.get_pc_thunk.ax
+                0x000000000000166b        0x4
+ .text.__x86.get_pc_thunk.ax
+                0x000000000000166b        0x4 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+                0x000000000000166b                __x86.get_pc_thunk.ax
+
+.text.__x86.get_pc_thunk.di
+                0x000000000000166f        0x4
+ .text.__x86.get_pc_thunk.di
+                0x000000000000166f        0x4 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+                0x000000000000166f                __x86.get_pc_thunk.di
+
+.rodata         0x0000000000001674       0x11
+ *(.rodata)
+ .rodata        0x0000000000001674       0x11 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.rodata.str1.4  0x0000000000001688      0x33b
+ .rodata.str1.4
+                0x0000000000001688      0x10f main.o
+ *fill*         0x0000000000001797        0x1 
+ .rodata.str1.4
+                0x0000000000001798      0x22b /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+
+.eh_frame       0x00000000000019c4      0xa4c
+ .eh_frame      0x00000000000019c4       0x70 main.o
+ .eh_frame      0x0000000000001a34       0xb4 activity.o
+                                         0xe0 (size before relaxing)
+ .eh_frame      0x0000000000001ae8       0x30 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(arch.lo)
+                                         0x60 (size before relaxing)
+ .eh_frame      0x0000000000001b18      0x438 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+                                        0x5cc (size before relaxing)
+ .eh_frame      0x0000000000001f50      0x4c0 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+                                        0x668 (size before relaxing)
+
+.note.gnu.property
+                0x0000000000002410       0x1c
+ .note.gnu.property
+                0x0000000000002410       0x1c main.o
+
+.rel.dyn        0x000000000000242c        0x0
+ .rel.got       0x000000000000242c        0x0 main.o
+ .rel.iplt      0x000000000000242c        0x0 main.o
+ .rel.text      0x000000000000242c        0x0 main.o
+
+.data           0x0000000000002440     0x8590
+ *(.data)
+ .data          0x0000000000002440        0x0 main.o
+ .data          0x0000000000002440        0x0 activity.o
+ .data          0x0000000000002440        0x0 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(arch.lo)
+ .data          0x0000000000002440        0x0 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+ .data          0x0000000000002440        0x4 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+ *(.bss)
+ .bss           0x0000000000002444        0x0 main.o
+ .bss           0x0000000000002444        0x2 activity.o
+                0x0000000000002444                val
+ .bss           0x0000000000002446        0x0 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(arch.lo)
+ *fill*         0x0000000000002446        0x2 
+ .bss           0x0000000000002448        0x8 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+                0x0000000000002448                pok_allocator_initialized
+                0x000000000000244c                pok_allocator_used_spaces
+ *fill*         0x0000000000002450       0x10 
+ .bss           0x0000000000002460       0x84 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+ *(COMMON)
+ COMMON         0x00000000000024e4        0x4 main.o
+                0x00000000000024e4                sid2
+                0x00000000000024e6                sid1
+ *fill*         0x00000000000024e8       0x18 
+ COMMON         0x0000000000002500     0x84d0 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+                0x0000000000002500                pok_allocator_memspace
+                0x000000000000a500                errno
+                0x000000000000a520                pok_allocator_spaces
+                0x000000000000a9d0                __partition_end = .
+LOAD main.o
+LOAD activity.o
+LOAD /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a
+LOAD /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok//libpok.a
+OUTPUT(pr1.elf elf32-i386)
+
+.got            0x000000000000a9d0        0x4
+ .got           0x000000000000a9d0        0x4 main.o
+
+.got.plt        0x000000000000a9d4        0xc
+ .got.plt       0x000000000000a9d4        0xc main.o
+                0x000000000000a9d4                _GLOBAL_OFFSET_TABLE_
+
+.igot.plt       0x000000000000a9e0        0x0
+ .igot.plt      0x000000000000a9e0        0x0 main.o
+
+.data.rel.ro.local
+                0x000000000000a9e0       0x6c
+ .data.rel.ro.local
+                0x000000000000a9e0       0x6c /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_info     0x0000000000000000     0x5141
+ .debug_info    0x0000000000000000      0x4b8 main.o
+ .debug_info    0x00000000000004b8      0x16e activity.o
+ .debug_info    0x0000000000000626      0x35a /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_info    0x0000000000000980     0x2fde /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_info    0x000000000000395e     0x17e3 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_abbrev   0x0000000000000000     0x1e75
+ .debug_abbrev  0x0000000000000000      0x11b main.o
+ .debug_abbrev  0x000000000000011b       0xba activity.o
+ .debug_abbrev  0x00000000000001d5      0x135 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_abbrev  0x000000000000030a      0xeea /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_abbrev  0x00000000000011f4      0xc81 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_loc      0x0000000000000000     0x1393
+ .debug_loc     0x0000000000000000       0xef main.o
+ .debug_loc     0x00000000000000ef       0x41 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_loc     0x0000000000000130      0x10f /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_loc     0x000000000000023f     0x1154 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_aranges  0x0000000000000000      0x4b0
+ .debug_aranges
+                0x0000000000000000       0x20 main.o
+ .debug_aranges
+                0x0000000000000020       0x20 activity.o
+ .debug_aranges
+                0x0000000000000040       0x40 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_aranges
+                0x0000000000000080      0x218 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_aranges
+                0x0000000000000298      0x218 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_line     0x0000000000000000     0x2630
+ .debug_line    0x0000000000000000      0x2d7 main.o
+ .debug_line    0x00000000000002d7      0x1d3 activity.o
+ .debug_line    0x00000000000004aa      0x114 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_line    0x00000000000005be     0x1011 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_line    0x00000000000015cf     0x1061 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_str      0x0000000000000000     0x13c2
+ .debug_str     0x0000000000000000      0x931 main.o
+                                        0x975 (size before relaxing)
+ .debug_str     0x0000000000000931       0x51 activity.o
+                                        0x1b6 (size before relaxing)
+ .debug_str     0x0000000000000982       0x73 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(arch.lo)
+                                        0x98b (size before relaxing)
+ .debug_str     0x00000000000009f5      0x6cb /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+                                       0x80e9 (size before relaxing)
+ .debug_str     0x00000000000010c0      0x302 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+                                       0x1b11 (size before relaxing)
+
+.comment        0x0000000000000000       0x2a
+ .comment       0x0000000000000000       0x2a main.o
+                                         0x2b (size before relaxing)
+ .comment       0x000000000000002a       0x2b activity.o
+ .comment       0x000000000000002a       0xac /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(arch.lo)
+ .comment       0x000000000000002a      0x637 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+ .comment       0x000000000000002a      0x2db /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 activity.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(arch.lo)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(core.lo)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_ranges   0x0000000000000000       0x60
+ .debug_ranges  0x0000000000000000       0x60 /home/tjw/pok/examples/cookinggame/pr1/../../..//libpok/libpok.a(libc.lo)

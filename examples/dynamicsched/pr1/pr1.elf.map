@@ -1,0 +1,316 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(arch.lo)
+                              main.o (pok_do_syscall)
+/home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+                              main.o (pok_sem_create)
+/home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+                              main.o (printf)
+
+Merging program properties
+
+
+Allocating common symbols
+Common symbol       size              file
+
+pok_allocator_memspace
+                    0x8000            /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+errno               0x4               /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+val                 0x2               activity.o
+pok_allocator_spaces
+                    0x4b0             /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+sid                 0x2               main.o
+
+Discarded input sections
+
+ .group         0x0000000000000000        0x8 main.o
+ .group         0x0000000000000000        0x8 activity.o
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 activity.o
+ .note.gnu.property
+                0x0000000000000000       0x1c activity.o
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(arch.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+ .group         0x0000000000000000        0x8 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+ .note.gnu.property
+                0x0000000000000000       0x1c /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+ .text.__x86.get_pc_thunk.bx
+                0x0000000000000000        0x4 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+ .text.__x86.get_pc_thunk.bp
+                0x0000000000000000        0x4 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+                0x0000000000000000                . = 0x0
+                0x0000000000000000                __partition_begin = .
+
+.text           0x0000000000000000     0x181a
+ *(.text)
+ .text          0x0000000000000000      0x2f7 main.o
+                0x0000000000000000                create_thread
+                0x0000000000000163                read_input
+                0x00000000000001f4                main
+ .text          0x00000000000002f7      0x174 activity.o
+                0x00000000000002f7                job0
+                0x000000000000034d                job1
+                0x00000000000003c6                job4
+                0x00000000000003fd                job3
+                0x0000000000000434                job2
+ .text          0x000000000000046b       0x1c /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(arch.lo)
+                0x000000000000046b                pok_arch_idle
+                0x0000000000000472                pok_do_syscall
+ .text          0x0000000000000487      0x987 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+                0x0000000000000487                pok_allocator_print_spaces
+                0x00000000000004f7                pok_allocator_allocate
+                0x00000000000006da                pok_allocator_delete_space
+                0x000000000000073e                pok_allocator_merge_space
+                0x0000000000000827                pok_allocator_free
+                0x0000000000000920                pok_time_gettick
+                0x0000000000000974                pok_time_get
+                0x0000000000000988                __pok_partition_start
+                0x00000000000009aa                pok_sem_create
+                0x0000000000000a2f                pok_sem_signal
+                0x0000000000000a9a                pok_sem_status
+                0x0000000000000aa4                pok_sem_wait
+                0x0000000000000b1f                pok_thread_create
+                0x0000000000000b73                pok_thread_attr_init
+                0x0000000000000bc2                pok_thread_period
+                0x0000000000000c16                pok_thread_sleep
+                0x0000000000000c6a                pok_thread_status
+                0x0000000000000cbe                pok_thread_yield
+                0x0000000000000d12                pok_thread_delayed_start
+                0x0000000000000d66                pok_thread_set_priority
+                0x0000000000000dba                pok_thread_resume
+ .text          0x0000000000000e0e      0xa0c /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+                0x0000000000001129                vprintf
+                0x000000000000128f                printf
+                0x00000000000012ab                getChar
+                0x000000000000130c                itoa
+                0x00000000000013d1                atoi
+                0x0000000000001418                memcpy
+                0x0000000000001448                memset
+                0x0000000000001470                memcmp
+                0x00000000000014b9                strcmp
+                0x00000000000014ff                strncmp
+                0x000000000000155e                strcpy
+                0x0000000000001594                strncpy
+                0x00000000000015c8                streq
+                0x0000000000001660                strlen
+                0x0000000000001682                __udivdi3
+                0x0000000000001749                __umoddi3
+                0x0000000000001776                rand
+                0x00000000000017b1                free
+                0x00000000000017d2                malloc
+                0x00000000000017f3                calloc
+
+.text.__x86.get_pc_thunk.bx
+                0x000000000000181a        0x4
+ .text.__x86.get_pc_thunk.bx
+                0x000000000000181a        0x4 main.o
+                0x000000000000181a                __x86.get_pc_thunk.bx
+
+.iplt           0x000000000000181e        0x0
+ .iplt          0x000000000000181e        0x0 main.o
+
+.text.__x86.get_pc_thunk.si
+                0x000000000000181e        0x4
+ .text.__x86.get_pc_thunk.si
+                0x000000000000181e        0x4 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+                0x000000000000181e                __x86.get_pc_thunk.si
+
+.text.__x86.get_pc_thunk.bp
+                0x0000000000001822        0x4
+ .text.__x86.get_pc_thunk.bp
+                0x0000000000001822        0x4 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+                0x0000000000001822                __x86.get_pc_thunk.bp
+
+.text.__x86.get_pc_thunk.ax
+                0x0000000000001826        0x4
+ .text.__x86.get_pc_thunk.ax
+                0x0000000000001826        0x4 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+                0x0000000000001826                __x86.get_pc_thunk.ax
+
+.text.__x86.get_pc_thunk.di
+                0x000000000000182a        0x4
+ .text.__x86.get_pc_thunk.di
+                0x000000000000182a        0x4 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+                0x000000000000182a                __x86.get_pc_thunk.di
+
+.rodata         0x0000000000001830       0x11
+ *(.rodata)
+ .rodata        0x0000000000001830       0x11 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.rodata.str1.4  0x0000000000001844      0x3df
+ .rodata.str1.4
+                0x0000000000001844      0x16c main.o
+ .rodata.str1.4
+                0x00000000000019b0       0x46 activity.o
+ *fill*         0x00000000000019f6        0x2 
+ .rodata.str1.4
+                0x00000000000019f8      0x22b /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+
+.rodata.str1.1  0x0000000000001c23       0x65
+ .rodata.str1.1
+                0x0000000000001c23       0x19 main.o
+ .rodata.str1.1
+                0x0000000000001c3c       0x4c activity.o
+
+.eh_frame       0x0000000000001c88      0xbd8
+ .eh_frame      0x0000000000001c88      0x154 main.o
+ .eh_frame      0x0000000000001ddc      0x130 activity.o
+                                        0x15c (size before relaxing)
+ .eh_frame      0x0000000000001f0c       0x30 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(arch.lo)
+                                         0x60 (size before relaxing)
+ .eh_frame      0x0000000000001f3c      0x438 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+                                        0x5cc (size before relaxing)
+ .eh_frame      0x0000000000002374      0x4ec /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+                                        0x6ac (size before relaxing)
+
+.note.gnu.property
+                0x0000000000002860       0x1c
+ .note.gnu.property
+                0x0000000000002860       0x1c main.o
+
+.rel.dyn        0x000000000000287c        0x0
+ .rel.got       0x000000000000287c        0x0 main.o
+ .rel.iplt      0x000000000000287c        0x0 main.o
+ .rel.text      0x000000000000287c        0x0 main.o
+
+.data           0x0000000000002880     0x8590
+ *(.data)
+ .data          0x0000000000002880        0x0 main.o
+ .data          0x0000000000002880        0x0 activity.o
+ .data          0x0000000000002880        0x0 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(arch.lo)
+ .data          0x0000000000002880        0x0 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+ .data          0x0000000000002880        0x4 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+ *(.bss)
+ .bss           0x0000000000002884        0x0 main.o
+ .bss           0x0000000000002884        0x0 activity.o
+ .bss           0x0000000000002884        0x0 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(arch.lo)
+ .bss           0x0000000000002884        0x8 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+                0x0000000000002884                pok_allocator_initialized
+                0x0000000000002888                pok_allocator_used_spaces
+ *fill*         0x000000000000288c       0x14 
+ .bss           0x00000000000028a0       0x84 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+ *(COMMON)
+ COMMON         0x0000000000002924        0x2 main.o
+                0x0000000000002924                sid
+ COMMON         0x0000000000002926        0x2 activity.o
+                0x0000000000002926                val
+ *fill*         0x0000000000002928       0x18 
+ COMMON         0x0000000000002940     0x84d0 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+                0x0000000000002940                pok_allocator_memspace
+                0x000000000000a940                errno
+                0x000000000000a960                pok_allocator_spaces
+                0x000000000000ae10                __partition_end = .
+LOAD main.o
+LOAD activity.o
+LOAD /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a
+LOAD /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok//libpok.a
+OUTPUT(pr1.elf elf32-i386)
+
+.got            0x000000000000ae10        0x0
+ .got           0x000000000000ae10        0x0 main.o
+
+.got.plt        0x000000000000ae10        0xc
+ .got.plt       0x000000000000ae10        0xc main.o
+                0x000000000000ae10                _GLOBAL_OFFSET_TABLE_
+
+.igot.plt       0x000000000000ae1c        0x0
+ .igot.plt      0x000000000000ae1c        0x0 main.o
+
+.data.rel.ro.local
+                0x000000000000ae20       0x6c
+ .data.rel.ro.local
+                0x000000000000ae20       0x6c /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_info     0x0000000000000000     0x5534
+ .debug_info    0x0000000000000000      0x590 main.o
+ .debug_info    0x0000000000000590      0x345 activity.o
+ .debug_info    0x00000000000008d5      0x35a /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_info    0x0000000000000c2f     0x2fde /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_info    0x0000000000003c0d     0x1927 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_abbrev   0x0000000000000000     0x1f89
+ .debug_abbrev  0x0000000000000000      0x15e main.o
+ .debug_abbrev  0x000000000000015e      0x100 activity.o
+ .debug_abbrev  0x000000000000025e      0x135 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_abbrev  0x0000000000000393      0xeea /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_abbrev  0x000000000000127d      0xd0c /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_loc      0x0000000000000000     0x148a
+ .debug_loc     0x0000000000000000      0x151 main.o
+ .debug_loc     0x0000000000000151       0x95 activity.o
+ .debug_loc     0x00000000000001e6       0x41 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_loc     0x0000000000000227      0x10f /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_loc     0x0000000000000336     0x1154 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_aranges  0x0000000000000000      0x4b8
+ .debug_aranges
+                0x0000000000000000       0x20 main.o
+ .debug_aranges
+                0x0000000000000020       0x20 activity.o
+ .debug_aranges
+                0x0000000000000040       0x40 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_aranges
+                0x0000000000000080      0x218 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_aranges
+                0x0000000000000298      0x220 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_line     0x0000000000000000     0x27ee
+ .debug_line    0x0000000000000000      0x327 main.o
+ .debug_line    0x0000000000000327      0x2e2 activity.o
+ .debug_line    0x0000000000000609      0x114 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(arch.lo)
+ .debug_line    0x000000000000071d     0x1011 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+ .debug_line    0x000000000000172e     0x10c0 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_str      0x0000000000000000     0x13c9
+ .debug_str     0x0000000000000000      0x94f main.o
+                                        0x993 (size before relaxing)
+ .debug_str     0x000000000000094f       0x51 activity.o
+                                        0x42f (size before relaxing)
+ .debug_str     0x00000000000009a0       0x73 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(arch.lo)
+                                        0x98b (size before relaxing)
+ .debug_str     0x0000000000000a13      0x6ba /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+                                       0x80e9 (size before relaxing)
+ .debug_str     0x00000000000010cd      0x2fc /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+                                       0x1dc2 (size before relaxing)
+
+.comment        0x0000000000000000       0x2a
+ .comment       0x0000000000000000       0x2a main.o
+                                         0x2b (size before relaxing)
+ .comment       0x000000000000002a       0x2b activity.o
+ .comment       0x000000000000002a       0xac /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(arch.lo)
+ .comment       0x000000000000002a      0x637 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+ .comment       0x000000000000002a      0x2db /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 activity.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(arch.lo)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(core.lo)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
+
+.debug_ranges   0x0000000000000000       0x60
+ .debug_ranges  0x0000000000000000       0x60 /home/tjw/pok/examples/dynamicsched/pr1/../../..//libpok/libpok.a(libc.lo)
