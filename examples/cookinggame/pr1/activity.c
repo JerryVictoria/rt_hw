@@ -28,7 +28,7 @@ void* bread (){
    while (1)
    {  
       //printf ("A");
-      // pok_sem_signal (sid1);
+      pok_sem_signal (sid1);
    }
 };
 
@@ -36,15 +36,15 @@ void* fired_chicken (){
    while (1)
    {  
       //printf ("B");
-      // pok_sem_signal (sid2);
+      pok_sem_signal (sid2);
    }
 };
 
 void* hamburger (){
    while (1)
    {  
-      // pok_sem_wait (sid1, 0);
-      // pok_sem_wait (sid2, 0);
+      pok_sem_wait (sid1, 0);
+      pok_sem_wait (sid2, 0);
       //printf ("C");
    }
 };
