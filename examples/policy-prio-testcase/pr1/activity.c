@@ -22,26 +22,16 @@
 
 void* job1 ()
 {
-   int count = 0;
    while (1)
    {  
-      printf ("1");
-      while(count < 10000000){
-         count++;
-      }
-      count = 0;
+      
    }
 }
 
 void* job2 ()
 {
-   int count = 0;
    while (1)
    {  
-      printf ("2");
-      while(count < 10000000){
-         count++;
-      }
-      count = 0;
+      
    }
 }

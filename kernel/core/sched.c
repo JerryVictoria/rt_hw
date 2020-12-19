@@ -449,24 +449,12 @@ void pok_sched()
       printf("now: %d, ", theory_time);
       switch (elected_thread)
       {
-         case 1:
-            printf("A\n");
-            break;
-         case 2:
-            printf("B\n");
-            break;
-         case 3:
-            printf("C\n");
-            break;
-         case 4:
-            printf("D\n");
-            break;
-         case 5:
-            printf("E\n");
-            break;
-      
-         default:
+         case POK_CONFIG_NB_THREADS-1:
             printf("IDLE THREAD\n");
+            break;
+
+         default:
+            printf("%c\n", 'A' + elected_thread - 1);
             break;
       }
       // printf("elect: %c\n", 'A' + elected_thread - 1); // bugs...

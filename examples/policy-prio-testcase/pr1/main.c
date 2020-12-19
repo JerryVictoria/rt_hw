@@ -32,7 +32,7 @@ int main ()
 
   tattr.priority = 30;
   tattr.period = ONE_SCHED_TIME*4;
-  tattr.time_capacity = 1;
+  tattr.time_capacity = 2;
   tattr.entry = job1;
 
   ret = pok_thread_create(&tid , &tattr);
@@ -40,7 +40,7 @@ int main ()
 
   tattr.priority = 40;
   tattr.period = ONE_SCHED_TIME*4;
-  tattr.time_capacity = 1;
+  tattr.time_capacity = 2;
   tattr.entry = job2;
 
   ret = pok_thread_create(&tid , &tattr);
