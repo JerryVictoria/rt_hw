@@ -25,10 +25,6 @@ void* jobA4 ()
    int count = 0;
    while (1)
    {  
-      if(count < 40)
-         printf ("A");
-      pok_thread_yield();
-      count++;
    }
 }
 
@@ -37,10 +33,6 @@ void* jobB3 ()
    int count = 0;
    while (1)
    {
-      if(count < 30)
-         printf ("B");
-      pok_thread_yield();
-      count++;
    }
 }
 
@@ -49,13 +41,6 @@ void* jobC2 ()
    int count = 0;
    while (1)
    {
-      if(count < 20){
-         printf ("C");
-         if((count + 1) % 2 == 0){
-            printf("\n");
-         }
-      } 
-      pok_thread_yield();
-      count++;
+      
    }
 }
