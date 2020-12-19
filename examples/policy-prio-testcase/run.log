@@ -8,19 +8,19 @@ Press Ctrl-B to configure iPXE (PCI 00:03.0)...
 Booting from Floppy...
 GRUB Loading stage2............[01;01H[2J
     GNU GRUB  version 0.94  (639K lower / 129920K upper memory)[04;02H┌─────────────────────────────────────────────────────────────────────────┐[05;02H│[05;76H│[06;02H│[06;76H│[07;02H│[07;76H│[08;02H│[08;76H│[09;02H│[09;76H│[10;02H│[10;76H│[11;02H│[11;76H│[12;02H│[12;76H│[13;02H│[13;76H│[14;02H│[14;76H│[15;02H│[15;76H│[16;02H│[16;76H│[17;02H└─────────────────────────────────────────────────────────────────────────┘
-      Use the ↑ and ↓ keys to[18;29H[18;30H select which entry is highlighted.
-      Press enter to boot the selected OS, 'e' to edit the
-      commands before booting, or 'c' for a command-line.[05;78H [05;03H[0;30;47m PolyORB Kernel                                                          [06;03H[0m                                                                         [07;03H                                                                         [08;03H                                                                         [09;03H                                                                         [10;03H                                                                         [11;03H                        [11;26H[11;27H                                                 [12;03H                                                                         [13;03H                                                                         [14;03H                                                                         [15;03H                                                                         [16;03H                                                                         [16;78H [01;01H[2J  Booting 'PolyORB Kernel'
+      Use the ↑ and ↓ keys to select which entry is highlighted.
+      Press ente[19;16H[19;17Hr to boot the selected OS, 'e' to edit the
+      commands before booting, or 'c' for a command-line.[05;78H [05;03H[0;30;47m PolyORB Kernel                                                          [06;03H[0m                                                                         [07;03H                                                                         [08;03H                                                                         [09;03H                                                                         [10;03H                                                                         [11;03H                                                                         [12;03H                                                                         [13;03H                                                                         [14;03H      [14;08H[14;09H                                                                   [15;03H                                                                         [16;03H                                                                         [16;78H [01;01H[2J  Booting 'PolyORB Kernel'
 
 root   (hd0,0)
  Filesystem type is fat, partition type 0x6
 kernel /pok.elf
-   [Multiboot-elf, <0x100000:0x26774:0x0>, shtab=0x127488, entry=0x1030f9
+   [Multiboot-elf, <0x100000:0x268b4:0x0>, shtab=0x127488, entry=0x1031c0
 pok_sched_slots_allocation: 0 
 POK kernel initialized
 [P1] pok_thread_create (job1) return=0
 [P1] pok_thread_create (job2) return=0
-time: 9578541, now: 1, B
+time: 9606198, now: 1, B
 time: 18438000, now: 2, B
 time: 27657000, now: 3, A
 time: 36876000, now: 4, B
@@ -106,5 +106,44 @@ time: 765177000, now: 83, A
 time: 774396000, now: 84, B
 time: 783615000, now: 85, B
 time: 792834000, now: 86, A
+time: 802053000, now: 87, A
+time: 811272000, now: 88, B
+time: 820491000, now: 89, B
+time: 829710000, now: 90, A
+time: 838929000, now: 91, A
+time: 848148000, now: 92, B
+time: 857367000, now: 93, B
+time: 866586000, now: 94, A
+time: 875805000, now: 95, A
+time: 885024000, now: 96, B
+time: 894243000, now: 97, B
+time: 903462000, now: 98, A
+time: 912681000, now: 99, A
+time: 921900000, now: 100, B
+time: 931119000, now: 101, B
+time: 940338000, now: 102, A
+time: 949557000, now: 103, A
+time: 958776000, now: 104, B
+time: 967995000, now: 105, B
+time: 977214000, now: 106, A
+time: 986433000, now: 107, A
+time: 995652000, now: 108, B
+time: 1004871000, now: 109, B
+time: 1014090000, now: 110, A
+time: 1023309000, now: 111, A
+time: 1032528000, now: 112, B
+time: 1041747000, now: 113, B
+time: 1050966000, now: 114, A
+time: 1060185000, now: 115, A
+time: 1069404000, now: 116, B
+time: 1078623000, now: 117, B
+time: 1087842000, now: 118, A
+time: 1097061000, now: 119, A
+time: 1106280000, now: 120, B
+time: 1115499000, now: 121, B
+time: 1124718000, now: 122, A
+time: 1133937000, now: 123, A
+time: 1143156000, now: 124, B
+time: 1152375000, now: 125, B
 QEMU: Terminated
 

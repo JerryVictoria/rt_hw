@@ -1,4 +1,4 @@
 #include <types.h>
 uint32_t part_sizes[] = {
-102332
+102704
 };
