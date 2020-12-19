@@ -60,6 +60,7 @@ typedef struct
 	 uint8_t      weight; // used for Weighted Round Robin
 	 uint8_t      priority;
 	 uint64_t     period;
+	 uint64_t     edf_end_time;
 	 uint64_t     deadline;
 	 uint64_t     time_capacity;
 	 uint64_t     remaining_time_capacity;

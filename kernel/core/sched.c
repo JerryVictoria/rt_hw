@@ -738,6 +738,51 @@ uint32_t pok_sched_part_prio (const uint32_t index_low, const uint32_t index_hig
    return res;
 
 }
+uint32_t pok_sched_part_edf (const uint32_t index_low, const uint32_t index_high,const uint32_t __attribute__((unused)) prev_thread,const uint32_t current_thread) {
+   // printf("------------------------------------------------------------------------------\n");
+   // printf("pok_sched_part_edf, index_low:%d, index_high:%d, current_thread:%d\n", index_low, index_high,current_thread);
+   uint32_t res = index_low;
+   uint32_t from = res;
+
+   int flag = 0;
+   uint32_t selected;
+   uint64_t earliest_ddl = 0;
+   if (pok_threads[current_thread].state == POK_STATE_RUNNABLE)
+   {
+      earliest_ddl = pok_threads[current_thread].edf_end_time;
+   }
+   do
+   {
+      res++;
+      if (res > index_high)
+      {
+         res = index_low;
+      }
+      if ((earliest_ddl == 0 || pok_threads[res].edf_end_time <= earliest_ddl) 
+         && pok_threads[res].remaining_time_capacity > 0 && pok_threads[res].state == POK_STATE_RUNNABLE){
+         earliest_ddl = pok_threads[res].edf_end_time;
+         selected = res;
+         flag = 1;
+         // printf("earliest_ddl = %d\n",earliest_ddl);
+      }
+   } while (res != from);
+
+   if (flag == 0) {
+      res = IDLE_THREAD;
+   } 
+   else
+   {
+      res = selected;
+      // printf("[SCHED THREAD] Selected Thread ID = %d\n", res);
+      // printf("[SCHED THREAD] Selected Thread DDL = %d\n", pok_threads[res].deadline);
+      // printf("[SCHED THREAD] Selected Thread edf_end_time = %d\n", pok_threads[res].edf_end_time);
+      // printf("[SCHED THREAD] Selected Thread period = %d\n", pok_threads[res].period);
+      // printf("[SCHED THREAD] Selected Thread next_activation = %d\n", pok_threads[res].next_activation);
+   }
+   // printf("[EDF sche result] res = %u\n", res);
+   // printf("------------------------------------------------------------------------------\n");
+   return res;
+}
 
 uint32_t pok_sched_part_rr (const uint32_t index_low, const uint32_t index_high,const uint32_t prev_thread,const uint32_t current_thread)
 {

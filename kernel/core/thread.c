@@ -193,7 +193,20 @@ pok_ret_t pok_partition_thread_create (uint32_t*                  thread_id,
    if (attr->deadline > 0)
    {
       pok_threads[id].deadline      = attr->deadline;
+
+#ifdef POK_NEEDS_SCHED_EDF
+      pok_threads[id].edf_end_time = attr->deadline;
+#endif
    }
+
+#ifdef POK_NEEDS_SCHED_EDF
+   if (attr->deadline <= 0)
+   {
+      // printf("CREATE THIS IS MAIN_THREAD\n");
+      pok_threads[id].edf_end_time = 0;
+      pok_threads[id].next_activation = 0;
+   }
+#endif
 
 #ifdef POK_NEEDS_SCHED_HFPPS
    pok_threads[id].payback = 0;

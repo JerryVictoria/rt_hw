@@ -1,0 +1,9 @@
+*.o
+*.lo
+*.mk
+*.elf*
+*.depend
+partitions.bin
+*.img
+*.pid
+*.a
