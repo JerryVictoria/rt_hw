@@ -306,6 +306,9 @@ uint32_t	pok_elect_thread(uint8_t new_partition_id)
      {
        thread->state = POK_STATE_RUNNABLE;
        thread->remaining_time_capacity =  thread->time_capacity;
+#ifdef POK_NEEDS_SCHED_EDF
+       thread->edf_end_time = thread->next_activation + thread->deadline;
+#endif
        thread->next_activation = thread->next_activation + thread->period; 
        // printf("%d, thread->remaining_time_capacity:%d\n",new_partition->thread_index_low + i, thread->remaining_time_capacity);
      }
