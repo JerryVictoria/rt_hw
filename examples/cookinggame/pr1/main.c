@@ -42,7 +42,7 @@ int main ()
   tattr.period = 9 * ONE_SCHED_TIME;
   tattr.time_capacity = 1;
   tattr.entry = bread;
-  tattr.deadline = 2;
+  tattr.deadline = 2 * ONE_SCHED_TIME;
 
   ret = pok_thread_create(&tid , &tattr);
   printf("[P1] pok_thread_create (bread) return=%d\n", ret);
@@ -52,7 +52,7 @@ int main ()
   tattr.period = 9 * ONE_SCHED_TIME;
   tattr.time_capacity = 2;
   tattr.entry = fired_chicken;
-  tattr.deadline = 3;
+  tattr.deadline = 3 * ONE_SCHED_TIME;
 
   ret = pok_thread_create(&tid , &tattr);
   printf("[P1] pok_thread_create (fired_chicken) return=%d\n", ret);
@@ -62,7 +62,7 @@ int main ()
   tattr.period = 8 * ONE_SCHED_TIME;
   tattr.time_capacity = 1;
   tattr.entry = hamburger;
-  tattr.deadline = 7;
+  tattr.deadline = 7 * ONE_SCHED_TIME;
 
   ret = pok_thread_create(&tid , &tattr);
   printf("[P1] pok_thread_create (hamburger) return=%d\n", ret);
@@ -72,7 +72,7 @@ int main ()
   tattr.period = 8 * ONE_SCHED_TIME;
   tattr.time_capacity = 2;
   tattr.entry = soup;
-  tattr.deadline = 8;
+  tattr.deadline = 8 * ONE_SCHED_TIME;
 
   ret = pok_thread_create(&tid , &tattr);
   printf("[P1] pok_thread_create (soup) return=%d\n", ret);
@@ -82,7 +82,7 @@ int main ()
   tattr.period = 5 * ONE_SCHED_TIME;
   tattr.time_capacity = 1;
   tattr.entry = noodle;
-  tattr.deadline = 5;
+  tattr.deadline = 5 * ONE_SCHED_TIME;
 
   ret = pok_thread_create(&tid , &tattr);
   printf("[P1] pok_thread_create (noodle) return=%d\n", ret);
