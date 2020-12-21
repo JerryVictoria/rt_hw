@@ -52,6 +52,10 @@ void pok_sched (void);      /* Main scheduling function, this function
 uint8_t pok_sched_get_priority_min (const pok_sched_t sched_type);
 uint8_t pok_sched_get_priority_max (const pok_sched_t sched_type);
 
+/* MLFQ related macro */
+#define MLFQ_QUEUE_LEVEL 2
+#define MLFQ_QUEUE_SIZE  512
+
 /* Scheduler election method */
 uint8_t pok_sched_election (void);
 uint32_t pok_sched_part_mlfq (const uint32_t ,const uint32_t,const uint32_t prev_thread,const uint32_t current_thread);

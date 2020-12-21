@@ -421,6 +421,13 @@ void pok_sched()
   uint32_t elected_thread = 0;
   uint8_t elected_partition = POK_SCHED_CURRENT_PARTITION;
 
+#ifdef POK_NEEDS_SCHED_MLFQ
+	/* if job is not finished */
+	if (pok_threads[current_thread].remaining_time_capacity > 0){
+		pok_threads[current_thread].mlfq_before_level = MLFQ_QUEUE_LEVEL;
+	}
+#endif
+
 #ifdef POK_NEEDS_SCHED_HFPPS
   uint64_t now = POK_GETTICK();
   elected_thread = current_thread;
@@ -617,8 +624,6 @@ uint32_t wmax_of_thread(const uint32_t index_low, const uint32_t index_high){
 }
 
 /* MLFQ sched algorithm */
-#define MLFQ_QUEUE_LEVEL 1
-#define MLFQ_QUEUE_SIZE 512
 uint32_t mlfq_queue_list[MLFQ_QUEUE_LEVEL][MLFQ_QUEUE_SIZE];
 uint32_t head[MLFQ_QUEUE_LEVEL];
 uint32_t tail[MLFQ_QUEUE_LEVEL];
@@ -668,23 +673,39 @@ uint32_t pok_sched_part_mlfq (const uint32_t index_low, const uint32_t index_hig
 {
    	/* Part 1: scan the whole array to add threads into mlfq_queue */
    	for(uint32_t idx = index_low; idx <= index_high; idx++){
-		if(pok_threads[idx].state == POK_STATE_RUNNABLE 
-			&& pok_threads[idx].if_inqueue == 0){
-			mlfq_enqueue(0, idx);
-			pok_threads[idx].if_inqueue = 1;
+		if(pok_threads[idx].state != POK_STATE_RUNNABLE){
+			continue;
 		}
+		if(pok_threads[idx].if_inqueue != 0){
+			continue;
+		}
+		/* Decide the next level */
+		uint32_t next_level = 0;
+		if(pok_threads[idx].mlfq_before_level != MLFQ_QUEUE_LEVEL){
+			next_level = (pok_threads[idx].mlfq_before_level + 1) 
+					% MLFQ_QUEUE_LEVEL;
+		}
+		/* Do the modification */
+		pok_threads[idx].if_inqueue = 1;
+		pok_threads[idx].mlfq_before_level = next_level;
+		mlfq_enqueue(next_level, idx);
    	}
 
 	/* Part 2: Pick next thread from the mlfq queue list */
+	uint32_t next_thread = IDLE_THREAD;
 	for(uint32_t lv = 0; lv < MLFQ_QUEUE_LEVEL; lv++){
-		uint32_t next_thread = mlfq_dequeue(lv);	
-		if(next_thread != IDLE_THREAD){
-			pok_threads[next_thread].if_inqueue = 0;
-			return next_thread;
+		uint32_t thread = mlfq_dequeue(lv);	
+		if(thread != IDLE_THREAD){
+			pok_threads[thread].if_inqueue = 0;
+			pok_threads[thread].mlfq_before_level = lv;	
+			next_thread = thread;
+			break;
 		}
 	}
-
 	
+	if (next_thread != IDLE_THREAD){
+		return next_thread;
+	}
 
 	/* retur IDLE if no thread to sched */
 	return IDLE_THREAD;	
