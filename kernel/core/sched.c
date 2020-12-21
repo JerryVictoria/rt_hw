@@ -627,6 +627,7 @@ uint32_t wmax_of_thread(const uint32_t index_low, const uint32_t index_high){
 uint32_t mlfq_queue_list[MLFQ_QUEUE_LEVEL][MLFQ_QUEUE_SIZE];
 uint32_t head[MLFQ_QUEUE_LEVEL];
 uint32_t tail[MLFQ_QUEUE_LEVEL];
+uint64_t mlfq_boost_timestamp;
 void mlfq_enqueue(uint32_t level, uint32_t thread)
 {
 	/* Check if full */
@@ -665,7 +666,19 @@ void mlfq_init(void)
 			mlfq_queue_list[lv][i] = IDLE_THREAD; 
 		}
 	}
+	mlfq_boost_timestamp = 0;
 	printf("[%s]: Done.\n", __func__);
+}
+
+void mlfq_boost(void)
+{
+	for(uint32_t lv = 1; lv < MLFQ_QUEUE_LEVEL; lv++){
+		uint32_t thread = mlfq_dequeue(lv);	
+		if(thread != IDLE_THREAD){
+			mlfq_enqueue(0,thread);
+			pok_threads[thread].mlfq_before_level = MLFQ_QUEUE_LEVEL;
+		}
+	}
 }
 uint32_t pok_sched_part_mlfq (const uint32_t index_low, const uint32_t index_high,
 		const uint32_t __attribute__((unused))prev_thread,
@@ -702,6 +715,13 @@ uint32_t pok_sched_part_mlfq (const uint32_t index_low, const uint32_t index_hig
 			break;
 		}
 	}
+
+	/* Part 3: Boost */
+	uint64_t theory_time = POK_GETTICK() / 9219000;
+	if(theory_time - mlfq_boost_timestamp >= MLFQ_BOOST_GAP){
+		mlfq_boost_timestamp = theory_time;
+		mlfq_boost();
+	}	
 	
 	if (next_thread != IDLE_THREAD){
 		return next_thread;

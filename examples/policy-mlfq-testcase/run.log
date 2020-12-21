@@ -6,7 +6,7 @@ POK kernel initialized
 [P1] pok_thread_create (1) return=0
 [P1] pok_thread_create (2) return=0
 [P1] pok_thread_create (3) return=0
-time: 9726045, now: 1, A
+time: 9679950, now: 1, A
 time: 18438000, now: 2, B
 time: 27657000, now: 3, C
 time: 36876000, now: 4, IDLE THREAD
@@ -120,5 +120,32 @@ time: 1023309000, now: 111, C
 time: 1032528000, now: 112, IDLE THREAD
 time: 1041747000, now: 113, IDLE THREAD
 time: 1050966000, now: 114, IDLE THREAD
+time: 1060185000, now: 115, IDLE THREAD
+time: 1069404000, now: 116, IDLE THREAD
+time: 1078623000, now: 117, IDLE THREAD
+time: 1087842000, now: 118, IDLE THREAD
+time: 1097061000, now: 119, IDLE THREAD
+time: 1106280000, now: 120, A
+time: 1115499000, now: 121, B
+time: 1124718000, now: 122, C
+time: 1133937000, now: 123, IDLE THREAD
+time: 1143156000, now: 124, IDLE THREAD
+time: 1152375000, now: 125, IDLE THREAD
+time: 1161594000, now: 126, IDLE THREAD
+time: 1170813000, now: 127, IDLE THREAD
+time: 1180032000, now: 128, IDLE THREAD
+time: 1189251000, now: 129, IDLE THREAD
+time: 1198470000, now: 130, B
+time: 1207689000, now: 131, C
+time: 1216908000, now: 132, IDLE THREAD
+time: 1226127000, now: 133, IDLE THREAD
+time: 1235346000, now: 134, IDLE THREAD
+time: 1244565000, now: 135, IDLE THREAD
+time: 1253784000, now: 136, IDLE THREAD
+time: 1263003000, now: 137, IDLE THREAD
+time: 1272222000, now: 138, IDLE THREAD
+time: 1281441000, now: 139, IDLE THREAD
+time: 1290660000, now: 140, A
+time: 1299879000, now: 141, B
 QEMU: Terminated
 

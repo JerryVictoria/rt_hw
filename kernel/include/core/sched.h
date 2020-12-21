@@ -53,8 +53,9 @@ uint8_t pok_sched_get_priority_min (const pok_sched_t sched_type);
 uint8_t pok_sched_get_priority_max (const pok_sched_t sched_type);
 
 /* MLFQ related macro */
-#define MLFQ_QUEUE_LEVEL 2
-#define MLFQ_QUEUE_SIZE  512
+#define MLFQ_QUEUE_LEVEL 	2
+#define MLFQ_QUEUE_SIZE  	512
+#define MLFQ_BOOST_GAP		10
 
 /* Scheduler election method */
 uint8_t pok_sched_election (void);
