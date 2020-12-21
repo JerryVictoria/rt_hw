@@ -641,6 +641,7 @@ void mlfq_enqueue(uint32_t level, uint32_t thread)
 	mlfq_queue_list[level][curr_tail] = thread;
 	curr_tail = (curr_tail + 1) % MLFQ_QUEUE_SIZE;
 	tail[level] = curr_tail;
+	printf("[%s]: enqueue thread = %u to level = %u\n", __func__, thread, level);
 }
 
 uint32_t mlfq_dequeue(uint32_t level)
@@ -655,6 +656,7 @@ uint32_t mlfq_dequeue(uint32_t level)
 	uint32_t res_thread = mlfq_queue_list[level][curr_head]; 
 	curr_head = (curr_head + 1) % MLFQ_QUEUE_SIZE;
 	head[level] = curr_head;
+	printf("[%s]: deqeueu thread = %u from level = %u\n", __func__, res_thread, level);
 	return res_thread;
 }
 void mlfq_init(void)
