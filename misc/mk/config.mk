@@ -24,6 +24,7 @@ OBJCOPY_x86=/usr/bin/objcopy
 OBJDUMP_x86=/usr/bin/objdump
 PERL=/usr/bin/perl
 QEMU_ppc=/usr/bin/qemu-system-ppc
+QEMU_sparc=/usr/bin/qemu-system-sparc
 QEMU_x86=/usr/bin/qemu-system-i386
 RANLIB_x86=/usr/bin/ranlib
 RM=/bin/rm -r -f

@@ -1,0 +1,1556 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALIGN_UP	arch/x86/x86-qemu/pm.c	30;"	d	file:
+ASI_MMU_BYPASS	arch/sparc/leon3/sparc_conf.h	32;"	d
+ASI_M_MMUREGS	arch/sparc/space.h	97;"	d
+BASE_HEX	libc/printf.c	30;"	d	file:
+BASE_OCT	libc/printf.c	31;"	d	file:
+BUS_FREQ	arch/ppc/timer.c	24;"	d	file:
+CLOCK_HANDLER	include/core/time.h	38;"	d
+CLOCK_REALTIME	include/core/time.h	44;"	d
+COM1	arch/ppc/prep/cons.c	28;"	d	file:
+COM1	arch/x86/x86-qemu/cons.c	36;"	d	file:
+CONS_BACK	arch/x86/x86-qemu/cons.h	46;"	d
+CONS_BLACK	arch/x86/x86-qemu/cons.h	33;"	d
+CONS_BLINK	arch/x86/x86-qemu/cons.h	42;"	d
+CONS_BLUE	arch/x86/x86-qemu/cons.h	34;"	d
+CONS_CLEAR	arch/x86/x86-qemu/cons.h	28;"	d
+CONS_COLOR	arch/x86/x86-qemu/cons.h	29;"	d
+CONS_CYAN	arch/x86/x86-qemu/cons.h	36;"	d
+CONS_ESCAPE	arch/x86/x86-qemu/cons.h	27;"	d
+CONS_FRONT	arch/x86/x86-qemu/cons.h	45;"	d
+CONS_GREEN	arch/x86/x86-qemu/cons.h	35;"	d
+CONS_LIGHT	arch/x86/x86-qemu/cons.h	43;"	d
+CONS_MAGENTA	arch/x86/x86-qemu/cons.h	38;"	d
+CONS_RED	arch/x86/x86-qemu/cons.h	37;"	d
+CONS_SETX	arch/x86/x86-qemu/cons.h	30;"	d
+CONS_SETY	arch/x86/x86-qemu/cons.h	31;"	d
+CONS_WHITE	arch/x86/x86-qemu/cons.h	40;"	d
+CONS_YELLOW	arch/x86/x86-qemu/cons.h	39;"	d
+CPIO_BIN_FMT	include/core/cpio.h	/^   CPIO_BIN_FMT,$/;"	e	enum:cpio_format
+CPIO_CRC_FMT	include/core/cpio.h	/^   CPIO_CRC_FMT,$/;"	e	enum:cpio_format
+CPIO_HPBIN_FMT	include/core/cpio.h	/^   CPIO_HPBIN_FMT,$/;"	e	enum:cpio_format
+CPIO_HPODC_FMT	include/core/cpio.h	/^   CPIO_HPODC_FMT$/;"	e	enum:cpio_format
+CPIO_NEWC_FMT	include/core/cpio.h	/^   CPIO_NEWC_FMT,$/;"	e	enum:cpio_format
+CPIO_ODC_FMT	include/core/cpio.h	/^   CPIO_ODC_FMT,$/;"	e	enum:cpio_format
+CPIO_TAR_FMT	include/core/cpio.h	/^   CPIO_TAR_FMT,$/;"	e	enum:cpio_format
+CPIO_USTAR_FMT	include/core/cpio.h	/^   CPIO_USTAR_FMT,$/;"	e	enum:cpio_format
+DEFAULT_STACK_SIZE	include/core/thread.h	52;"	d
+EI_NIDENT	include/elf.h	26;"	d
+ELF_H_	include/elf.h	19;"	d
+ETH_DATA_MAXLEN	include/drivers/rtl8029.h	27;"	d
+ETH_DATA_MINLEN	include/drivers/rtl8029.h	28;"	d
+ETH_MAC_LEN	include/drivers/rtl8029.h	29;"	d
+EXCEPTION_ALIGNEMENT_CHECK	arch/x86/event.h	63;"	d
+EXCEPTION_BOUNDRANGE	arch/x86/event.h	51;"	d
+EXCEPTION_BREAKPOINT	arch/x86/event.h	49;"	d
+EXCEPTION_COPSEG_OVERRUN	arch/x86/event.h	55;"	d
+EXCEPTION_DEBUG	arch/x86/event.h	47;"	d
+EXCEPTION_DIVIDE_ERROR	arch/x86/event.h	46;"	d
+EXCEPTION_DOUBLEFAULT	arch/x86/event.h	54;"	d
+EXCEPTION_FPU_FAULT	arch/x86/event.h	62;"	d
+EXCEPTION_GENERAL_PROTECTION	arch/x86/event.h	59;"	d
+EXCEPTION_INVALIDOPCODE	arch/x86/event.h	52;"	d
+EXCEPTION_INVALID_TSS	arch/x86/event.h	56;"	d
+EXCEPTION_MACHINE_CHECK	arch/x86/event.h	64;"	d
+EXCEPTION_NMI	arch/x86/event.h	48;"	d
+EXCEPTION_NOMATH_COPROC	arch/x86/event.h	53;"	d
+EXCEPTION_OVERFLOW	arch/x86/event.h	50;"	d
+EXCEPTION_PAGEFAULT	arch/x86/event.h	60;"	d
+EXCEPTION_RESERVED	arch/x86/event.h	61;"	d
+EXCEPTION_SEGMENT_NOT_PRESENT	arch/x86/event.h	57;"	d
+EXCEPTION_SIMD_FAULT	arch/x86/event.h	65;"	d
+EXCEPTION_STACKSEG_FAULT	arch/x86/event.h	58;"	d
+EXT_C	include/arch/x86/multiboot.h	55;"	d
+EXT_C	include/arch/x86/multiboot.h	57;"	d
+Elf32_Addr	include/elf.h	/^typedef uint32_t Elf32_Addr;$/;"	t
+Elf32_Ehdr	include/elf.h	/^} Elf32_Ehdr;$/;"	t	typeref:struct:__anon41
+Elf32_Half	include/elf.h	/^typedef uint16_t Elf32_Half;$/;"	t
+Elf32_Off	include/elf.h	/^typedef uint32_t Elf32_Off;$/;"	t
+Elf32_Phdr	include/elf.h	/^} Elf32_Phdr;$/;"	t	typeref:struct:__anon42
+Elf32_Word	include/elf.h	/^typedef uint32_t Elf32_Word;$/;"	t
+FALSE	include/types.h	28;"	d
+FRAME_SIZE	arch/ppc/entry.S	/^#define FRAME_SIZE 80$/;"	d
+FREQ_DIV	arch/ppc/timer.c	26;"	d	file:
+G1_OFFSET	arch/sparc/context_offset.h	57;"	d
+G2_OFFSET	arch/sparc/context_offset.h	56;"	d
+G3_OFFSET	arch/sparc/context_offset.h	55;"	d
+G4_OFFSET	arch/sparc/context_offset.h	54;"	d
+G5_OFFSET	arch/sparc/context_offset.h	53;"	d
+G6_OFFSET	arch/sparc/context_offset.h	52;"	d
+G7_OFFSET	arch/sparc/context_offset.h	51;"	d
+GDTE_CODE	arch/x86/gdt.h	/^  GDTE_CODE = 0xB,$/;"	e	enum:e_gdte_type
+GDTE_DATA	arch/x86/gdt.h	/^  GDTE_DATA = 0x3,$/;"	e	enum:e_gdte_type
+GDTE_TSS	arch/x86/gdt.h	/^  GDTE_TSS = 0x9$/;"	e	enum:e_gdte_type
+GDT_BUILD_SELECTOR	arch/x86/gdt.h	52;"	d
+GDT_CORE_CODE_SEGMENT	arch/x86/gdt.h	45;"	d
+GDT_CORE_DATA_SEGMENT	arch/x86/gdt.h	46;"	d
+GDT_PARTITION_CODE_SEGMENT	arch/x86/gdt.h	49;"	d
+GDT_PARTITION_DATA_SEGMENT	arch/x86/gdt.h	50;"	d
+GDT_SIZE	arch/x86/gdt.c	35;"	d	file:
+GDT_TSS_SEGMENT	arch/x86/gdt.h	47;"	d
+HM_MODULE_RESTART	include/core/partition.h	/^  HM_MODULE_RESTART     = 2,$/;"	e	enum:__anon26
+HM_PARTITION_RESTART	include/core/partition.h	/^  HM_PARTITION_RESTART  = 3$/;"	e	enum:__anon26
+I0_OFFSET	arch/sparc/context_offset.h	38;"	d
+I1_OFFSET	arch/sparc/context_offset.h	39;"	d
+I2_OFFSET	arch/sparc/context_offset.h	40;"	d
+I3_OFFSET	arch/sparc/context_offset.h	41;"	d
+I4_OFFSET	arch/sparc/context_offset.h	42;"	d
+I5_OFFSET	arch/sparc/context_offset.h	43;"	d
+I6_OFFSET	arch/sparc/context_offset.h	44;"	d
+I7_OFFSET	arch/sparc/context_offset.h	45;"	d
+IDLE_STACK_SIZE	include/core/thread.h	51;"	d
+IDLE_THREAD	include/core/thread.h	35;"	d
+IDTE_INTERRUPT	arch/x86/event.h	/^  IDTE_INTERRUPT = 6,$/;"	e	enum:e_idte_type
+IDTE_TASK	arch/x86/event.h	/^  IDTE_TASK = 5,$/;"	e	enum:e_idte_type
+IDTE_TRAP	arch/x86/event.h	/^  IDTE_TRAP = 7$/;"	e	enum:e_idte_type
+IDT_SIZE	arch/x86/event.c	27;"	d	file:
+INTERRUPT_HANDLER	arch/x86/exceptions.c	/^INTERRUPT_HANDLER (exception_boundrange)$/;"	f
+INTERRUPT_HANDLER	arch/x86/exceptions.c	/^INTERRUPT_HANDLER (exception_breakpoint)$/;"	f
+INTERRUPT_HANDLER	arch/x86/exceptions.c	/^INTERRUPT_HANDLER (exception_copseg_overrun)$/;"	f
+INTERRUPT_HANDLER	arch/x86/exceptions.c	/^INTERRUPT_HANDLER (exception_debug)$/;"	f
+INTERRUPT_HANDLER	arch/x86/exceptions.c	/^INTERRUPT_HANDLER (exception_divide_error)$/;"	f
+INTERRUPT_HANDLER	arch/x86/exceptions.c	/^INTERRUPT_HANDLER (exception_fpu_fault)$/;"	f
+INTERRUPT_HANDLER	arch/x86/exceptions.c	/^INTERRUPT_HANDLER (exception_invalidopcode)$/;"	f
+INTERRUPT_HANDLER	arch/x86/exceptions.c	/^INTERRUPT_HANDLER (exception_machine_check)$/;"	f
+INTERRUPT_HANDLER	arch/x86/exceptions.c	/^INTERRUPT_HANDLER (exception_nmi)$/;"	f
+INTERRUPT_HANDLER	arch/x86/exceptions.c	/^INTERRUPT_HANDLER (exception_nomath_coproc)$/;"	f
+INTERRUPT_HANDLER	arch/x86/exceptions.c	/^INTERRUPT_HANDLER (exception_overflow)$/;"	f
+INTERRUPT_HANDLER	arch/x86/exceptions.c	/^INTERRUPT_HANDLER (exception_simd_fault)$/;"	f
+INTERRUPT_HANDLER	arch/x86/x86-qemu/pit.c	/^INTERRUPT_HANDLER (pit_interrupt)$/;"	f
+INTERRUPT_HANDLER	include/arch/x86/interrupt.h	53;"	d
+INTERRUPT_HANDLER_errorcode	arch/x86/exceptions.c	/^INTERRUPT_HANDLER_errorcode (exception_alignement_check)$/;"	f
+INTERRUPT_HANDLER_errorcode	arch/x86/exceptions.c	/^INTERRUPT_HANDLER_errorcode (exception_doublefault)$/;"	f
+INTERRUPT_HANDLER_errorcode	arch/x86/exceptions.c	/^INTERRUPT_HANDLER_errorcode (exception_general_protection)$/;"	f
+INTERRUPT_HANDLER_errorcode	arch/x86/exceptions.c	/^INTERRUPT_HANDLER_errorcode (exception_invalid_tss)$/;"	f
+INTERRUPT_HANDLER_errorcode	arch/x86/exceptions.c	/^INTERRUPT_HANDLER_errorcode (exception_pagefault)$/;"	f
+INTERRUPT_HANDLER_errorcode	arch/x86/exceptions.c	/^INTERRUPT_HANDLER_errorcode (exception_segment_not_present)$/;"	f
+INTERRUPT_HANDLER_errorcode	arch/x86/exceptions.c	/^INTERRUPT_HANDLER_errorcode (exception_stackseg_fault)$/;"	f
+INTERRUPT_HANDLER_errorcode	include/arch/x86/interrupt.h	81;"	d
+INTERRUPT_HANDLER_syscall	arch/x86/syscalls.c	/^INTERRUPT_HANDLER_syscall(syscall_gate)$/;"	f
+INTERRUPT_HANDLER_syscall	include/arch/x86/interrupt.h	108;"	d
+INT_SIGNED	libc/printf.c	28;"	d	file:
+INT_UNSIGNED	libc/printf.c	27;"	d	file:
+IRQMP_BASE	arch/sparc/leon3/irq.h	28;"	d
+IRQMP_CLEAR_OFFSET	arch/sparc/leon3/irq.h	30;"	d
+IRQMP_MASK0_OFFSET	arch/sparc/leon3/irq.h	31;"	d
+KERNEL_STACK_SIZE	arch/ppc/space.c	28;"	d	file:
+KERNEL_STACK_SIZE	arch/sparc/space.c	36;"	d	file:
+KERNEL_STACK_SIZE	arch/x86/space.c	38;"	d	file:
+KERNEL_THREAD	include/core/thread.h	34;"	d
+L0_OFFSET	arch/sparc/context_offset.h	30;"	d
+L1_OFFSET	arch/sparc/context_offset.h	31;"	d
+L2_OFFSET	arch/sparc/context_offset.h	32;"	d
+L3_OFFSET	arch/sparc/context_offset.h	33;"	d
+L4_OFFSET	arch/sparc/context_offset.h	34;"	d
+L5_OFFSET	arch/sparc/context_offset.h	35;"	d
+L6_OFFSET	arch/sparc/context_offset.h	36;"	d
+L7_OFFSET	arch/sparc/context_offset.h	37;"	d
+LEON_CTX_NBR	arch/sparc/space.h	105;"	d
+LOCKOBJ_LOCK_TIMED	include/core/lockobj.h	/^   LOCKOBJ_LOCK_TIMED   = 2$/;"	e	enum:__anon35
+LOCKOBJ_OPERATION_BROADCAST	include/core/lockobj.h	/^   LOCKOBJ_OPERATION_BROADCAST = 5$/;"	e	enum:__anon36
+LOCKOBJ_OPERATION_LOCK	include/core/lockobj.h	/^   LOCKOBJ_OPERATION_LOCK = 1,$/;"	e	enum:__anon36
+LOCKOBJ_OPERATION_SIGNAL	include/core/lockobj.h	/^   LOCKOBJ_OPERATION_SIGNAL = 4,$/;"	e	enum:__anon36
+LOCKOBJ_OPERATION_UNLOCK	include/core/lockobj.h	/^   LOCKOBJ_OPERATION_UNLOCK = 2,$/;"	e	enum:__anon36
+LOCKOBJ_OPERATION_WAIT	include/core/lockobj.h	/^   LOCKOBJ_OPERATION_WAIT = 3,$/;"	e	enum:__anon36
+LOCKOBJ_STATE_LOCK	include/core/lockobj.h	/^   LOCKOBJ_STATE_LOCK = 0,$/;"	e	enum:__anon32
+LOCKOBJ_STATE_UNLOCK	include/core/lockobj.h	/^   LOCKOBJ_STATE_UNLOCK = 1,$/;"	e	enum:__anon32
+LOCKOBJ_STATE_WAITEVENT	include/core/lockobj.h	/^   LOCKOBJ_STATE_WAITEVENT = 2$/;"	e	enum:__anon32
+LOCKOBK_LOCK_REGULAR	include/core/lockobj.h	/^   LOCKOBK_LOCK_REGULAR = 1,$/;"	e	enum:__anon35
+LO_DEPS	Makefile	/^LO_DEPS= core\/core.lo \\$/;"	m
+LO_DEPS	arch/Makefile	/^LO_DEPS=	$(ARCH)\/$(ARCH).lo$/;"	m
+LO_DEPS	arch/ppc/Makefile	/^LO_DEPS=	$(BSP)\/$(BSP).lo$/;"	m
+LO_DEPS	arch/ppc/prep/Makefile	/^LO_DEPS=$/;"	m
+LO_DEPS	arch/sparc/Makefile	/^LO_DEPS= $(BSP)\/$(BSP).lo$/;"	m
+LO_DEPS	arch/sparc/leon3/Makefile	/^LO_DEPS=$/;"	m
+LO_DEPS	arch/x86/Makefile	/^LO_DEPS=	$(BSP)\/$(BSP).lo$/;"	m
+LO_DEPS	arch/x86/x86-qemu/Makefile	/^LO_DEPS=$/;"	m
+LO_DEPS	core/Makefile	/^LO_DEPS=$/;"	m
+LO_DEPS	drivers/Makefile	/^LO_DEPS=$/;"	m
+LO_DEPS	libc/Makefile	/^LO_DEPS=$/;"	m
+LO_DEPS	middleware/Makefile	/^LO_DEPS=$/;"	m
+LO_OBJS	arch/Makefile	/^LO_OBJS=		$/;"	m
+LO_OBJS	arch/ppc/Makefile	/^LO_OBJS=	entry.o \\$/;"	m
+LO_OBJS	arch/ppc/prep/Makefile	/^LO_OBJS=	cons.o \\$/;"	m
+LO_OBJS	arch/sparc/Makefile	/^LO_OBJS= entry.o   \\$/;"	m
+LO_OBJS	arch/sparc/leon3/Makefile	/^LO_OBJS= cons.o  \\$/;"	m
+LO_OBJS	arch/x86/Makefile	/^LO_OBJS=	arch.o		\\$/;"	m
+LO_OBJS	arch/x86/x86-qemu/Makefile	/^LO_OBJS=	cons.o \\$/;"	m
+LO_OBJS	core/Makefile	/^LO_OBJS=	partition.o \\$/;"	m
+LO_OBJS	drivers/Makefile	/^LO_OBJS=	rtl8029.o$/;"	m
+LO_OBJS	libc/Makefile	/^LO_OBJS=	memcpy.o memset.o __udivdi3.o __umoddi3.o printf.o strlen.o strcmp.o$/;"	m
+LO_OBJS	middleware/Makefile	/^LO_OBJS=	portqueueingcreate.o \\$/;"	m
+LO_TARGET	Makefile	/^LO_TARGET=pok.lo$/;"	m
+LO_TARGET	arch/Makefile	/^LO_TARGET=	arch.lo$/;"	m
+LO_TARGET	arch/ppc/Makefile	/^LO_TARGET=	ppc.lo$/;"	m
+LO_TARGET	arch/ppc/prep/Makefile	/^LO_TARGET=	prep.lo$/;"	m
+LO_TARGET	arch/sparc/Makefile	/^LO_TARGET= sparc.lo$/;"	m
+LO_TARGET	arch/sparc/leon3/Makefile	/^LO_TARGET= leon3.lo$/;"	m
+LO_TARGET	arch/x86/Makefile	/^LO_TARGET=	x86.lo$/;"	m
+LO_TARGET	arch/x86/x86-qemu/Makefile	/^LO_TARGET=	x86-qemu.lo$/;"	m
+LO_TARGET	core/Makefile	/^LO_TARGET=	core.lo$/;"	m
+LO_TARGET	drivers/Makefile	/^LO_TARGET=drivers.lo$/;"	m
+LO_TARGET	libc/Makefile	/^LO_TARGET=	libc.lo$/;"	m
+LO_TARGET	middleware/Makefile	/^LO_TARGET=middleware.lo$/;"	m
+MAX	core/sched.c	22;"	d	file:
+MEM_16MB	arch/x86/x86-qemu/pm.h	21;"	d
+MMU_CTRL_REG	arch/sparc/space.h	98;"	d
+MMU_CTXTBL_PTR	arch/sparc/space.h	99;"	d
+MMU_CTX_REG	arch/sparc/space.h	100;"	d
+MMU_FAULT_ADDR	arch/sparc/space.h	102;"	d
+MMU_FAULT_STATUS	arch/sparc/space.h	101;"	d
+MM_ACC_E	arch/sparc/space.h	46;"	d
+MM_ACC_R	arch/sparc/space.h	42;"	d
+MM_ACC_RE	arch/sparc/space.h	44;"	d
+MM_ACC_RW	arch/sparc/space.h	43;"	d
+MM_ACC_RWE	arch/sparc/space.h	45;"	d
+MM_ACC_R_S_RW	arch/sparc/space.h	47;"	d
+MM_ACC_S_RE	arch/sparc/space.h	49;"	d
+MM_ACC_S_RWE	arch/sparc/space.h	50;"	d
+MM_CACHEABLE	arch/sparc/space.h	58;"	d
+MM_ET_INVALID	arch/sparc/space.h	32;"	d
+MM_ET_PTD	arch/sparc/space.h	33;"	d
+MM_ET_PTE	arch/sparc/space.h	34;"	d
+MM_LVL1_ENTRIES_NBR	arch/sparc/space.h	67;"	d
+MM_LVL1_PAGE_SIZE	arch/sparc/space.h	68;"	d
+MM_LVL2_ENTRIES_NBR	arch/sparc/space.h	75;"	d
+MM_LVL2_PAGE_SIZE	arch/sparc/space.h	76;"	d
+MM_LVL3_ENTRIES_NBR	arch/sparc/space.h	83;"	d
+MM_LVL3_PAGE_SIZE	arch/sparc/space.h	84;"	d
+MM_MODIFIED	arch/sparc/space.h	59;"	d
+MM_REFERENCED	arch/sparc/space.h	60;"	d
+MSR_DR	arch/ppc/msr.h	21;"	d
+MSR_EE	arch/ppc/msr.h	26;"	d
+MSR_IP	arch/ppc/msr.h	23;"	d
+MSR_IR	arch/ppc/msr.h	22;"	d
+MSR_PR	arch/ppc/msr.h	25;"	d
+MULTIBOOT_BOOTLOADER_MAGIC	include/arch/x86/multiboot.h	26;"	d
+MULTIBOOT_BOOTLOADER_MAGIC	include/arch/x86/multiboot.h	41;"	d
+MULTIBOOT_CMDLINE	include/arch/x86/multiboot.h	48;"	d
+MULTIBOOT_HEADER_FLAGS	include/arch/x86/multiboot.h	36;"	d
+MULTIBOOT_HEADER_MAGIC	include/arch/x86/multiboot.h	31;"	d
+MULTIBOOT_MODS	include/arch/x86/multiboot.h	49;"	d
+MULTIBOOT_STACK_SIZE	include/arch/x86/multiboot.h	46;"	d
+MY_BUF_SIZE	libc/printf.c	33;"	d	file:
+NE2000_BNRY	include/drivers/rtl8029.h	187;"	d
+NE2000_CR	include/drivers/rtl8029.h	100;"	d
+NE2000_CR_PS0	include/drivers/rtl8029.h	113;"	d
+NE2000_CR_PS1	include/drivers/rtl8029.h	114;"	d
+NE2000_CR_RD0	include/drivers/rtl8029.h	110;"	d
+NE2000_CR_RD1	include/drivers/rtl8029.h	111;"	d
+NE2000_CR_RD2	include/drivers/rtl8029.h	112;"	d
+NE2000_CR_STA	include/drivers/rtl8029.h	104;"	d
+NE2000_CR_STP	include/drivers/rtl8029.h	101;"	d
+NE2000_CR_TXP	include/drivers/rtl8029.h	107;"	d
+NE2000_CURR	include/drivers/rtl8029.h	196;"	d
+NE2000_DCR	include/drivers/rtl8029.h	145;"	d
+NE2000_DCR_ARM	include/drivers/rtl8029.h	158;"	d
+NE2000_DCR_BOS	include/drivers/rtl8029.h	149;"	d
+NE2000_DCR_FT0	include/drivers/rtl8029.h	162;"	d
+NE2000_DCR_FT1	include/drivers/rtl8029.h	163;"	d
+NE2000_DCR_LAS	include/drivers/rtl8029.h	152;"	d
+NE2000_DCR_LS	include/drivers/rtl8029.h	154;"	d
+NE2000_DCR_WTS	include/drivers/rtl8029.h	146;"	d
+NE2000_DMA_PORT	include/drivers/rtl8029.h	224;"	d
+NE2000_IMR	include/drivers/rtl8029.h	178;"	d
+NE2000_ISR	include/drivers/rtl8029.h	117;"	d
+NE2000_ISR_CNT	include/drivers/rtl8029.h	133;"	d
+NE2000_ISR_OVW	include/drivers/rtl8029.h	131;"	d
+NE2000_ISR_PRX	include/drivers/rtl8029.h	119;"	d
+NE2000_ISR_PTX	include/drivers/rtl8029.h	121;"	d
+NE2000_ISR_RDC	include/drivers/rtl8029.h	135;"	d
+NE2000_ISR_RST	include/drivers/rtl8029.h	137;"	d
+NE2000_ISR_RXE	include/drivers/rtl8029.h	123;"	d
+NE2000_ISR_TXE	include/drivers/rtl8029.h	128;"	d
+NE2000_MAR	include/drivers/rtl8029.h	221;"	d
+NE2000_MEMSZ	include/drivers/rtl8029.h	227;"	d
+NE2000_PAR0	include/drivers/rtl8029.h	212;"	d
+NE2000_PAR1	include/drivers/rtl8029.h	213;"	d
+NE2000_PAR2	include/drivers/rtl8029.h	214;"	d
+NE2000_PAR3	include/drivers/rtl8029.h	215;"	d
+NE2000_PAR4	include/drivers/rtl8029.h	216;"	d
+NE2000_PAR5	include/drivers/rtl8029.h	217;"	d
+NE2000_PSTART	include/drivers/rtl8029.h	181;"	d
+NE2000_PSTOP	include/drivers/rtl8029.h	184;"	d
+NE2000_RBCR0	include/drivers/rtl8029.h	208;"	d
+NE2000_RBCR1	include/drivers/rtl8029.h	209;"	d
+NE2000_RCR	include/drivers/rtl8029.h	166;"	d
+NE2000_RCR_AB	include/drivers/rtl8029.h	167;"	d
+NE2000_RSAR0	include/drivers/rtl8029.h	204;"	d
+NE2000_RSAR1	include/drivers/rtl8029.h	205;"	d
+NE2000_RSR	include/drivers/rtl8029.h	173;"	d
+NE2000_RSR_PRX	include/drivers/rtl8029.h	174;"	d
+NE2000_RXBUF	include/drivers/rtl8029.h	230;"	d
+NE2000_RXBUFSZ	include/drivers/rtl8029.h	232;"	d
+NE2000_SELECT_PAGE	drivers/rtl8029.c	39;"	d	file:
+NE2000_TBCR0	include/drivers/rtl8029.h	199;"	d
+NE2000_TBCR1	include/drivers/rtl8029.h	200;"	d
+NE2000_TCR	include/drivers/rtl8029.h	193;"	d
+NE2000_TPSR	include/drivers/rtl8029.h	190;"	d
+NE2000_TXBUF	include/drivers/rtl8029.h	228;"	d
+NE2000_TXBUFSZ	include/drivers/rtl8029.h	229;"	d
+NET_DATA_MAXLEN	include/drivers/rtl8029.h	66;"	d
+NET_DATA_MINLEN	include/drivers/rtl8029.h	67;"	d
+NORMAL_START	include/core/partition.h	/^  NORMAL_START          = 0,$/;"	e	enum:__anon26
+NPC_OFFSET	arch/sparc/context_offset.h	66;"	d
+NULL	include/types.h	27;"	d
+OSCILLATOR_RATE	arch/x86/x86-qemu/pit.c	29;"	d	file:
+PARTITION_ID	arch/x86/syscalls.c	33;"	d	file:
+PARTITION_RESTART	include/core/partition.h	/^  PARTITION_RESTART     = 1,$/;"	e	enum:__anon26
+PCI_BUS_MAX	include/arch/x86/pci.h	45;"	d
+PCI_CONFIG_ADDRESS	include/arch/x86/pci.h	30;"	d
+PCI_CONFIG_DATA	include/arch/x86/pci.h	31;"	d
+PCI_DEV_MAX	include/arch/x86/pci.h	46;"	d
+PCI_FUN_MAX	include/arch/x86/pci.h	47;"	d
+PCI_REG_BAR0	include/arch/x86/pci.h	39;"	d
+PCI_REG_DEVICEID	include/arch/x86/pci.h	37;"	d
+PCI_REG_HEADERTYPE	include/arch/x86/pci.h	38;"	d
+PCI_REG_IRQLINE	include/arch/x86/pci.h	40;"	d
+PCI_REG_VENDORID	include/arch/x86/pci.h	36;"	d
+PC_OFFSET	arch/sparc/context_offset.h	65;"	d
+PIC_MASTER_BASE	arch/x86/x86-qemu/pic.h	21;"	d
+PIC_MASTER_ICW1	arch/x86/x86-qemu/pic.h	24;"	d
+PIC_MASTER_ICW2	arch/x86/x86-qemu/pic.h	25;"	d
+PIC_MASTER_ICW3	arch/x86/x86-qemu/pic.h	26;"	d
+PIC_MASTER_ICW4	arch/x86/x86-qemu/pic.h	27;"	d
+PIC_SLAVE_BASE	arch/x86/x86-qemu/pic.h	22;"	d
+PIC_SLAVE_ICW1	arch/x86/x86-qemu/pic.h	29;"	d
+PIC_SLAVE_ICW2	arch/x86/x86-qemu/pic.h	30;"	d
+PIC_SLAVE_ICW3	arch/x86/x86-qemu/pic.h	31;"	d
+PIC_SLAVE_ICW4	arch/x86/x86-qemu/pic.h	32;"	d
+PIT_BASE	arch/x86/x86-qemu/pit.c	30;"	d	file:
+PIT_IRQ	arch/x86/x86-qemu/pit.c	31;"	d	file:
+POK_CONFIG_NB_INPUT_VIRTUALPORT	include/drivers/rtl8029.h	36;"	d
+POK_CONFIG_NB_LOCKOBJECTS	include/core/lockobj.h	25;"	d
+POK_CONFIG_NB_PARTITIONS	arch/x86/gdt.c	32;"	d	file:
+POK_CONFIG_NB_THREADS	arch/x86/gdt.c	28;"	d	file:
+POK_CURRENT_PARTITION	include/core/partition.h	129;"	d
+POK_CURRENT_THREAD	include/core/thread.h	121;"	d
+POK_DEBUG_PRINT_CURRENT_STATE	include/core/debug.h	33;"	d
+POK_DEBUG_PRINT_CURRENT_STATE	include/core/debug.h	37;"	d
+POK_ERRNO_DIRECTION	include/errno.h	/^		POK_ERRNO_DIRECTION            =  303,$/;"	e	enum:__anon56
+POK_ERRNO_DISCIPLINE	include/errno.h	/^		POK_ERRNO_DISCIPLINE           =  305,$/;"	e	enum:__anon56
+POK_ERRNO_EDOM	include/errno.h	/^		POK_ERRNO_EDOM                  =   9,$/;"	e	enum:__anon56
+POK_ERRNO_EFAULT	include/errno.h	/^		POK_ERRNO_EFAULT                =  11,$/;"	e	enum:__anon56
+POK_ERRNO_EINVAL	include/errno.h	/^		POK_ERRNO_EINVAL                =   1,$/;"	e	enum:__anon56
+POK_ERRNO_EMPTY	include/errno.h	/^		POK_ERRNO_EMPTY                =  308,$/;"	e	enum:__anon56
+POK_ERRNO_EPERM	include/errno.h	/^		POK_ERRNO_EPERM                 =   6,$/;"	e	enum:__anon56
+POK_ERRNO_ERANGE	include/errno.h	/^		POK_ERRNO_ERANGE                =   8,$/;"	e	enum:__anon56
+POK_ERRNO_EXISTS	include/errno.h	/^		POK_ERRNO_EXISTS                =   7,$/;"	e	enum:__anon56
+POK_ERRNO_FULL	include/errno.h	/^		POK_ERRNO_FULL                 =  311,$/;"	e	enum:__anon56
+POK_ERRNO_HUGE_VAL	include/errno.h	/^		POK_ERRNO_HUGE_VAL              =  10,$/;"	e	enum:__anon56
+POK_ERRNO_KIND	include/errno.h	/^		POK_ERRNO_KIND                 =  309,$/;"	e	enum:__anon56
+POK_ERRNO_LOCKOBJ_KIND	include/errno.h	/^		POK_ERRNO_LOCKOBJ_KIND         =  502,$/;"	e	enum:__anon56
+POK_ERRNO_LOCKOBJ_NOTREADY	include/errno.h	/^		POK_ERRNO_LOCKOBJ_NOTREADY     =  501,$/;"	e	enum:__anon56
+POK_ERRNO_LOCKOBJ_POLICY	include/errno.h	/^		POK_ERRNO_LOCKOBJ_POLICY       =  503,$/;"	e	enum:__anon56
+POK_ERRNO_LOCKOBJ_UNAVAILABLE	include/errno.h	/^		POK_ERRNO_LOCKOBJ_UNAVAILABLE  =  500,$/;"	e	enum:__anon56
+POK_ERRNO_MODE	include/errno.h	/^		POK_ERRNO_MODE                 =  251,$/;"	e	enum:__anon56
+POK_ERRNO_NOTFOUND	include/errno.h	/^		POK_ERRNO_NOTFOUND             =  302,$/;"	e	enum:__anon56
+POK_ERRNO_OK	include/errno.h	/^		POK_ERRNO_OK                    =   0,$/;"	e	enum:__anon56
+POK_ERRNO_PARAM	include/errno.h	/^		POK_ERRNO_PARAM									=   3,$/;"	e	enum:__anon56
+POK_ERRNO_PARTITION	include/errno.h	/^		POK_ERRNO_PARTITION            =  401$/;"	e	enum:__anon56
+POK_ERRNO_PARTITION_ATTR	include/errno.h	/^		POK_ERRNO_PARTITION_ATTR        = 200,$/;"	e	enum:__anon56
+POK_ERRNO_PARTITION_MODE	include/errno.h	/^		POK_ERRNO_PARTITION_MODE       =  601,$/;"	e	enum:__anon56
+POK_ERRNO_PORT	include/errno.h	/^		POK_ERRNO_PORT                 =  301,$/;"	e	enum:__anon56
+POK_ERRNO_PORTPART	include/errno.h	/^		POK_ERRNO_PORTPART             =  307,$/;"	e	enum:__anon56
+POK_ERRNO_READY	include/errno.h	/^		POK_ERRNO_READY                =  310,$/;"	e	enum:__anon56
+POK_ERRNO_SIZE	include/errno.h	/^		POK_ERRNO_SIZE                 =  304,$/;"	e	enum:__anon56
+POK_ERRNO_THREAD	include/errno.h	/^		POK_ERRNO_THREAD                =  49,$/;"	e	enum:__anon56
+POK_ERRNO_THREADATTR	include/errno.h	/^		POK_ERRNO_THREADATTR            =  50,$/;"	e	enum:__anon56
+POK_ERRNO_TIME	include/errno.h	/^		POK_ERRNO_TIME                 =  100,$/;"	e	enum:__anon56
+POK_ERRNO_TIMEOUT	include/errno.h	/^		POK_ERRNO_TIMEOUT              =  250,$/;"	e	enum:__anon56
+POK_ERRNO_TOOMANY	include/errno.h	/^		POK_ERRNO_TOOMANY               =   5,$/;"	e	enum:__anon56
+POK_ERRNO_UNAVAILABLE	include/errno.h	/^		POK_ERRNO_UNAVAILABLE           =   2,$/;"	e	enum:__anon56
+POK_ERROR_CURRENT_PARTITION	include/core/error.h	69;"	d
+POK_ERROR_KIND_APPLICATION_ERROR	include/core/error.h	27;"	d
+POK_ERROR_KIND_DEADLINE_MISSED	include/core/error.h	26;"	d
+POK_ERROR_KIND_HARDWARE_FAULT	include/core/error.h	32;"	d
+POK_ERROR_KIND_ILLEGAL_REQUEST	include/core/error.h	29;"	d
+POK_ERROR_KIND_INVALID	include/core/error.h	25;"	d
+POK_ERROR_KIND_KERNEL_CONFIG	include/core/error.h	41;"	d
+POK_ERROR_KIND_KERNEL_INIT	include/core/error.h	39;"	d
+POK_ERROR_KIND_KERNEL_SCHEDULING	include/core/error.h	40;"	d
+POK_ERROR_KIND_MEMORY_VIOLATION	include/core/error.h	31;"	d
+POK_ERROR_KIND_NUMERIC_ERROR	include/core/error.h	28;"	d
+POK_ERROR_KIND_PARTITION_CONFIGURATION	include/core/error.h	34;"	d
+POK_ERROR_KIND_PARTITION_HANDLER	include/core/error.h	37;"	d
+POK_ERROR_KIND_PARTITION_INIT	include/core/error.h	35;"	d
+POK_ERROR_KIND_PARTITION_PROCESS	include/core/error.h	38;"	d
+POK_ERROR_KIND_PARTITION_SCHEDULING	include/core/error.h	36;"	d
+POK_ERROR_KIND_POWER_FAIL	include/core/error.h	33;"	d
+POK_ERROR_KIND_STACK_OVERFLOW	include/core/error.h	30;"	d
+POK_ERROR_MAX_MSG_SIZE	include/core/error.h	43;"	d
+POK_FATAL	include/core/debug.h	31;"	d
+POK_FATAL	include/core/debug.h	38;"	d
+POK_GETTICK	include/core/time.h	40;"	d
+POK_LOCKOBJ_KIND_EVENT	include/core/lockobj.h	/^   POK_LOCKOBJ_KIND_EVENT = 3$/;"	e	enum:__anon30
+POK_LOCKOBJ_KIND_MUTEX	include/core/lockobj.h	/^   POK_LOCKOBJ_KIND_MUTEX = 1,$/;"	e	enum:__anon30
+POK_LOCKOBJ_KIND_SEMAPHORE	include/core/lockobj.h	/^   POK_LOCKOBJ_KIND_SEMAPHORE = 2,$/;"	e	enum:__anon30
+POK_LOCKOBJ_POLICY_PCP	include/core/lockobj.h	/^   POK_LOCKOBJ_POLICY_PCP      = 2$/;"	e	enum:__anon31
+POK_LOCKOBJ_POLICY_PIP	include/core/lockobj.h	/^   POK_LOCKOBJ_POLICY_PIP      = 1,$/;"	e	enum:__anon31
+POK_LOCKOBJ_POLICY_STANDARD	include/core/lockobj.h	/^   POK_LOCKOBJ_POLICY_STANDARD = 0,$/;"	e	enum:__anon31
+POK_NEEDS_SCHED_STOP_SELF	include/dependencies.h	22;"	d
+POK_NEEDS_SCHED_STOP_SELF	include/dependencies.h	28;"	d
+POK_PAGE_MASK	arch/ppc/space.c	120;"	d	file:
+POK_PAGE_SIZE	arch/ppc/space.c	119;"	d	file:
+POK_PARTITION_MODE_IDLE	include/core/partition.h	/^   POK_PARTITION_MODE_IDLE      = 4, \/**< Idle mode, the partition is not executed *\/$/;"	e	enum:__anon25
+POK_PARTITION_MODE_INIT_COLD	include/core/partition.h	/^   POK_PARTITION_MODE_INIT_COLD = 1, \/**< Partition is in cold mode (init mode),$/;"	e	enum:__anon25
+POK_PARTITION_MODE_INIT_WARM	include/core/partition.h	/^   POK_PARTITION_MODE_INIT_WARM = 2, \/**< Partition is in warm init mode,$/;"	e	enum:__anon25
+POK_PARTITION_MODE_NORMAL	include/core/partition.h	/^   POK_PARTITION_MODE_NORMAL    = 3, \/**< Partition is currently being executed,$/;"	e	enum:__anon25
+POK_PARTITION_MODE_RESTART	include/core/partition.h	/^   POK_PARTITION_MODE_RESTART   = 5, \/**< Currently being restarted *\/$/;"	e	enum:__anon25
+POK_PARTITION_MODE_STOPPED	include/core/partition.h	/^   POK_PARTITION_MODE_STOPPED   = 6, \/**< Partition is stopped, it will no longer be executed *\/$/;"	e	enum:__anon25
+POK_PORT_DIRECTION_IN	include/middleware/port.h	/^	 POK_PORT_DIRECTION_IN   = 1,$/;"	e	enum:__anon50
+POK_PORT_DIRECTION_OUT	include/middleware/port.h	/^	 POK_PORT_DIRECTION_OUT  = 2$/;"	e	enum:__anon50
+POK_PORT_KIND_INVALID	include/middleware/port.h	/^	 POK_PORT_KIND_INVALID   = 10$/;"	e	enum:__anon51
+POK_PORT_KIND_QUEUEING	include/middleware/port.h	/^	 POK_PORT_KIND_QUEUEING  = 1,$/;"	e	enum:__anon51
+POK_PORT_KIND_SAMPLING	include/middleware/port.h	/^	 POK_PORT_KIND_SAMPLING  = 2,$/;"	e	enum:__anon51
+POK_PORT_KIND_VIRTUAL	include/middleware/port.h	/^	 POK_PORT_KIND_VIRTUAL   = 2,$/;"	e	enum:__anon51
+POK_PORT_MAX_SIZE	include/middleware/port.h	31;"	d
+POK_PORT_QUEUEING_DISCIPLINE_FIFO	include/middleware/port.h	/^	 POK_PORT_QUEUEING_DISCIPLINE_FIFO      = 1,$/;"	e	enum:__anon49
+POK_PORT_QUEUEING_DISCIPLINE_PRIORITY	include/middleware/port.h	/^	 POK_PORT_QUEUEING_DISCIPLINE_PRIORITY  = 2$/;"	e	enum:__anon49
+POK_PREP_IOBASE	arch/ppc/prep/ioports.h	21;"	d
+POK_SCHED_CURRENT_PARTITION	include/core/sched.h	28;"	d
+POK_SCHED_CURRENT_THREAD	include/core/sched.h	33;"	d
+POK_SCHED_EDF	include/core/schedvalues.h	/^   POK_SCHED_EDF              = 4,$/;"	e	enum:__anon22
+POK_SCHED_FIFO	include/core/schedvalues.h	/^   POK_SCHED_FIFO             = 0,$/;"	e	enum:__anon22
+POK_SCHED_GLOBAL_TIMESLICE	include/core/schedvalues.h	/^   POK_SCHED_GLOBAL_TIMESLICE = 2,$/;"	e	enum:__anon22
+POK_SCHED_LLF	include/core/schedvalues.h	/^   POK_SCHED_LLF              = 5,$/;"	e	enum:__anon22
+POK_SCHED_PRIO	include/core/schedvalues.h	/^   POK_SCHED_PRIO             = 7,$/;"	e	enum:__anon22
+POK_SCHED_RMS	include/core/schedvalues.h	/^   POK_SCHED_RMS              = 3,$/;"	e	enum:__anon22
+POK_SCHED_RR	include/core/schedvalues.h	/^   POK_SCHED_RR               = 1,$/;"	e	enum:__anon22
+POK_SCHED_STATIC	include/core/schedvalues.h	/^   POK_SCHED_STATIC           = 6,$/;"	e	enum:__anon22
+POK_SCHED_WRR	include/core/schedvalues.h	/^   POK_SCHED_WRR              = 8$/;"	e	enum:__anon22
+POK_STATE_DELAYED_START	include/core/sched.h	/^  POK_STATE_DELAYED_START = 5$/;"	e	enum:__anon29
+POK_STATE_LOCK	include/core/sched.h	/^  POK_STATE_LOCK = 3,$/;"	e	enum:__anon29
+POK_STATE_RUNNABLE	include/core/sched.h	/^  POK_STATE_RUNNABLE = 1,$/;"	e	enum:__anon29
+POK_STATE_STOPPED	include/core/sched.h	/^  POK_STATE_STOPPED = 0,$/;"	e	enum:__anon29
+POK_STATE_WAITING	include/core/sched.h	/^  POK_STATE_WAITING = 2,$/;"	e	enum:__anon29
+POK_STATE_WAIT_NEXT_ACTIVATION	include/core/sched.h	/^  POK_STATE_WAIT_NEXT_ACTIVATION = 4,$/;"	e	enum:__anon29
+POK_SYSCALL_CONSWRITE	include/core/syscall.h	/^   POK_SYSCALL_CONSWRITE                           =  10,$/;"	e	enum:__anon38
+POK_SYSCALL_ERROR_GET	include/core/syscall.h	/^   POK_SYSCALL_ERROR_GET                           = 304,$/;"	e	enum:__anon38
+POK_SYSCALL_ERROR_HANDLER_CREATE	include/core/syscall.h	/^   POK_SYSCALL_ERROR_HANDLER_CREATE                = 301,$/;"	e	enum:__anon38
+POK_SYSCALL_ERROR_HANDLER_SET_READY	include/core/syscall.h	/^   POK_SYSCALL_ERROR_HANDLER_SET_READY             = 302,$/;"	e	enum:__anon38
+POK_SYSCALL_ERROR_RAISE_APPLICATION_ERROR	include/core/syscall.h	/^   POK_SYSCALL_ERROR_RAISE_APPLICATION_ERROR       = 303,$/;"	e	enum:__anon38
+POK_SYSCALL_GETCHAR	include/core/syscall.h	/^   POK_SYSCALL_GETCHAR                             =  11,$/;"	e	enum:__anon38
+POK_SYSCALL_GETTICK	include/core/syscall.h	/^   POK_SYSCALL_GETTICK                             =  20,$/;"	e	enum:__anon38
+POK_SYSCALL_INB	include/core/syscall.h	/^   POK_SYSCALL_INB                                 = 501,$/;"	e	enum:__anon38
+POK_SYSCALL_INT_NUMBER	include/core/syscall.h	/^   POK_SYSCALL_INT_NUMBER                          =  42,$/;"	e	enum:__anon38
+POK_SYSCALL_LOCKOBJ_CREATE	include/core/syscall.h	/^   POK_SYSCALL_LOCKOBJ_CREATE                      = 201,$/;"	e	enum:__anon38
+POK_SYSCALL_LOCKOBJ_OPERATION	include/core/syscall.h	/^   POK_SYSCALL_LOCKOBJ_OPERATION                   = 202,$/;"	e	enum:__anon38
+POK_SYSCALL_MIDDLEWARE_NODE_MAC_ADDR	include/core/syscall.h	/^   POK_SYSCALL_MIDDLEWARE_NODE_MAC_ADDR            = 120,$/;"	e	enum:__anon38
+POK_SYSCALL_MIDDLEWARE_QUEUEING_CREATE	include/core/syscall.h	/^   POK_SYSCALL_MIDDLEWARE_QUEUEING_CREATE          = 110,$/;"	e	enum:__anon38
+POK_SYSCALL_MIDDLEWARE_QUEUEING_ID	include/core/syscall.h	/^   POK_SYSCALL_MIDDLEWARE_QUEUEING_ID              = 113,$/;"	e	enum:__anon38
+POK_SYSCALL_MIDDLEWARE_QUEUEING_RECEIVE	include/core/syscall.h	/^   POK_SYSCALL_MIDDLEWARE_QUEUEING_RECEIVE         = 112,$/;"	e	enum:__anon38
+POK_SYSCALL_MIDDLEWARE_QUEUEING_SEND	include/core/syscall.h	/^   POK_SYSCALL_MIDDLEWARE_QUEUEING_SEND            = 111,$/;"	e	enum:__anon38
+POK_SYSCALL_MIDDLEWARE_QUEUEING_STATUS	include/core/syscall.h	/^   POK_SYSCALL_MIDDLEWARE_QUEUEING_STATUS          = 114,$/;"	e	enum:__anon38
+POK_SYSCALL_MIDDLEWARE_SAMPLING_CREATE	include/core/syscall.h	/^   POK_SYSCALL_MIDDLEWARE_SAMPLING_CREATE          = 105,$/;"	e	enum:__anon38
+POK_SYSCALL_MIDDLEWARE_SAMPLING_ID	include/core/syscall.h	/^   POK_SYSCALL_MIDDLEWARE_SAMPLING_ID              = 101,$/;"	e	enum:__anon38
+POK_SYSCALL_MIDDLEWARE_SAMPLING_READ	include/core/syscall.h	/^   POK_SYSCALL_MIDDLEWARE_SAMPLING_READ            = 102,$/;"	e	enum:__anon38
+POK_SYSCALL_MIDDLEWARE_SAMPLING_STATUS	include/core/syscall.h	/^   POK_SYSCALL_MIDDLEWARE_SAMPLING_STATUS          = 103,$/;"	e	enum:__anon38
+POK_SYSCALL_MIDDLEWARE_SAMPLING_WRITE	include/core/syscall.h	/^   POK_SYSCALL_MIDDLEWARE_SAMPLING_WRITE           = 104,$/;"	e	enum:__anon38
+POK_SYSCALL_MIDDLEWARE_VIRTUAL_CREATE	include/core/syscall.h	/^   POK_SYSCALL_MIDDLEWARE_VIRTUAL_CREATE           = 150,$/;"	e	enum:__anon38
+POK_SYSCALL_MIDDLEWARE_VIRTUAL_DESTINATION	include/core/syscall.h	/^   POK_SYSCALL_MIDDLEWARE_VIRTUAL_DESTINATION      = 152,$/;"	e	enum:__anon38
+POK_SYSCALL_MIDDLEWARE_VIRTUAL_GET_GLOBAL	include/core/syscall.h	/^   POK_SYSCALL_MIDDLEWARE_VIRTUAL_GET_GLOBAL       = 153,$/;"	e	enum:__anon38
+POK_SYSCALL_MIDDLEWARE_VIRTUAL_NB_DESTINATIONS	include/core/syscall.h	/^   POK_SYSCALL_MIDDLEWARE_VIRTUAL_NB_DESTINATIONS  = 151,$/;"	e	enum:__anon38
+POK_SYSCALL_MIDDLEWARE_VIRTUAL_NODE	include/core/syscall.h	/^   POK_SYSCALL_MIDDLEWARE_VIRTUAL_NODE             = 154,$/;"	e	enum:__anon38
+POK_SYSCALL_OUTB	include/core/syscall.h	/^   POK_SYSCALL_OUTB                                = 502,$/;"	e	enum:__anon38
+POK_SYSCALL_PARTITION_GET_DURATION	include/core/syscall.h	/^   POK_SYSCALL_PARTITION_GET_DURATION              = 407,$/;"	e	enum:__anon38
+POK_SYSCALL_PARTITION_GET_ID	include/core/syscall.h	/^   POK_SYSCALL_PARTITION_GET_ID                    = 405,$/;"	e	enum:__anon38
+POK_SYSCALL_PARTITION_GET_LOCK_LEVEL	include/core/syscall.h	/^   POK_SYSCALL_PARTITION_GET_LOCK_LEVEL            = 408,$/;"	e	enum:__anon38
+POK_SYSCALL_PARTITION_GET_OPERATING_MODE	include/core/syscall.h	/^   POK_SYSCALL_PARTITION_GET_OPERATING_MODE        = 409,$/;"	e	enum:__anon38
+POK_SYSCALL_PARTITION_GET_PERIOD	include/core/syscall.h	/^   POK_SYSCALL_PARTITION_GET_PERIOD                = 406,$/;"	e	enum:__anon38
+POK_SYSCALL_PARTITION_GET_START_CONDITION	include/core/syscall.h	/^   POK_SYSCALL_PARTITION_GET_START_CONDITION       = 410,$/;"	e	enum:__anon38
+POK_SYSCALL_PARTITION_SET_MODE	include/core/syscall.h	/^   POK_SYSCALL_PARTITION_SET_MODE                  = 404,$/;"	e	enum:__anon38
+POK_SYSCALL_PCI_REGISTER	include/core/syscall.h	/^   POK_SYSCALL_PCI_REGISTER                        = 601,$/;"	e	enum:__anon38
+POK_SYSCALL_RTL8929_CLEAR	include/core/syscall.h	/^	 POK_SYSCALL_RTL8929_CLEAR                       = 705,$/;"	e	enum:__anon38
+POK_SYSCALL_RTL8929_INIT	include/core/syscall.h	/^         POK_SYSCALL_RTL8929_INIT                        = 706$/;"	e	enum:__anon38
+POK_SYSCALL_RTL8929_POLL	include/core/syscall.h	/^	 POK_SYSCALL_RTL8929_POLL                        = 704,$/;"	e	enum:__anon38
+POK_SYSCALL_RTL8929_POLL_AND_READ	include/core/syscall.h	/^         POK_SYSCALL_RTL8929_POLL_AND_READ               = 702,$/;"	e	enum:__anon38
+POK_SYSCALL_RTL8929_READ	include/core/syscall.h	/^	 POK_SYSCALL_RTL8929_READ                        = 701,$/;"	e	enum:__anon38
+POK_SYSCALL_RTL8929_WRITE	include/core/syscall.h	/^	 POK_SYSCALL_RTL8929_WRITE                       = 703,$/;"	e	enum:__anon38
+POK_SYSCALL_THREAD_CREATE	include/core/syscall.h	/^   POK_SYSCALL_THREAD_CREATE                       =  50,$/;"	e	enum:__anon38
+POK_SYSCALL_THREAD_DELAYED_START	include/core/syscall.h	/^   POK_SYSCALL_THREAD_DELAYED_START                =  65,$/;"	e	enum:__anon38
+POK_SYSCALL_THREAD_ID	include/core/syscall.h	/^   POK_SYSCALL_THREAD_ID                           =  58,$/;"	e	enum:__anon38
+POK_SYSCALL_THREAD_PERIOD	include/core/syscall.h	/^   POK_SYSCALL_THREAD_PERIOD                       =  56,$/;"	e	enum:__anon38
+POK_SYSCALL_THREAD_RESTART	include/core/syscall.h	/^   POK_SYSCALL_THREAD_RESTART                      =  54,$/;"	e	enum:__anon38
+POK_SYSCALL_THREAD_RESUME	include/core/syscall.h	/^   POK_SYSCALL_THREAD_RESUME                       =  61,$/;"	e	enum:__anon38
+POK_SYSCALL_THREAD_SET_PRIORITY	include/core/syscall.h	/^   POK_SYSCALL_THREAD_SET_PRIORITY								 =  60,$/;"	e	enum:__anon38
+POK_SYSCALL_THREAD_SLEEP	include/core/syscall.h	/^   POK_SYSCALL_THREAD_SLEEP                        =  52,$/;"	e	enum:__anon38
+POK_SYSCALL_THREAD_SLEEP_UNTIL	include/core/syscall.h	/^   POK_SYSCALL_THREAD_SLEEP_UNTIL                  =  51,$/;"	e	enum:__anon38
+POK_SYSCALL_THREAD_STATUS	include/core/syscall.h	/^   POK_SYSCALL_THREAD_STATUS                       =  59,$/;"	e	enum:__anon38
+POK_SYSCALL_THREAD_STOP	include/core/syscall.h	/^   POK_SYSCALL_THREAD_STOP                         =  55,$/;"	e	enum:__anon38
+POK_SYSCALL_THREAD_STOPSELF	include/core/syscall.h	/^   POK_SYSCALL_THREAD_STOPSELF                     =  57,$/;"	e	enum:__anon38
+POK_SYSCALL_THREAD_SUSPEND	include/core/syscall.h	/^   POK_SYSCALL_THREAD_SUSPEND                      =  53,$/;"	e	enum:__anon38
+POK_SYSCALL_THREAD_SUSPEND_TARGET	include/core/syscall.h	/^   POK_SYSCALL_THREAD_SUSPEND_TARGET               =  62,$/;"	e	enum:__anon38
+POK_SYSCALL_THREAD_YIELD_AND_FULL	include/core/syscall.h	/^   POK_SYSCALL_THREAD_YIELD_AND_FULL                        =  66,$/;"	e	enum:__anon38
+POK_THREAD_DEFAULT_TIME_CAPACITY	include/core/thread.h	37;"	d
+POK_THREAD_MAX_PRIORITY	include/core/thread.h	44;"	d
+POK_TIMER_FREQUENCY	include/core/time.h	29;"	d
+POK_TIMER_QUANTUM	include/core/time.h	34;"	d
+POK_USER_STACK_SIZE	include/core/thread.h	55;"	d
+PPC_PTE_C	arch/ppc/space.c	123;"	d	file:
+PPC_PTE_G	arch/ppc/space.c	127;"	d	file:
+PPC_PTE_H	arch/ppc/space.c	121;"	d	file:
+PPC_PTE_I	arch/ppc/space.c	125;"	d	file:
+PPC_PTE_M	arch/ppc/space.c	126;"	d	file:
+PPC_PTE_PP_NO	arch/ppc/space.c	128;"	d	file:
+PPC_PTE_PP_RO	arch/ppc/space.c	129;"	d	file:
+PPC_PTE_PP_RW	arch/ppc/space.c	130;"	d	file:
+PPC_PTE_R	arch/ppc/space.c	122;"	d	file:
+PPC_PTE_V	arch/ppc/space.c	118;"	d	file:
+PPC_PTE_W	arch/ppc/space.c	124;"	d	file:
+PPC_SR_KP	arch/ppc/space.c	30;"	d	file:
+PPC_SR_Ks	arch/ppc/space.c	31;"	d	file:
+PPC_SR_T	arch/ppc/space.c	32;"	d	file:
+PSR_CWP_MASK	arch/sparc/psr.h	29;"	d
+PSR_ET	arch/sparc/psr.h	26;"	d
+PSR_OFFSET	arch/sparc/context_offset.h	63;"	d
+PSR_PIL	arch/sparc/psr.h	30;"	d
+PSR_PS	arch/sparc/psr.h	27;"	d
+PSR_S	arch/sparc/psr.h	28;"	d
+RECV_BUF_SZ	include/drivers/rtl8029.h	32;"	d
+RESTORE_CNT_OFFSET	arch/sparc/context_offset.h	67;"	d
+SAVE_REGS	arch/ppc/entry.S	/^#define SAVE_REGS                                \\$/;"	d
+SPARC_PAGE_SIZE	arch/sparc/leon3/sparc_conf.h	34;"	d
+SPARC_PARTITION_BASE_VADDR	arch/sparc/leon3/sparc_conf.h	37;"	d
+SPARC_PARTITION_SIZE	arch/sparc/leon3/sparc_conf.h	35;"	d
+SPARC_PROC_FREQ	arch/sparc/leon3/sparc_conf.h	28;"	d
+SPARC_RAM_ADDR	arch/sparc/leon3/sparc_conf.h	26;"	d
+SPARC_TRAP_IRQ_BASE	arch/sparc/traps.h	28;"	d
+SPARC_TRAP_SYSCALL_BASE	arch/sparc/traps.h	29;"	d
+SPIN_LOCK	include/arch/ppc/spinlock.h	26;"	d
+SPIN_LOCK	include/arch/sparc/spinlock.h	30;"	d
+SPIN_LOCK	include/arch/x86/spinlock.h	28;"	d
+SPIN_UNLOCK	include/arch/ppc/spinlock.h	23;"	d
+SPIN_UNLOCK	include/arch/sparc/spinlock.h	27;"	d
+SPIN_UNLOCK	include/arch/x86/spinlock.h	23;"	d
+STACK_SIZE	arch/x86/x86-qemu/entry.S	/^#define STACK_SIZE 0x4000$/;"	d
+TIMER1	arch/sparc/leon3/timer.h	42;"	d
+TIMER_CNT_VAL_OFFSET	arch/sparc/leon3/timer.h	36;"	d
+TIMER_CTRL_CH	arch/sparc/leon3/timer.h	30;"	d
+TIMER_CTRL_DH	arch/sparc/leon3/timer.h	31;"	d
+TIMER_CTRL_EN	arch/sparc/leon3/timer.h	25;"	d
+TIMER_CTRL_IE	arch/sparc/leon3/timer.h	28;"	d
+TIMER_CTRL_IP	arch/sparc/leon3/timer.h	29;"	d
+TIMER_CTRL_LD	arch/sparc/leon3/timer.h	27;"	d
+TIMER_CTRL_OFFSET	arch/sparc/leon3/timer.h	38;"	d
+TIMER_CTRL_RS	arch/sparc/leon3/timer.h	26;"	d
+TIMER_IRQ	arch/sparc/leon3/timer.h	40;"	d
+TIMER_RELOAD_OFFSET	arch/sparc/leon3/timer.h	37;"	d
+TIMER_SCALER_OFFSET	arch/sparc/leon3/timer.h	33;"	d
+TIMER_SCAL_RELOAD_OFFSET	arch/sparc/leon3/timer.h	34;"	d
+TOPDIR	arch/Makefile	/^TOPDIR=		..\/..\/$/;"	m
+TOPDIR	arch/ppc/Makefile	/^TOPDIR=		..\/..\/..\/$/;"	m
+TOPDIR	arch/sparc/Makefile	/^TOPDIR= ..\/..\/..\/$/;"	m
+TOPDIR	arch/x86/Makefile	/^TOPDIR=		..\/..\/..\/$/;"	m
+TOPDIR	arch/x86/x86-qemu/Makefile	/^TOPDIR=		..\/..\/..\/..\/$/;"	m
+TOPDIR	core/Makefile	/^TOPDIR=		..\/..\/$/;"	m
+TOPDIR	drivers/Makefile	/^TOPDIR=		..\/..\/$/;"	m
+TOPDIR	libc/Makefile	/^TOPDIR=		..\/..\/$/;"	m
+TOPDIR	middleware/Makefile	/^TOPDIR=		..\/..\/$/;"	m
+TRUE	include/types.h	29;"	d
+UART1	arch/sparc/leon3/cons.h	48;"	d
+UART_CTRL_FL	arch/sparc/leon3/cons.h	40;"	d
+UART_CTRL_LB	arch/sparc/leon3/cons.h	41;"	d
+UART_CTRL_OFFSET	arch/sparc/leon3/cons.h	45;"	d
+UART_CTRL_PE	arch/sparc/leon3/cons.h	39;"	d
+UART_CTRL_PS	arch/sparc/leon3/cons.h	38;"	d
+UART_CTRL_RE	arch/sparc/leon3/cons.h	34;"	d
+UART_CTRL_RI	arch/sparc/leon3/cons.h	36;"	d
+UART_CTRL_TE	arch/sparc/leon3/cons.h	35;"	d
+UART_CTRL_TI	arch/sparc/leon3/cons.h	37;"	d
+UART_DATA_OFFSET	arch/sparc/leon3/cons.h	43;"	d
+UART_SCALER_OFFSET	arch/sparc/leon3/cons.h	46;"	d
+UART_STATUS_BR	arch/sparc/leon3/cons.h	28;"	d
+UART_STATUS_DR	arch/sparc/leon3/cons.h	25;"	d
+UART_STATUS_ERR	arch/sparc/leon3/cons.h	32;"	d
+UART_STATUS_FE	arch/sparc/leon3/cons.h	31;"	d
+UART_STATUS_OE	arch/sparc/leon3/cons.h	29;"	d
+UART_STATUS_PE	arch/sparc/leon3/cons.h	30;"	d
+UART_STATUS_THE	arch/sparc/leon3/cons.h	27;"	d
+UART_STATUS_TSE	arch/sparc/leon3/cons.h	26;"	d
+UART_STAT_OFFSET	arch/sparc/leon3/cons.h	44;"	d
+WIM_OFFSET	arch/sparc/context_offset.h	62;"	d
+WINDOWS_NBR	arch/sparc/leon3/sparc_conf.h	30;"	d
+Y_OFFSET	arch/sparc/context_offset.h	64;"	d
+__POK_ARCH_H__	include/arch.h	26;"	d
+__POK_BOOT_H__	include/core/boot.h	24;"	d
+__POK_BSP_H__	include/bsp.h	25;"	d
+__POK_CLOCK_REALTIME	include/core/time.h	/^   __POK_CLOCK_REALTIME = 0 $/;"	e	enum:__anon28
+__POK_CONS_H__	arch/ppc/prep/cons.h	19;"	d
+__POK_CONS_H__	arch/x86/x86-qemu/cons.h	19;"	d
+__POK_CORE_ERROR_H__	include/core/error.h	20;"	d
+__POK_ERRNO_H__	include/errno.h	19;"	d
+__POK_INTERRUPT_H__	include/arch/x86/interrupt.h	19;"	d
+__POK_IOPORTS_H__	arch/ppc/prep/ioports.h	19;"	d
+__POK_IOPORTS_H__	include/arch/x86/ioports.h	19;"	d
+__POK_KERNEL_CPIO_H__	include/core/cpio.h	19;"	d
+__POK_KERNEL_DEBUG_H_	include/core/debug.h	21;"	d
+__POK_KERNEL_DEPENDENCIES_H__	include/dependencies.h	18;"	d
+__POK_KERNEL_INSTRUMENTATION_H__	include/core/instrumentation.h	18;"	d
+__POK_KERNEL_LIBC_H__	include/libc.h	19;"	d
+__POK_KERNEL_LOCKOBJ_H__	include/core/lockobj.h	19;"	d
+__POK_KERNEL_PORTS_H__	include/middleware/port.h	25;"	d
+__POK_KERNEL_QUEUES_H__	include/middleware/queue.h	19;"	d
+__POK_LOADER_H__	include/core/loader.h	19;"	d
+__POK_MULTIBOOT_H__	include/arch/x86/multiboot.h	24;"	d
+__POK_PARTITION_H__	include/core/partition.h	24;"	d
+__POK_PPC_MSR_H__	arch/ppc/msr.h	19;"	d
+__POK_PPC_THREAD_H__	arch/ppc/thread.h	19;"	d
+__POK_RTL8029_H__	include/drivers/rtl8029.h	20;"	d
+__POK_SCHEDVALUES_H__	include/core/schedvalues.h	19;"	d
+__POK_SCHED_H__	include/core/sched.h	18;"	d
+__POK_SPARC_CONTEXT_OFFSET_H__	arch/sparc/context_offset.h	24;"	d
+__POK_SPARC_LEON3_CONF_H_	arch/sparc/leon3/sparc_conf.h	24;"	d
+__POK_SPARC_LEON3_CONS_H__	arch/sparc/leon3/cons.h	23;"	d
+__POK_SPARC_LEON3_IOPORTS_H__	arch/sparc/leon3/ioports.h	26;"	d
+__POK_SPARC_LEON3_IRQ_H__	arch/sparc/leon3/irq.h	24;"	d
+__POK_SPARC_LEON3_TIMER_H__	arch/sparc/leon3/timer.h	23;"	d
+__POK_SPARC_PSR_H__	arch/sparc/psr.h	24;"	d
+__POK_SPARC_SPACE_H__	arch/sparc/space.h	23;"	d
+__POK_SPARC_SYSCALLS_H__	arch/sparc/syscalls.h	23;"	d
+__POK_SPARC_THREAD_H__	arch/sparc/thread.h	23;"	d
+__POK_SPARC_TRAPS_H__	arch/sparc/traps.h	23;"	d
+__POK_SPARC_TYPES_H__	include/arch/sparc/types.h	19;"	d
+__POK_SPINLOCK_H__	include/arch/ppc/spinlock.h	19;"	d
+__POK_SPINLOCK_H__	include/arch/sparc/spinlock.h	18;"	d
+__POK_SPINLOCK_H__	include/arch/x86/spinlock.h	19;"	d
+__POK_SYSCALL_H__	include/core/syscall.h	18;"	d
+__POK_THREAD_H__	include/core/thread.h	19;"	d
+__POK_TIME_H__	include/core/time.h	21;"	d
+__POK_TYPES_H__	include/types.h	19;"	d
+__POK_X86_EVENT_H__	arch/x86/event.h	19;"	d
+__POK_X86_GDT_H__	arch/x86/gdt.h	19;"	d
+__POK_X86_PCI_H__	include/arch/x86/pci.h	21;"	d
+__POK_X86_PIC_H__	arch/x86/x86-qemu/pic.h	19;"	d
+__POK_X86_PM_H__	arch/x86/x86-qemu/pm.h	19;"	d
+__POK_X86_QEMU_PIT_H__	arch/x86/x86-qemu/pit.h	18;"	d
+__POK_X86_SPACE_H__	arch/x86/space.h	24;"	d
+__POK_X86_SYSDESC_H__	arch/x86/sysdesc.h	19;"	d
+__POK_X86_THREAD_H__	arch/x86/thread.h	19;"	d
+__POK_X86_TSS_H__	arch/x86/tss.h	19;"	d
+__POK_X86_TYPES_H__	arch/x86/types.h	19;"	d
+__POK_X86_TYPES_H__	include/arch/x86/types.h	19;"	d
+__esp	arch/x86/thread.h	/^  uint32_t __esp;$/;"	m	struct:__anon8
+__esp	include/arch/x86/interrupt.h	/^  uint32_t __esp;$/;"	m	struct:__anon19
+__udivdi3	libc/__udivdi3.c	/^unsigned long long __udivdi3 (unsigned long long num,$/;"	f
+__umoddi3	libc/__umoddi3.c	/^unsigned long long __umoddi3 (unsigned long long num,$/;"	f
+_core_entry	arch/x86/x86-qemu/entry.S	/^_core_entry:$/;"	l
+_pok_reset	arch/ppc/entry.S	/^_pok_reset:$/;"	l
+_pok_reset	arch/sparc/entry.S	/^_pok_reset:$/;"	l
+ack_irq	arch/sparc/leon3/irq.h	44;"	d
+activation	include/core/partition.h	/^   uint64_t              activation;                    \/**< Last activation time of the partition *\/$/;"	m	struct:__anon27
+addr	include/arch/x86/multiboot.h	/^   unsigned int                  addr;$/;"	m	struct:__anon13
+addr	include/arch/x86/multiboot.h	/^   unsigned int                  addr;$/;"	m	struct:__anon14
+addr	include/arch/x86/pci.h	/^  uint32_t	addr;$/;"	m	struct:__anon20
+addr	include/drivers/rtl8029.h	/^  unsigned int  addr;$/;"	m	struct:__anon47
+alignment_0600	arch/ppc/entry.S	/^alignment_0600:$/;"	l
+aout_sym	include/arch/x86/multiboot.h	/^      pok_aout_symbol_table_t         aout_sym;$/;"	m	union:__anon15::__anon16
+arg1	arch/x86/space.h	/^  uint32_t arg1;$/;"	m	struct:__anon6
+arg1	include/core/syscall.h	/^   uint32_t             arg1;$/;"	m	struct:__anon39
+arg2	arch/x86/space.h	/^  uint32_t arg2;$/;"	m	struct:__anon6
+arg2	include/core/syscall.h	/^   uint32_t             arg2;$/;"	m	struct:__anon39
+arg3	include/core/syscall.h	/^   uint32_t             arg3;$/;"	m	struct:__anon39
+arg4	include/core/syscall.h	/^   uint32_t             arg4;$/;"	m	struct:__anon39
+arg5	include/core/syscall.h	/^   uint32_t             arg5;$/;"	m	struct:__anon39
+available	arch/x86/gdt.h	/^   uint32_t	available:2;$/;"	m	struct:__anon5
+available_size	include/middleware/queue.h	/^   uint32_t    available_size;$/;"	m	struct:__anon55
+back_chain	arch/ppc/thread.h	/^  uint32_t back_chain;$/;"	m	struct:__anon2
+back_chain	arch/ppc/thread.h	/^  uint32_t back_chain;$/;"	m	struct:__anon3
+back_link	arch/x86/tss.h	/^   uint32_t back_link;$/;"	m	struct:__anon11
+bar	include/arch/x86/pci.h	/^  uint32_t	bar[6];$/;"	m	struct:__anon20
+base	arch/ppc/entry.S	/^base = .$/;"	d
+base	arch/x86/sysdesc.h	/^  uint32_t base;$/;"	m	struct:__anon10
+base_addr	include/core/partition.h	/^   uint32_t              base_addr;    \/**< The base address inside the whole memory (where the segment is in the whole memory ?) *\/$/;"	m	struct:__anon27
+base_addr	include/core/syscall.h	/^   uint32_t             base_addr;$/;"	m	struct:__anon40
+base_addr_high	include/arch/x86/multiboot.h	/^   unsigned int                  base_addr_high;$/;"	m	struct:__anon18
+base_addr_low	include/arch/x86/multiboot.h	/^   unsigned int                  base_addr_low;$/;"	m	struct:__anon18
+base_high	arch/x86/gdt.h	/^   uint32_t	base_high:8;$/;"	m	struct:__anon5
+base_low	arch/x86/gdt.h	/^   uint32_t	base_low:24 __attribute__ ((packed));$/;"	m	struct:__anon5
+base_priority	include/core/thread.h	/^  uint8_t	base_priority;$/;"	m	struct:__anon23
+base_vaddr	include/core/partition.h	/^   uint32_t              base_vaddr;   \/**< The virtual address of the partition. The address the threads sees when they are$/;"	m	struct:__anon27
+bool_t	include/types.h	30;"	d
+boot_device	include/arch/x86/multiboot.h	/^   unsigned int                  boot_device;$/;"	m	struct:__anon15
+bss_end_addr	include/arch/x86/multiboot.h	/^   unsigned int                  bss_end_addr;$/;"	m	struct:__anon12
+buff	libc/printf.c	/^   char		buff[MY_BUF_SIZE];$/;"	m	struct:s_file	file:
+bus	include/arch/x86/pci.h	/^  uint16_t	bus;$/;"	m	struct:__anon20
+c_dev	include/core/cpio.h	/^  unsigned short	c_dev;$/;"	m	struct:cpio_bin_header
+c_filesize	include/core/cpio.h	/^  unsigned short	c_filesize[2];$/;"	m	struct:cpio_bin_header
+c_gid	include/core/cpio.h	/^  unsigned short	c_gid;$/;"	m	struct:cpio_bin_header
+c_ino	include/core/cpio.h	/^  unsigned short	c_ino;$/;"	m	struct:cpio_bin_header
+c_magic	include/core/cpio.h	/^  unsigned short	c_magic;$/;"	m	struct:cpio_bin_header
+c_mode	include/core/cpio.h	/^  unsigned short	c_mode;$/;"	m	struct:cpio_bin_header
+c_mtime	include/core/cpio.h	/^  unsigned short	c_mtime[2];$/;"	m	struct:cpio_bin_header
+c_namesize	include/core/cpio.h	/^  unsigned short	c_namesize;$/;"	m	struct:cpio_bin_header
+c_nlink	include/core/cpio.h	/^  unsigned short	c_nlink;$/;"	m	struct:cpio_bin_header
+c_rdev	include/core/cpio.h	/^  unsigned short	c_rdev;$/;"	m	struct:cpio_bin_header
+c_uid	include/core/cpio.h	/^  unsigned short	c_uid;$/;"	m	struct:cpio_bin_header
+ch	libc/printf.c	/^   char     ch;$/;"	m	struct:s_format	file:
+checksum	include/arch/x86/multiboot.h	/^   unsigned int                  checksum;$/;"	m	struct:__anon12
+chk	include/drivers/rtl8029.h	/^  unsigned short chk; \/\/ not used$/;"	m	struct:__anon44
+clockid_t	include/core/time.h	/^typedef int clockid_t;$/;"	t
+close_buffered_output	libc/printf.c	/^static void	close_buffered_output(struct s_file *file)$/;"	f	file:
+cmdline	include/arch/x86/multiboot.h	/^   unsigned int                  cmdline;$/;"	m	struct:__anon15
+col	arch/x86/x86-qemu/cons.h	/^  char col;$/;"	m	struct:s_cons
+context_restore	arch/sparc/entry.S	/^context_restore:$/;"	l
+context_save	arch/sparc/entry.S	/^context_save:$/;"	l
+context_t	arch/ppc/thread.h	/^} context_t;$/;"	t	typeref:struct:__anon2
+context_t	arch/x86/thread.h	/^} context_t;$/;"	t	typeref:struct:__anon8
+conv	libc/printf.c	/^static int	conv(unsigned int n, int base, int dig[])$/;"	f	file:
+core_entry	arch/x86/x86-qemu/entry.S	/^core_entry:$/;"	l
+cpio_addr	include/core/cpio.h	/^  void			   *cpio_addr;$/;"	m	struct:cpio_file
+cpio_bin_header	include/core/cpio.h	/^struct cpio_bin_header$/;"	s
+cpio_file	include/core/cpio.h	/^struct cpio_file$/;"	s
+cpio_fmt	include/core/cpio.h	/^  int			      cpio_fmt;$/;"	m	struct:cpio_file
+cpio_format	include/core/cpio.h	/^enum cpio_format$/;"	g
+cr	arch/ppc/thread.h	/^  uint32_t cr; \/* 8 *\/$/;"	m	struct:__anon3
+cr	arch/ppc/thread.h	/^  uint32_t cr;$/;"	m	struct:__anon2
+cr3	arch/x86/tss.h	/^   uint32_t	cr3;$/;"	m	struct:__anon11
+cs	arch/x86/thread.h	/^  uint32_t cs;$/;"	m	struct:__anon8
+cs	arch/x86/tss.h	/^   uint32_t	cs;$/;"	m	struct:__anon11
+cs	include/arch/x86/interrupt.h	/^  uint32_t cs;$/;"	m	struct:__anon19
+ctr	arch/ppc/thread.h	/^  uint32_t ctr; \/* 64 *\/$/;"	m	struct:__anon3
+ctx	arch/x86/space.h	/^  context_t ctx;$/;"	m	struct:__anon6
+ctx	arch/x86/thread.h	/^  context_t ctx;$/;"	m	struct:__anon9
+cur_attr	arch/x86/x86-qemu/cons.h	/^  char cur_attr;$/;"	m	struct:s_cons
+curr_fileaddr	include/core/cpio.h	/^  void			   *curr_fileaddr;$/;"	m	struct:cpio_file
+curr_filename	include/core/cpio.h	/^  char			   *curr_filename;$/;"	m	struct:cpio_file
+curr_filename_len	include/core/cpio.h	/^  unsigned int		curr_filename_len;$/;"	m	struct:cpio_file
+curr_filesz	include/core/cpio.h	/^  unsigned int		curr_filesz;$/;"	m	struct:cpio_file
+curr_header	include/core/cpio.h	/^  void			   *curr_header;$/;"	m	struct:cpio_file
+current_thread	core/sched.c	/^uint32_t	         current_thread = KERNEL_THREAD;$/;"	v
+current_thread	include/core/partition.h	/^   uint32_t              current_thread;                \/**< member for the scheduler (current executed thread inside the partition *\/$/;"	m	struct:__anon27
+current_value	include/core/lockobj.h	/^   uint16_t                   current_value;$/;"	m	struct:__anon34
+d	arch/x86/event.h	/^  uint32_t	d:1;$/;"	m	struct:__anon7
+data	include/drivers/rtl8029.h	/^  char		data[NET_DATA_MAXLEN];$/;"	m	struct:__anon45
+data	include/drivers/rtl8029.h	/^  char		data[RECV_BUF_SZ];$/;"	m	struct:__anon46
+data	include/middleware/queue.h	/^   char*       data;$/;"	m	struct:__anon55
+deadline	include/core/thread.h	/^	 uint64_t     deadline;$/;"	m	struct:__anon23
+deadline	include/core/thread.h	/^	 uint64_t     deadline;$/;"	m	struct:__anon24
+debug_strlen	core/debug.c	/^int debug_strlen (const char* str)$/;"	f
+decrementer_0900	arch/ppc/entry.S	/^decrementer_0900:$/;"	l
+dev	drivers/rtl8029.c	/^static s_ne2000_dev dev;$/;"	v	file:
+dev	include/arch/x86/pci.h	/^  uint16_t	dev;$/;"	m	struct:__anon20
+deviceid	include/arch/x86/pci.h	/^  uint16_t	deviceid;$/;"	m	struct:__anon20
+digits	libc/printf.c	/^static const char digits[] = "0123456789abcdef";$/;"	v	file:
+direction	include/middleware/port.h	/^	 pok_port_direction_t             direction;$/;"	m	struct:__anon52
+direction	include/middleware/port.h	/^	 pok_port_direction_t direction;$/;"	m	struct:__anon53
+direction	include/middleware/port.h	/^	 pok_port_direction_t direction;$/;"	m	struct:__anon54
+discipline	include/middleware/port.h	/^	 pok_port_queueing_discipline_t   discipline;$/;"	m	struct:__anon52
+display_mac	drivers/rtl8029.c	/^void display_mac(char*mac)$/;"	f
+dpl	arch/x86/event.h	/^  uint32_t	dpl:2;$/;"	m	struct:__anon7
+dpl	arch/x86/gdt.h	/^   uint32_t	dpl:2;$/;"	m	struct:__anon5
+ds	arch/x86/tss.h	/^   uint32_t	ds;$/;"	m	struct:__anon11
+ds	include/arch/x86/interrupt.h	/^  uint32_t ds;$/;"	m	struct:__anon19
+dsi_0300	arch/ppc/entry.S	/^dsi_0300:$/;"	l
+dst	include/drivers/rtl8029.h	/^  char		 dst[ETH_MAC_LEN];$/;"	m	struct:__anon43
+dst	include/drivers/rtl8029.h	/^  unsigned short dst;$/;"	m	struct:__anon44
+dummy_pci_handler	arch/x86/pci.c	/^void dummy_pci_handler(void)$/;"	f
+dump_registers	arch/x86/exceptions.c	/^static void dump_registers (interrupt_frame *frame)$/;"	f	file:
+e_ehsize	include/elf.h	/^  Elf32_Half	e_ehsize;		\/* ELF header size in bytes *\/$/;"	m	struct:__anon41
+e_entry	include/elf.h	/^  Elf32_Addr	e_entry;		\/* Entry point virtual address *\/$/;"	m	struct:__anon41
+e_flags	include/elf.h	/^  Elf32_Word	e_flags;		\/* Processor-specific flags *\/$/;"	m	struct:__anon41
+e_gdte_type	arch/x86/gdt.h	/^typedef enum e_gdte_type$/;"	g
+e_gdte_type	arch/x86/gdt.h	/^} e_gdte_type;$/;"	t	typeref:enum:e_gdte_type
+e_ident	include/elf.h	/^  unsigned char	e_ident[EI_NIDENT];	\/* Magic number and other info *\/$/;"	m	struct:__anon41
+e_idte_type	arch/x86/event.h	/^typedef enum e_idte_type$/;"	g
+e_idte_type	arch/x86/event.h	/^} e_idte_type;$/;"	t	typeref:enum:e_idte_type
+e_machine	include/elf.h	/^  Elf32_Half	e_machine;		\/* Architecture *\/$/;"	m	struct:__anon41
+e_phentsize	include/elf.h	/^  Elf32_Half	e_phentsize;		\/* Program header table entry size *\/$/;"	m	struct:__anon41
+e_phnum	include/elf.h	/^  Elf32_Half	e_phnum;		\/* Program header table entry count *\/$/;"	m	struct:__anon41
+e_phoff	include/elf.h	/^  Elf32_Off	e_phoff;		\/* Program header table file offset *\/$/;"	m	struct:__anon41
+e_shentsize	include/elf.h	/^  Elf32_Half	e_shentsize;		\/* Section header table entry size *\/$/;"	m	struct:__anon41
+e_shnum	include/elf.h	/^  Elf32_Half	e_shnum;		\/* Section header table entry count *\/$/;"	m	struct:__anon41
+e_shoff	include/elf.h	/^  Elf32_Off	e_shoff;		\/* Section header table file offset *\/$/;"	m	struct:__anon41
+e_shstrndx	include/elf.h	/^  Elf32_Half	e_shstrndx;		\/* Section header string table index *\/$/;"	m	struct:__anon41
+e_type	include/elf.h	/^  Elf32_Half	e_type;			\/* Object file type *\/$/;"	m	struct:__anon41
+e_version	include/elf.h	/^  Elf32_Word	e_version;		\/* Object file version *\/$/;"	m	struct:__anon41
+eax	arch/x86/thread.h	/^  uint32_t eax;$/;"	m	struct:__anon8
+eax	arch/x86/tss.h	/^   uint32_t	eax;$/;"	m	struct:__anon11
+eax	include/arch/x86/interrupt.h	/^  uint32_t eax;$/;"	m	struct:__anon19
+ebp	arch/x86/thread.h	/^  uint32_t ebp;$/;"	m	struct:__anon8
+ebp	arch/x86/tss.h	/^   uint32_t	ebp;$/;"	m	struct:__anon11
+ebp	include/arch/x86/interrupt.h	/^  uint32_t ebp;$/;"	m	struct:__anon19
+ebx	arch/x86/thread.h	/^  uint32_t ebx;$/;"	m	struct:__anon8
+ebx	arch/x86/tss.h	/^   uint32_t	ebx;$/;"	m	struct:__anon11
+ebx	include/arch/x86/interrupt.h	/^  uint32_t ebx;$/;"	m	struct:__anon19
+ecx	arch/x86/thread.h	/^  uint32_t ecx;$/;"	m	struct:__anon8
+ecx	arch/x86/tss.h	/^   uint32_t	ecx;$/;"	m	struct:__anon11
+ecx	include/arch/x86/interrupt.h	/^  uint32_t ecx;$/;"	m	struct:__anon19
+edf_end_time	include/core/thread.h	/^	 uint64_t     edf_end_time;$/;"	m	struct:__anon23
+edi	arch/x86/thread.h	/^  uint32_t edi;$/;"	m	struct:__anon8
+edi	arch/x86/tss.h	/^   uint32_t	edi;$/;"	m	struct:__anon11
+edi	include/arch/x86/interrupt.h	/^  uint32_t edi;$/;"	m	struct:__anon19
+edx	arch/x86/thread.h	/^  uint32_t edx;$/;"	m	struct:__anon8
+edx	arch/x86/tss.h	/^   uint32_t	edx;$/;"	m	struct:__anon11
+edx	include/arch/x86/interrupt.h	/^  uint32_t edx;$/;"	m	struct:__anon19
+eflags	arch/x86/thread.h	/^  uint32_t eflags;$/;"	m	struct:__anon8
+eflags	arch/x86/tss.h	/^   uint32_t	eflags;$/;"	m	struct:__anon11
+eflags	include/arch/x86/interrupt.h	/^  uint32_t eflags;$/;"	m	struct:__anon19
+eip	arch/x86/thread.h	/^  uint32_t eip;$/;"	m	struct:__anon8
+eip	arch/x86/tss.h	/^   uint32_t	eip;$/;"	m	struct:__anon11
+eip	include/arch/x86/interrupt.h	/^  uint32_t eip;$/;"	m	struct:__anon19
+elf_sec	include/arch/x86/multiboot.h	/^      pok_elf_section_header_table_t  elf_sec;$/;"	m	union:__anon15::__anon16
+empty	include/middleware/port.h	/^	 bool_t                           empty;$/;"	m	struct:__anon52
+end_of_restore_loop	arch/sparc/entry.S	/^end_of_restore_loop:$/;"	l
+end_of_save_loop	arch/sparc/entry.S	/^end_of_save_loop:$/;"	l
+end_time	include/core/thread.h	/^	 uint64_t	end_time;$/;"	m	struct:__anon23
+entry	arch/x86/thread.h	/^  uint32_t entry;$/;"	m	struct:__anon9
+entry	include/core/thread.h	/^	 void			 *entry;$/;"	m	struct:__anon23
+entry	include/core/thread.h	/^	 void*        entry;            \/* entrypoint of the thread  *\/$/;"	m	struct:__anon24
+entry_addr	include/arch/x86/multiboot.h	/^   unsigned int                  entry_addr;$/;"	m	struct:__anon12
+error	include/arch/x86/interrupt.h	/^  uint32_t error;	\/* Error code or padding *\/$/;"	m	struct:__anon19
+error_kind	include/core/error.h	/^   uint8_t        error_kind;$/;"	m	struct:__anon21
+error_status	include/core/partition.h	/^   pok_error_status_t   error_status;        \/**< A pointer used to store information about errors *\/$/;"	m	struct:__anon27
+es	arch/x86/tss.h	/^   uint32_t	es;$/;"	m	struct:__anon11
+es	include/arch/x86/interrupt.h	/^  uint32_t es;$/;"	m	struct:__anon19
+esi	arch/x86/thread.h	/^  uint32_t esi;$/;"	m	struct:__anon8
+esi	arch/x86/tss.h	/^   uint32_t	esi;$/;"	m	struct:__anon11
+esi	include/arch/x86/interrupt.h	/^  uint32_t esi;$/;"	m	struct:__anon19
+esp	arch/x86/tss.h	/^   uint32_t	esp;$/;"	m	struct:__anon11
+esp	include/arch/x86/interrupt.h	/^  uint32_t esp;$/;"	m	struct:__anon19
+esp0	arch/x86/tss.h	/^   uint32_t	esp0;$/;"	m	struct:__anon11
+esp1	arch/x86/tss.h	/^   uint32_t	esp1;$/;"	m	struct:__anon11
+esp2	arch/x86/tss.h	/^   uint32_t	esp2;$/;"	m	struct:__anon11
+eth	include/drivers/rtl8029.h	/^  eth_hdr_t	eth;$/;"	m	struct:__anon45
+eth_hdr_t	include/drivers/rtl8029.h	/^} __attribute__ ((__packed__)) eth_hdr_t;$/;"	t	typeref:struct:__anon43
+ethertype	include/drivers/rtl8029.h	/^  unsigned short ethertype;$/;"	m	struct:__anon43
+eventspin	include/core/lockobj.h	/^   pok_spinlock_t             eventspin;$/;"	m	struct:__anon34
+exceptionHandler	arch/x86/x86-qemu/debug.c	/^void exceptionHandler (int exception_number,$/;"	f
+exception_list	arch/x86/exceptions.c	/^exception_list[] =$/;"	v	typeref:struct:__anon4	file:
+ext_interrupt_0500	arch/ppc/entry.S	/^ext_interrupt_0500:$/;"	l
+failed	arch/ppc/entry.S	/^failed: b failed$/;"	l
+failed_addr	include/core/error.h	/^   uint32_t       failed_addr;$/;"	m	struct:__anon21
+failed_thread	include/core/error.h	/^   uint32_t       failed_thread;$/;"	m	struct:__anon21
+fake_ret	arch/x86/space.h	/^  uint32_t fake_ret;$/;"	m	struct:__anon6
+fake_ret	arch/x86/thread.h	/^  uint32_t fake_ret;$/;"	m	struct:__anon9
+flags	include/arch/x86/multiboot.h	/^   unsigned int                  flags;$/;"	m	struct:__anon12
+flags	include/arch/x86/multiboot.h	/^   unsigned int                  flags;$/;"	m	struct:__anon15
+flags	libc/printf.c	/^   int      flags;$/;"	m	struct:s_format	file:
+formats	libc/printf.c	/^static const struct s_format formats[] =$/;"	v	typeref:struct:s_format	file:
+fp_unavailable_0800	arch/ppc/entry.S	/^fp_unavailable_0800:$/;"	l
+fs	arch/x86/tss.h	/^   uint32_t	fs;$/;"	m	struct:__anon11
+full	include/middleware/port.h	/^	 bool_t                           full;$/;"	m	struct:__anon52
+fun	include/arch/x86/pci.h	/^  uint16_t	fun;$/;"	m	struct:__anon20
+fun	libc/printf.c	/^   t_fmtfun	fun;$/;"	m	struct:s_format	file:
+g_cons	arch/x86/x86-qemu/cons.c	/^struct s_cons        g_cons;$/;"	v	typeref:struct:s_cons
+gcd_of_two	core/sched.c	/^uint32_t gcd_of_two(uint32_t x, uint32_t y){$/;"	f
+gdt_disable	arch/x86/gdt.c	/^void gdt_disable(uint16_t index)$/;"	f
+gdt_enable	arch/x86/gdt.c	/^void gdt_enable(uint16_t index)$/;"	f
+gdt_entry_t	arch/x86/gdt.h	/^} __attribute__((packed)) gdt_entry_t;$/;"	t	typeref:struct:__anon5
+gdt_set_segment	arch/x86/gdt.c	/^void gdt_set_segment(uint16_t index,$/;"	f
+gdt_set_system	arch/x86/gdt.c	/^void gdt_set_system(uint16_t index,$/;"	f
+getDebugChar	arch/x86/x86-qemu/debug.c	/^int getDebugChar ()$/;"	f
+get_msr	arch/ppc/arch.c	/^static inline unsigned int get_msr (void)$/;"	f	file:
+get_ppc_tb	arch/ppc/timer.c	/^static inline unsigned long long get_ppc_tb (void)$/;"	f	file:
+granularity	arch/x86/gdt.h	/^   uint32_t	granularity:1;$/;"	m	struct:__anon5
+gs	arch/x86/tss.h	/^   uint32_t	gs;$/;"	m	struct:__anon11
+handler	arch/x86/exceptions.c	/^  void		(*handler)(void);$/;"	m	struct:__anon4	file:
+header_addr	include/arch/x86/multiboot.h	/^   unsigned int                  header_addr;$/;"	m	struct:__anon12
+heap_end	arch/ppc/prep/bsp.c	/^static char *heap_end = _end;$/;"	v	file:
+heap_end	arch/sparc/leon3/bsp.c	/^static char *heap_end = _end;$/;"	v	file:
+id	arch/x86/thread.h	/^  uint32_t id;$/;"	m	struct:__anon9
+identifier	include/middleware/port.h	/^	 pok_port_id_t                    identifier;$/;"	m	struct:__anon52
+idt_entry_t	arch/x86/event.h	/^} __attribute__((packed)) idt_entry_t;$/;"	t	typeref:struct:__anon7
+inb	arch/ppc/prep/ioports.h	26;"	d
+inb	arch/sparc/leon3/ioports.h	/^static inline uint8_t inb(uint32_t addr)$/;"	f
+inb	include/arch/x86/ioports.h	28;"	d
+index	include/middleware/port.h	/^	 pok_port_size_t                  index;$/;"	m	struct:__anon52
+infinite_loop	arch/sparc/entry.S	/^infinite_loop:$/;"	l
+init_buffered_output	libc/printf.c	/^static struct s_file*	init_buffered_output(void)$/;"	f	file:
+init_stack_addr	include/core/thread.h	/^	 uint32_t    init_stack_addr;$/;"	m	struct:__anon23
+initial_value	include/core/lockobj.h	/^   pok_sem_value_t            initial_value;$/;"	m	struct:__anon33
+initialized	include/core/lockobj.h	/^   bool_t                     initialized;$/;"	m	struct:__anon34
+inl	include/arch/x86/ioports.h	42;"	d
+int16_t	arch/x86/types.h	/^typedef short                 int16_t;$/;"	t
+int16_t	include/arch/sparc/types.h	/^typedef short                 int16_t;$/;"	t
+int16_t	include/arch/x86/types.h	/^typedef short                 int16_t;$/;"	t
+int64_t	arch/x86/types.h	/^typedef signed long long      int64_t;$/;"	t
+int64_t	include/arch/sparc/types.h	/^typedef signed long long      int64_t;$/;"	t
+int64_t	include/arch/x86/types.h	/^typedef signed long long      int64_t;$/;"	t
+int8_t	arch/x86/types.h	/^typedef short                 int8_t;$/;"	t
+int8_t	include/arch/sparc/types.h	/^typedef char                  int8_t;$/;"	t
+int8_t	include/arch/x86/types.h	/^typedef short                 int8_t;$/;"	t
+interrupt_frame	include/arch/x86/interrupt.h	/^} interrupt_frame;$/;"	t	typeref:struct:__anon19
+intptr_t	arch/x86/types.h	/^typedef unsigned long int     intptr_t;$/;"	t
+intptr_t	include/arch/sparc/types.h	/^typedef unsigned long int     intptr_t;$/;"	t
+intptr_t	include/arch/x86/types.h	/^typedef unsigned long int     intptr_t;$/;"	t
+inw	arch/sparc/leon3/ioports.h	/^static inline uint32_t inw(uint32_t addr)$/;"	f
+io_bit_map_offset	arch/x86/tss.h	/^   uint16_t	io_bit_map_offset;$/;"	m	struct:__anon11
+io_max	include/core/partition.h	/^  uint16_t		io_max;                        \/**< If the partition is allowed to perform I\/O, the uppder bound of the I\/O *\/$/;"	m	struct:__anon27
+io_min	include/core/partition.h	/^  uint16_t		io_min;                        \/**< If the partition is allowed to perform I\/O, the lower bound of the I\/O *\/$/;"	m	struct:__anon27
+io_range	include/arch/x86/pci.h	/^  uint16_t	io_range;$/;"	m	struct:__anon20
+irq_handler	include/arch/x86/pci.h	/^  void*		irq_handler;$/;"	m	struct:__anon20
+irq_line	include/arch/x86/pci.h	/^  uint16_t	irq_line;$/;"	m	struct:__anon20
+is_received_data_ready	arch/x86/x86-qemu/cons.c	/^int is_received_data_ready() {$/;"	f
+is_transmit_empty	arch/ppc/prep/cons.c	/^static int is_transmit_empty(void)$/;"	f	file:
+is_transmitter_holding_register	arch/x86/x86-qemu/cons.c	/^int is_transmitter_holding_register() {$/;"	f
+isi_0400	arch/ppc/entry.S	/^isi_0400:$/;"	l
+kernel_sp	arch/x86/space.h	/^  uint32_t kernel_sp;$/;"	m	struct:__anon6
+kind	include/core/lockobj.h	/^   pok_lockobj_kind_t         kind;$/;"	m	struct:__anon33
+kind	include/core/lockobj.h	/^   pok_lockobj_kind_t         kind;$/;"	m	struct:__anon34
+kind	include/middleware/port.h	/^	 uint8_t                          kind;$/;"	m	struct:__anon52
+last_receive	include/middleware/port.h	/^	 uint64_t                         last_receive;$/;"	m	struct:__anon52
+ldt	arch/x86/tss.h	/^   uint32_t	ldt;$/;"	m	struct:__anon11
+len	include/drivers/rtl8029.h	/^  uint32_t	len;$/;"	m	struct:__anon46
+len	include/drivers/rtl8029.h	/^  unsigned short len;$/;"	m	struct:__anon44
+length_high	include/arch/x86/multiboot.h	/^   unsigned int                  length_high;$/;"	m	struct:__anon18
+length_low	include/arch/x86/multiboot.h	/^   unsigned int                  length_low;$/;"	m	struct:__anon18
+limit	arch/x86/sysdesc.h	/^  uint16_t limit;$/;"	m	struct:__anon10
+limit_high	arch/x86/gdt.h	/^   uint32_t	limit_high:4;$/;"	m	struct:__anon5
+limit_low	arch/x86/gdt.h	/^   uint32_t	limit_low:16;$/;"	m	struct:__anon5
+load_addr	include/arch/x86/multiboot.h	/^   unsigned int                  load_addr;$/;"	m	struct:__anon12
+load_end_addr	include/arch/x86/multiboot.h	/^   unsigned int                  load_end_addr;$/;"	m	struct:__anon12
+lock	include/middleware/port.h	/^	 pok_lockobj_t                    lock;$/;"	m	struct:__anon52
+lock_kind	include/core/lockobj.h	/^   pok_lockobj_lock_kind_t    lock_kind;$/;"	m	struct:__anon37
+lock_level	include/core/partition.h	/^  uint32_t		lock_level;$/;"	m	struct:__anon27
+locking_policy	include/core/lockobj.h	/^   pok_locking_policy_t       locking_policy;$/;"	m	struct:__anon33
+locking_policy	include/core/lockobj.h	/^   pok_locking_policy_t       locking_policy;$/;"	m	struct:__anon34
+lockobj_index_high	include/core/partition.h	/^   uint8_t               lockobj_index_high;  \/**< The high bound in the lockobject array *\/$/;"	m	struct:__anon27
+lockobj_index_low	include/core/partition.h	/^   uint8_t               lockobj_index_low;   \/**< The low bound in the lockobject array. *\/$/;"	m	struct:__anon27
+loop	arch/x86/x86-qemu/entry.S	/^loop:$/;"	l
+lr	arch/ppc/thread.h	/^  uint32_t lr;$/;"	m	struct:__anon2
+lr	arch/ppc/thread.h	/^  uint32_t lr;$/;"	m	struct:__anon3
+mac	include/drivers/rtl8029.h	/^  char		mac[6];$/;"	m	struct:__anon47
+machine_check_0200	arch/ppc/entry.S	/^machine_check_0200:$/;"	l
+magic	include/arch/x86/multiboot.h	/^   unsigned int                  magic;$/;"	m	struct:__anon12
+max_value	include/core/lockobj.h	/^   pok_sem_value_t            max_value;$/;"	m	struct:__anon33
+max_value	include/core/lockobj.h	/^   uint16_t                   max_value;$/;"	m	struct:__anon34
+mem_lower	include/arch/x86/multiboot.h	/^   unsigned int                  mem_lower;$/;"	m	struct:__anon15
+mem_upper	include/arch/x86/multiboot.h	/^   unsigned int                  mem_upper;$/;"	m	struct:__anon15
+memcpy	libc/memcpy.c	/^void* memcpy (void*        to,$/;"	f
+memset	libc/memset.c	/^void* memset (void *dest, unsigned char val, size_t count)$/;"	f
+mm_index1	arch/sparc/space.h	73;"	d
+mm_index2	arch/sparc/space.h	81;"	d
+mm_index3	arch/sparc/space.h	89;"	d
+mmap_addr	include/arch/x86/multiboot.h	/^   unsigned int                  mmap_addr;$/;"	m	struct:__anon15
+mmap_length	include/arch/x86/multiboot.h	/^   unsigned int                  mmap_length;$/;"	m	struct:__anon15
+mmu_contexts_tab	arch/sparc/space.c	/^ptd mmu_contexts_tab[POK_CONFIG_NB_PARTITIONS]$/;"	v
+mmu_level1_tab	arch/sparc/space.c	/^ptd mmu_level1_tab[POK_CONFIG_NB_PARTITIONS][MM_LVL1_ENTRIES_NBR]$/;"	v
+mmu_level2_tab	arch/sparc/space.c	/^pte mmu_level2_tab[POK_CONFIG_NB_PARTITIONS][MM_LVL2_ENTRIES_NBR]$/;"	v
+mod_end	include/arch/x86/multiboot.h	/^   unsigned int                  mod_end;$/;"	m	struct:__anon17
+mod_start	include/arch/x86/multiboot.h	/^   unsigned int                  mod_start;$/;"	m	struct:__anon17
+mode	include/core/partition.h	/^   pok_partition_mode_t mode;                 \/**< Current mode of the partition *\/$/;"	m	struct:__anon27
+mods_addr	include/arch/x86/multiboot.h	/^   unsigned int                  mods_addr;$/;"	m	struct:__anon15
+mods_count	include/arch/x86/multiboot.h	/^   unsigned int                  mods_count;$/;"	m	struct:__anon15
+msg	include/core/error.h	/^   char           msg[POK_ERROR_MAX_MSG_SIZE];$/;"	m	struct:__anon21
+msg_nb	include/drivers/rtl8029.h	/^  uint32_t      msg_nb;$/;"	m	struct:__anon47
+msg_size	include/core/error.h	/^   uint32_t       msg_size;$/;"	m	struct:__anon21
+multiboot_header	arch/x86/x86-qemu/entry.S	/^multiboot_header:$/;"	l
+must_be_flushed	include/middleware/port.h	/^	 bool_t                           must_be_flushed;$/;"	m	struct:__anon52
+my_fflush	libc/printf.c	/^static void	my_fflush(struct s_file *file)$/;"	f	file:
+my_printnbr_base	libc/printf.c	/^static int	my_printnbr_base (unsigned int   n,$/;"	f	file:
+my_putc	libc/printf.c	/^static void	my_putc(char c, struct s_file *file)$/;"	f	file:
+name	include/core/partition.h	/^   const char            *name;        \/**< Name of the partition *\/$/;"	m	struct:__anon27
+nargs	include/core/syscall.h	/^   uint32_t             nargs;$/;"	m	struct:__anon39
+ne2000_dev	arch/x86/pci.c	/^void* ne2000_dev = NULL;$/;"	v
+ne2000_read	drivers/rtl8029.c	/^size_t ne2000_read(const s_ne2000_dev*	dev,$/;"	f	file:
+ne2000_write	drivers/rtl8029.c	/^size_t ne2000_write(const s_ne2000_dev* dev,$/;"	f	file:
+next	include/drivers/rtl8029.h	/^  unsigned char       next;$/;"	m	struct:__anon48
+next_activation	include/core/thread.h	/^	 uint64_t     next_activation;$/;"	m	struct:__anon23
+next_header	include/core/cpio.h	/^  int             (*next_header)(struct cpio_file *cpio);$/;"	m	struct:cpio_file
+nlockobjs	include/core/partition.h	/^   uint8_t               nlockobjs;           \/**< The amount of lockobjects reserved for the partition *\/$/;"	m	struct:__anon27
+nthreads	include/core/partition.h	/^   uint32_t              nthreads;     \/**< Number of threads inside the partition *\/$/;"	m	struct:__anon27
+num	include/arch/x86/multiboot.h	/^   unsigned int                  num;$/;"	m	struct:__anon14
+obj_kind	include/core/lockobj.h	/^   pok_lockobj_kind_t         obj_kind;$/;"	m	struct:__anon37
+off	include/drivers/rtl8029.h	/^  uint32_t	off;$/;"	m	struct:__anon46
+off_b	include/middleware/port.h	/^	 pok_port_size_t                  off_b; \/* Offset of the beginning of the buffer *\/$/;"	m	struct:__anon52
+off_e	include/middleware/port.h	/^	 pok_port_size_t                  off_e; \/* Offset of the end of the buffer *\/$/;"	m	struct:__anon52
+offset_high	arch/x86/event.h	/^  uint32_t	offset_high:16;$/;"	m	struct:__anon7
+offset_low	arch/x86/event.h	/^  uint32_t	offset_low:16;$/;"	m	struct:__anon7
+op_size	arch/x86/gdt.h	/^   uint32_t	op_size:1;$/;"	m	struct:__anon5
+operation	include/core/lockobj.h	/^   pok_lockobj_operation_t    operation;$/;"	m	struct:__anon37
+outb	arch/ppc/prep/ioports.h	23;"	d
+outb	arch/sparc/leon3/ioports.h	/^static inline void outb(uint32_t addr, uint8_t data)$/;"	f
+outb	include/arch/x86/ioports.h	23;"	d
+outl	include/arch/x86/ioports.h	37;"	d
+outw	arch/sparc/leon3/ioports.h	/^static inline void outw(uint32_t addr, uint32_t data)$/;"	f
+p_align	include/elf.h	/^  Elf32_Word	p_align;		\/* Segment alignment *\/$/;"	m	struct:__anon42
+p_filesz	include/elf.h	/^  Elf32_Word	p_filesz;		\/* Segment size in file *\/$/;"	m	struct:__anon42
+p_flags	include/elf.h	/^  Elf32_Word	p_flags;		\/* Segment flags *\/$/;"	m	struct:__anon42
+p_memsz	include/elf.h	/^  Elf32_Word	p_memsz;		\/* Segment size in memory *\/$/;"	m	struct:__anon42
+p_offset	include/elf.h	/^  Elf32_Off	p_offset;		\/* Segment file offset *\/$/;"	m	struct:__anon42
+p_paddr	include/elf.h	/^  Elf32_Addr	p_paddr;		\/* Segment physical address *\/$/;"	m	struct:__anon42
+p_type	include/elf.h	/^  Elf32_Word	p_type;			\/* Segment type *\/$/;"	m	struct:__anon42
+p_vaddr	include/elf.h	/^  Elf32_Addr	p_vaddr;		\/* Segment virtual address *\/$/;"	m	struct:__anon42
+pad	arch/ppc/thread.h	/^  uint32_t pad;$/;"	m	struct:__anon2
+pad0	arch/ppc/thread.h	/^  uint32_t pad0;$/;"	m	struct:__anon3
+pad1	arch/ppc/thread.h	/^  uint32_t pad1;$/;"	m	struct:__anon3
+padding	arch/x86/sysdesc.h	/^  uint16_t padding;$/;"	m	struct:__anon10
+partition	include/core/syscall.h	/^   pok_partition_id_t   partition;$/;"	m	struct:__anon40
+partition	include/core/thread.h	/^	 uint8_t		 partition;$/;"	m	struct:__anon23
+partition	include/middleware/port.h	/^	 pok_partition_id_t               partition;$/;"	m	struct:__anon52
+partition_id	arch/x86/space.h	/^  unsigned int partition_id;$/;"	m	struct:__anon6
+payback	include/core/partition.h	/^   uint64_t		payback; \/**< Payback for HFPPS scheduling algorithm *\/$/;"	m	struct:__anon27
+payback	include/core/thread.h	/^	 uint64_t	payback; \/**< Payback for HFPPS scheduling algorithm *\/$/;"	m	struct:__anon23
+pci	include/drivers/rtl8029.h	/^  s_pci_device  pci;$/;"	m	struct:__anon47
+pci_open	arch/x86/pci.c	/^int pci_open(s_pci_device* d)$/;"	f	file:
+pci_read	arch/x86/pci.c	/^unsigned int pci_read(unsigned int bus,$/;"	f	file:
+pci_read_reg	arch/x86/pci.c	/^unsigned int pci_read_reg(s_pci_device* d,$/;"	f	file:
+pci_register	arch/x86/pci.c	/^pok_ret_t pci_register(s_pci_device*	dev,$/;"	f
+period	include/core/partition.h	/^   uint32_t              period;       \/**< Period of the partition, unused at this time *\/$/;"	m	struct:__anon27
+period	include/core/thread.h	/^	 uint64_t     period;$/;"	m	struct:__anon23
+period	include/core/thread.h	/^	 uint64_t     period;$/;"	m	struct:__anon24
+phys_base	arch/ppc/space.c	/^  uint32_t phys_base;$/;"	m	struct:pok_space	file:
+phys_base	arch/sparc/space.c	/^    uint32_t phys_base; \/**< Pysical adress of the partition. *\/$/;"	m	struct:pok_space	file:
+pit_freq	arch/x86/x86-qemu/pit.c	/^uint32_t pit_freq;$/;"	v
+pok_aout_symbol_table_t	include/arch/x86/multiboot.h	/^} pok_aout_symbol_table_t;$/;"	t	typeref:struct:__anon13
+pok_arch_decr_int	arch/ppc/timer.c	/^void pok_arch_decr_int (void)$/;"	f
+pok_arch_dsi_int	arch/ppc/space.c	/^void pok_arch_dsi_int (uint32_t dar, uint32_t dsisr)$/;"	f
+pok_arch_event_register	arch/ppc/arch.c	/^pok_ret_t pok_arch_event_register (uint8_t vector, void (*handler)(void))$/;"	f
+pok_arch_event_register	arch/sparc/arch.c	/^pok_ret_t pok_arch_event_register (uint8_t vector, void (*handler)(void))$/;"	f
+pok_arch_event_register	arch/x86/arch.c	/^pok_ret_t pok_arch_event_register  (uint8_t vector,$/;"	f
+pok_arch_idle	arch/ppc/arch.c	/^pok_ret_t pok_arch_idle()$/;"	f
+pok_arch_idle	arch/sparc/arch.c	/^pok_ret_t pok_arch_idle()$/;"	f
+pok_arch_idle	arch/x86/arch.c	/^pok_ret_t pok_arch_idle()$/;"	f
+pok_arch_init	arch/ppc/arch.c	/^pok_ret_t pok_arch_init ()$/;"	f
+pok_arch_init	arch/sparc/arch.c	/^pok_ret_t pok_arch_init ()$/;"	f
+pok_arch_init	arch/x86/arch.c	/^pok_ret_t pok_arch_init ()$/;"	f
+pok_arch_isi_int	arch/ppc/space.c	/^void pok_arch_isi_int (uint32_t pc, uint32_t msr)$/;"	f
+pok_arch_preempt_disable	arch/ppc/arch.c	/^pok_ret_t pok_arch_preempt_disable()$/;"	f
+pok_arch_preempt_disable	arch/sparc/arch.c	/^pok_ret_t pok_arch_preempt_disable()$/;"	f
+pok_arch_preempt_disable	arch/x86/arch.c	/^pok_ret_t pok_arch_preempt_disable()$/;"	f
+pok_arch_preempt_enable	arch/ppc/arch.c	/^pok_ret_t pok_arch_preempt_enable()$/;"	f
+pok_arch_preempt_enable	arch/sparc/arch.c	/^pok_ret_t pok_arch_preempt_enable()$/;"	f
+pok_arch_preempt_enable	arch/x86/arch.c	/^pok_ret_t pok_arch_preempt_enable()$/;"	f
+pok_arch_rfi	arch/ppc/entry.S	/^pok_arch_rfi:$/;"	l
+pok_arch_sc_int	arch/ppc/syscalls.c	/^void pok_arch_sc_int(uint32_t num, uint32_t arg1, uint32_t arg2,$/;"	f
+pok_arch_sc_int	arch/sparc/syscalls.c	/^void pok_arch_sc_int(void)$/;"	f
+pok_arch_set_decr	arch/ppc/timer.c	/^static int pok_arch_set_decr (void)$/;"	f	file:
+pok_arch_sp	arch/sparc/thread.c	/^uint32_t pok_arch_sp;$/;"	v
+pok_arch_space_init	arch/ppc/space.c	/^void pok_arch_space_init (void)$/;"	f
+pok_arch_space_init	arch/sparc/space.c	/^void pok_arch_space_init (void)$/;"	f
+pok_arch_thread_start	arch/ppc/cswitch.S	/^pok_arch_thread_start:$/;"	l
+pok_blackboard_id_t	include/types.h	/^typedef uint8_t pok_blackboard_id_t;$/;"	t
+pok_bool_t	include/types.h	31;"	d
+pok_boot	core/boot.c	/^void pok_boot ()$/;"	f
+pok_bsp_debug	arch/x86/x86-qemu/debug.c	/^void pok_bsp_debug ()$/;"	f
+pok_bsp_init	arch/ppc/prep/bsp.c	/^int pok_bsp_init (void)$/;"	f
+pok_bsp_init	arch/sparc/leon3/bsp.c	/^int pok_bsp_init (void)$/;"	f
+pok_bsp_init	arch/x86/x86-qemu/bsp.c	/^pok_ret_t pok_bsp_init (void)$/;"	f
+pok_bsp_irq_acknowledge	arch/x86/x86-qemu/bsp.c	/^pok_ret_t pok_bsp_irq_acknowledge (uint8_t irq)$/;"	f
+pok_bsp_irq_register	arch/x86/x86-qemu/bsp.c	/^pok_ret_t pok_bsp_irq_register (uint8_t   irq,$/;"	f
+pok_bsp_mem_alloc	arch/ppc/prep/bsp.c	/^void *pok_bsp_mem_alloc (size_t sz)$/;"	f
+pok_bsp_mem_alloc	arch/sparc/leon3/bsp.c	/^void *pok_bsp_mem_alloc (size_t sz)$/;"	f
+pok_bsp_mem_alloc	arch/x86/x86-qemu/bsp.c	/^void *pok_bsp_mem_alloc (size_t size)$/;"	f
+pok_bsp_time_init	arch/ppc/timer.c	/^pok_ret_t pok_bsp_time_init ()$/;"	f
+pok_bsp_time_init	arch/sparc/leon3/timer.c	/^pok_ret_t pok_bsp_time_init ()$/;"	f
+pok_bsp_time_init	arch/x86/x86-qemu/bsp.c	/^pok_ret_t pok_bsp_time_init ()$/;"	f
+pok_buffer_flush	middleware/portflushall.c	/^uint8_t                 pok_buffer_flush[POK_PORT_MAX_SIZE];$/;"	v
+pok_buffer_id_t	include/types.h	/^typedef uint8_t pok_buffer_id_t;$/;"	t
+pok_check_ptr_in_partition	include/core/partition.h	/^static inline bool_t pok_check_ptr_in_partition($/;"	f
+pok_check_ptr_or_return	include/core/syscall.h	158;"	d
+pok_clockid_t	include/core/time.h	/^} pok_clockid_t;$/;"	t	typeref:enum:__anon28
+pok_cons_attr	arch/x86/x86-qemu/cons.c	/^void pok_cons_attr (uint8_t attr)$/;"	f
+pok_cons_clear	arch/x86/x86-qemu/cons.c	/^void pok_cons_clear (void)$/;"	f
+pok_cons_disable_cursor	arch/x86/x86-qemu/cons.c	/^void pok_cons_disable_cursor (void)$/;"	f
+pok_cons_get_char	arch/x86/x86-qemu/cons.c	/^void pok_cons_get_char (char * c)$/;"	f
+pok_cons_init	arch/ppc/prep/cons.c	/^int pok_cons_init (void)$/;"	f
+pok_cons_init	arch/sparc/leon3/cons.c	/^int pok_cons_init (void)$/;"	f
+pok_cons_init	arch/x86/x86-qemu/cons.c	/^int pok_cons_init (void)$/;"	f
+pok_cons_print_char	arch/x86/x86-qemu/cons.c	/^void pok_cons_print_char (const char c)$/;"	f
+pok_cons_write	arch/ppc/prep/cons.c	/^pok_bool_t pok_cons_write (const char *s, size_t length)$/;"	f
+pok_cons_write	arch/sparc/leon3/cons.c	/^pok_bool_t pok_cons_write (const char *s, size_t length)$/;"	f
+pok_cons_write	arch/x86/x86-qemu/cons.c	/^pok_bool_t pok_cons_write (const char *s, size_t length)$/;"	f
+pok_context_create	arch/ppc/thread.c	/^uint32_t		pok_context_create (uint32_t id,$/;"	f
+pok_context_create	arch/sparc/thread.c	/^uint32_t pok_context_create (uint32_t id,$/;"	f
+pok_context_create	arch/x86/thread.c	/^uint32_t		pok_context_create (uint32_t thread_id,$/;"	f
+pok_context_reset	arch/ppc/thread.c	/^uint32_t pok_context_reset(uint32_t stack_size,$/;"	f
+pok_context_reset	arch/sparc/thread.c	/^void                    pok_context_reset(uint32_t stack_size,$/;"	f
+pok_context_reset	arch/x86/thread.c	/^void			pok_context_reset(uint32_t stack_size,$/;"	f
+pok_context_switch	arch/ppc/cswitch.S	/^pok_context_switch:$/;"	l
+pok_context_switch	arch/sparc/thread.c	/^void pok_context_switch (uint32_t* old_sp,$/;"	f
+pok_core_syscall	core/syscall.c	/^pok_ret_t pok_core_syscall (const pok_syscall_id_t       syscall_id,$/;"	f
+pok_counter_ns_incr	arch/x86/x86-qemu/pit.c	/^static uint64_t pok_prev_tick_value, pok_counter_ns_incr, pok_quantum_incr;$/;"	v	file:
+pok_create_space	arch/ppc/space.c	/^pok_ret_t pok_create_space (uint8_t partition_id,$/;"	f
+pok_create_space	arch/sparc/space.c	/^pok_ret_t pok_create_space (uint8_t partition_id,$/;"	f
+pok_create_space	arch/x86/space.c	/^pok_ret_t pok_create_space (uint8_t partition_id,$/;"	f
+pok_current_partition	core/sched.c	/^uint8_t                   pok_current_partition;$/;"	v
+pok_current_partition_get_duration	core/partition.c	/^pok_ret_t pok_current_partition_get_duration (uint64_t *duration)$/;"	f
+pok_current_partition_get_id	core/partition.c	/^pok_ret_t pok_current_partition_get_id (uint8_t *id)$/;"	f
+pok_current_partition_get_lock_level	core/partition.c	/^pok_ret_t pok_current_partition_get_lock_level (uint32_t *lock_level)$/;"	f
+pok_current_partition_get_operating_mode	core/partition.c	/^pok_ret_t pok_current_partition_get_operating_mode (pok_partition_mode_t *op_mode)$/;"	f
+pok_current_partition_get_period	core/partition.c	/^pok_ret_t pok_current_partition_get_period (uint64_t *period)$/;"	f
+pok_current_partition_get_start_condition	core/partition.c	/^pok_ret_t pok_current_partition_get_start_condition (pok_start_condition_t *start_condition)$/;"	f
+pok_debug_print_current_state	core/debug.c	/^void pok_debug_print_current_state ()$/;"	f
+pok_dispatch_space	arch/x86/space.c	/^void pok_dispatch_space (uint8_t partition_id,$/;"	f
+pok_elect_partition	core/sched.c	/^uint8_t	pok_elect_partition()$/;"	f
+pok_elect_thread	core/sched.c	/^uint32_t	pok_elect_thread(uint8_t new_partition_id)$/;"	f
+pok_elf_section_header_table_t	include/arch/x86/multiboot.h	/^} pok_elf_section_header_table_t;$/;"	t	typeref:struct:__anon14
+pok_error_declare	core/error.c	/^void pok_error_declare (const uint8_t error)$/;"	f
+pok_error_get	core/error.c	/^pok_ret_t pok_error_get (pok_error_status_t* status)$/;"	f
+pok_error_ignore	core/error.c	/^void pok_error_ignore ()$/;"	f
+pok_error_kernel_callback	core/error.c	/^void pok_error_kernel_callback ()$/;"	f
+pok_error_partition_callback	core/error.c	/^void pok_error_partition_callback (uint32_t partition)$/;"	f
+pok_error_raise_application_error	core/error.c	/^void pok_error_raise_application_error (char* msg, uint32_t msg_size)$/;"	f
+pok_error_status_t	include/core/error.h	/^} pok_error_status_t;$/;"	t	typeref:struct:__anon21
+pok_error_thread_create	core/error.c	/^pok_ret_t pok_error_thread_create (uint32_t stack_size, void* entry)$/;"	f
+pok_event_id_t	include/types.h	/^typedef uint8_t pok_event_id_t;$/;"	t
+pok_event_init	arch/x86/event.c	/^pok_ret_t pok_event_init ()$/;"	f
+pok_exception_init	arch/x86/exceptions.c	/^pok_ret_t pok_exception_init()$/;"	f
+pok_fatal	core/debug.c	/^void pok_fatal (const char* message)$/;"	f
+pok_gdt	arch/x86/gdt.c	/^gdt_entry_t	pok_gdt[GDT_SIZE];$/;"	v
+pok_gdt_init	arch/x86/gdt.c	/^pok_ret_t pok_gdt_init()$/;"	f
+pok_gettick_by_pointer	core/time.c	/^pok_ret_t pok_gettick_by_pointer (uint64_t* clk_val)$/;"	f
+pok_global_sched	core/sched.c	/^pok_sched_t       pok_global_sched;$/;"	v
+pok_idt	arch/x86/event.c	/^idt_entry_t	pok_idt[IDT_SIZE];$/;"	v
+pok_idt_init	arch/x86/event.c	/^pok_ret_t pok_idt_init ()$/;"	f
+pok_idt_set_gate	arch/x86/event.c	/^void pok_idt_set_gate (uint16_t     index,$/;"	f
+pok_insert_pte	arch/ppc/space.c	/^static void pok_insert_pte (uint32_t vsid, uint32_t vaddr, uint32_t pte)$/;"	f	file:
+pok_instrumentation_partition_archi	core/instrumentation.c	/^void pok_instrumentation_partition_archi (const uint8_t id)$/;"	f
+pok_instrumentation_partition_is_init	core/instrumentation.c	/^uint8_t pok_instrumentation_partition_is_init = 0;$/;"	v
+pok_instrumentation_running_task	core/instrumentation.c	/^void pok_instrumentation_running_task (const uint32_t id)$/;"	f
+pok_instrumentation_task_archi	core/instrumentation.c	/^void pok_instrumentation_task_archi (const uint32_t id)$/;"	f
+pok_instrumentation_task_is_init	core/instrumentation.c	/^uint8_t pok_instrumentation_task_is_init = 0;$/;"	v
+pok_kernel_error	core/error.c	/^void pok_kernel_error (uint32_t error)$/;"	f
+pok_kernel_restart	core/kernel.c	/^void pok_kernel_restart (void)$/;"	f
+pok_kernel_stop	core/kernel.c	/^void pok_kernel_stop (void)$/;"	f
+pok_loader_elf_load	core/loader.c	/^static pok_ret_t pok_loader_elf_load   (char* file,$/;"	f	file:
+pok_loader_load_partition	core/loader.c	/^void pok_loader_load_partition (const uint8_t part_id,$/;"	f
+pok_locking_policy_t	include/core/lockobj.h	/^}pok_locking_policy_t;$/;"	t	typeref:enum:__anon31
+pok_lockobj_attr_t	include/core/lockobj.h	/^}pok_lockobj_attr_t;$/;"	t	typeref:struct:__anon33
+pok_lockobj_create	core/lockobj.c	/^pok_ret_t pok_lockobj_create (pok_lockobj_t* obj, const pok_lockobj_attr_t* attr)$/;"	f
+pok_lockobj_eventbroadcast	core/lockobj.c	/^pok_ret_t pok_lockobj_eventbroadcast (pok_lockobj_t* obj)$/;"	f
+pok_lockobj_eventsignal	core/lockobj.c	/^pok_ret_t pok_lockobj_eventsignal (pok_lockobj_t* obj)$/;"	f
+pok_lockobj_eventwait	core/lockobj.c	/^pok_ret_t pok_lockobj_eventwait (pok_lockobj_t* obj, const uint64_t timeout)$/;"	f
+pok_lockobj_id_t	include/types.h	/^typedef uint8_t pok_lockobj_id_t;$/;"	t
+pok_lockobj_init	core/lockobj.c	/^pok_ret_t pok_lockobj_init ()$/;"	f
+pok_lockobj_kind_t	include/core/lockobj.h	/^}pok_lockobj_kind_t;$/;"	t	typeref:enum:__anon30
+pok_lockobj_lock	core/lockobj.c	/^pok_ret_t pok_lockobj_lock (pok_lockobj_t* obj, const pok_lockobj_lockattr_t* attr)$/;"	f
+pok_lockobj_lock_kind_t	include/core/lockobj.h	/^}pok_lockobj_lock_kind_t;$/;"	t	typeref:enum:__anon35
+pok_lockobj_lockattr_t	include/core/lockobj.h	/^}pok_lockobj_lockattr_t;$/;"	t	typeref:struct:__anon37
+pok_lockobj_operation_t	include/core/lockobj.h	/^}pok_lockobj_operation_t;$/;"	t	typeref:enum:__anon36
+pok_lockobj_partition_create	core/lockobj.c	/^pok_ret_t pok_lockobj_partition_create (pok_lockobj_id_t* id, const pok_lockobj_attr_t* attr)$/;"	f
+pok_lockobj_partition_wrapper	core/lockobj.c	/^pok_ret_t pok_lockobj_partition_wrapper (const pok_lockobj_id_t id, const pok_lockobj_lockattr_t* attr)$/;"	f
+pok_lockobj_t	include/core/lockobj.h	/^} pok_lockobj_t;$/;"	t	typeref:struct:__anon34
+pok_lockobj_unlock	core/lockobj.c	/^pok_ret_t pok_lockobj_unlock (pok_lockobj_t* obj, const pok_lockobj_lockattr_t* attr)$/;"	f
+pok_memory_map_t	include/arch/x86/multiboot.h	/^} pok_memory_map_t;$/;"	t	typeref:struct:__anon18
+pok_module_t	include/arch/x86/multiboot.h	/^} pok_module_t;$/;"	t	typeref:struct:__anon17
+pok_multiboot_header_t	include/arch/x86/multiboot.h	/^} pok_multiboot_header_t;$/;"	t	typeref:struct:__anon12
+pok_multiboot_info_t	include/arch/x86/multiboot.h	/^} pok_multiboot_info_t;$/;"	t	typeref:struct:__anon15
+pok_mutex_state_t	include/core/lockobj.h	/^}pok_mutex_state_t;$/;"	t	typeref:enum:__anon32
+pok_node_mac_addr	middleware/portvirtualutils.c	/^pok_ret_t pok_node_mac_addr(uint8_t * node_id, char * addr)$/;"	f
+pok_own_port	middleware/portutils.c	/^bool_t pok_own_port (const uint8_t partition, const uint8_t port)$/;"	f
+pok_packet_t	include/drivers/rtl8029.h	/^} __attribute__ ((__packed__)) pok_packet_t;$/;"	t	typeref:struct:__anon45
+pok_partition_error	core/error.c	/^void pok_partition_error (uint8_t partition, uint32_t error)$/;"	f
+pok_partition_id_t	include/types.h	/^typedef uint8_t pok_partition_id_t;$/;"	t
+pok_partition_init	core/partition.c	/^pok_ret_t pok_partition_init ()$/;"	f
+pok_partition_mode_t	include/core/partition.h	/^}pok_partition_mode_t;$/;"	t	typeref:enum:__anon25
+pok_partition_percent	core/sched.c	/^uint8_t            pok_partition_percent[POK_CONFIG_NB_PARTITIONS]$/;"	v
+pok_partition_reinit	core/partition.c	/^void pok_partition_reinit (const uint8_t pid)$/;"	f
+pok_partition_restart_thread	core/partition.c	/^pok_ret_t pok_partition_restart_thread (const uint32_t tid)$/;"	f
+pok_partition_set_mode	core/partition.c	/^pok_ret_t pok_partition_set_mode (const uint8_t pid, const pok_partition_mode_t mode)$/;"	f
+pok_partition_set_mode_current	core/partition.c	/^pok_ret_t pok_partition_set_mode_current (const pok_partition_mode_t mode)$/;"	f
+pok_partition_setup_main_thread	core/partition.c	/^void pok_partition_setup_main_thread (const uint8_t pid)$/;"	f
+pok_partition_setup_scheduler	core/partition.c	/^void pok_partition_setup_scheduler (const uint8_t pid)$/;"	f
+pok_partition_stop_thread	core/partition.c	/^pok_ret_t pok_partition_stop_thread (const uint32_t tid)$/;"	f
+pok_partition_t	include/core/partition.h	/^} pok_partition_t;$/;"	t	typeref:struct:__anon27
+pok_partition_thread_create	core/thread.c	/^pok_ret_t pok_partition_thread_create (uint32_t*                  thread_id,$/;"	f
+pok_partitions	core/partition.c	/^pok_partition_t pok_partitions[POK_CONFIG_NB_PARTITIONS];$/;"	v
+pok_partitions_index	core/partition.c	/^uint8_t			 pok_partitions_index = 0;$/;"	v
+pok_partitions_lockobjs	core/lockobj.c	/^pok_lockobj_t           pok_partitions_lockobjs[POK_CONFIG_NB_LOCKOBJECTS+1];$/;"	v
+pok_pic_eoi	arch/x86/x86-qemu/pic.c	/^void pok_pic_eoi (uint8_t irq)$/;"	f
+pok_pic_init	arch/x86/x86-qemu/pic.c	/^int pok_pic_init ()$/;"	f
+pok_pic_mask	arch/x86/x86-qemu/pic.c	/^int pok_pic_mask (uint8_t irq)$/;"	f
+pok_pic_unmask	arch/x86/x86-qemu/pic.c	/^int pok_pic_unmask(uint8_t irq)$/;"	f
+pok_pm_init	arch/x86/x86-qemu/pm.c	/^int pok_pm_init ()$/;"	f
+pok_pm_sbrk	arch/x86/x86-qemu/pm.c	/^uint32_t pok_pm_sbrk (uint32_t increment)$/;"	f
+pok_port_available_size	middleware/portutils.c	/^pok_port_size_t pok_port_available_size (uint8_t pid)$/;"	f
+pok_port_consumed_size	middleware/portutils.c	/^pok_port_size_t pok_port_consumed_size (uint8_t pid)$/;"	f
+pok_port_create	middleware/portcreate.c	/^pok_ret_t pok_port_create (char* name,$/;"	f
+pok_port_direction_t	include/types.h	/^typedef uint8_t pok_port_direction_t;$/;"	t
+pok_port_directions_t	include/middleware/port.h	/^} pok_port_directions_t;$/;"	t	typeref:enum:__anon50
+pok_port_flush_partition	middleware/portflushall.c	/^void pok_port_flush_partition (uint8_t pid)$/;"	f
+pok_port_flushall	middleware/portflushall.c	/^void pok_port_flushall (void)$/;"	f
+pok_port_get	middleware/portutils.c	/^pok_ret_t pok_port_get (const uint32_t pid, void *data, const pok_port_size_t size)$/;"	f
+pok_port_id_t	include/types.h	/^typedef uint8_t pok_port_id_t;$/;"	t
+pok_port_init	middleware/portinit.c	/^void pok_port_init (void)$/;"	f
+pok_port_kind_t	include/types.h	/^typedef uint8_t pok_port_kind_t;$/;"	t
+pok_port_kinds_t	include/middleware/port.h	/^} pok_port_kinds_t;$/;"	t	typeref:enum:__anon51
+pok_port_queueing_create	middleware/portqueueingcreate.c	/^pok_ret_t pok_port_queueing_create (char*                                  name, $/;"	f
+pok_port_queueing_discipline_t	include/middleware/port.h	/^typedef pok_queueing_discipline_t pok_port_queueing_discipline_t;$/;"	t
+pok_port_queueing_disciplines_t	include/middleware/port.h	/^} pok_port_queueing_disciplines_t;$/;"	t	typeref:enum:__anon49
+pok_port_queueing_id	middleware/portqueueingid.c	/^pok_ret_t pok_port_queueing_id (char* name, pok_port_id_t* id)$/;"	f
+pok_port_queueing_receive	middleware/portqueueingreceive.c	/^pok_ret_t pok_port_queueing_receive (const pok_port_id_t    id, $/;"	f
+pok_port_queueing_send	middleware/portqueueingsend.c	/^pok_ret_t pok_port_queueing_send (const pok_port_id_t   id, $/;"	f
+pok_port_queueing_status	middleware/portqueueingstatus.c	/^pok_ret_t pok_port_queueing_status (const pok_port_id_t         id,$/;"	f
+pok_port_queueing_status_t	include/middleware/port.h	/^}pok_port_queueing_status_t;$/;"	t	typeref:struct:__anon53
+pok_port_sampling_create	middleware/portsamplingcreate.c	/^pok_ret_t pok_port_sampling_create (char*                                  name, $/;"	f
+pok_port_sampling_id	middleware/portsamplingid.c	/^pok_ret_t pok_port_sampling_id (char* name, pok_port_id_t* id)$/;"	f
+pok_port_sampling_read	middleware/portsamplingread.c	/^pok_ret_t pok_port_sampling_read (const pok_port_id_t id, $/;"	f
+pok_port_sampling_status	middleware/portsamplingstatus.c	/^pok_ret_t pok_port_sampling_status (const pok_port_id_t         id,$/;"	f
+pok_port_sampling_status_t	include/middleware/port.h	/^}pok_port_sampling_status_t;$/;"	t	typeref:struct:__anon54
+pok_port_sampling_write	middleware/portsamplingwrite.c	/^pok_ret_t pok_port_sampling_write (const pok_port_id_t   id, $/;"	f
+pok_port_size_t	include/types.h	/^typedef uint32_t pok_port_size_t;$/;"	t
+pok_port_t	include/middleware/port.h	/^}pok_port_t;$/;"	t	typeref:struct:__anon52
+pok_port_transfer	middleware/portutils.c	/^pok_ret_t pok_port_transfer (const uint8_t pid_dst, const uint8_t pid_src)$/;"	f
+pok_port_virtual_destination	middleware/portvirtualdestination.c	/^pok_ret_t pok_port_virtual_destination (const pok_port_id_t id, const uint32_t n, uint32_t* result)$/;"	f
+pok_port_virtual_get_global	middleware/portvirtualgetglobal.c	/^pok_ret_t pok_port_virtual_get_global (const pok_port_id_t local, pok_port_id_t* global)$/;"	f
+pok_port_virtual_id	middleware/portvirtualid.c	/^pok_ret_t pok_port_virtual_id (char*            name, $/;"	f
+pok_port_virtual_nb_destinations	middleware/portvirtualnbdestinations.c	/^pok_ret_t pok_port_virtual_nb_destinations (const pok_port_id_t id, uint32_t* result)$/;"	f
+pok_port_virtual_node	middleware/portvirtualutils.c	/^pok_ret_t pok_port_virtual_node(uint32_t port, uint8_t * node)$/;"	f
+pok_port_write	middleware/portutils.c	/^pok_ret_t  pok_port_write (const uint8_t pid, const void *data, const pok_port_size_t size)$/;"	f
+pok_ports	middleware/ressources.c	/^pok_port_t  pok_ports[POK_CONFIG_NB_PORTS];$/;"	v
+pok_prev_tick_value	arch/x86/x86-qemu/pit.c	/^static uint64_t pok_prev_tick_value, pok_counter_ns_incr, pok_quantum_incr;$/;"	v	file:
+pok_print_attr	core/cons.c	/^void pok_print_attr (uint8_t attr)$/;"	f
+pok_print_attr_fn	core/cons.c	/^print_attr_fn_t pok_print_attr_fn = NULL;$/;"	v
+pok_print_char	core/cons.c	/^void pok_print_char (const char c)$/;"	f
+pok_print_char_fn	core/cons.c	/^print_char_fn_t pok_print_char_fn = NULL;$/;"	v
+pok_print_init	core/cons.c	/^int pok_print_init (print_char_fn_t print_char_fn,$/;"	f
+pok_quantum_incr	arch/x86/x86-qemu/pit.c	/^static uint64_t pok_prev_tick_value, pok_counter_ns_incr, pok_quantum_incr;$/;"	v	file:
+pok_queue	middleware/ressources.c	/^pok_queue_t pok_queue;$/;"	v
+pok_queue_data	middleware/ressources.c	/^const char  pok_queue_data[1024];$/;"	v
+pok_queue_init	middleware/queueinit.c	/^void pok_queue_init ()$/;"	f
+pok_queue_t	include/drivers/rtl8029.h	/^} __attribute__ ((__packed__)) pok_queue_t;$/;"	t	typeref:struct:__anon46
+pok_queue_t	include/middleware/queue.h	/^}pok_queue_t;$/;"	t	typeref:struct:__anon55
+pok_queueing_discipline_t	include/types.h	/^typedef uint8_t pok_queueing_discipline_t;$/;"	t
+pok_range_t	include/types.h	/^typedef uint8_t pok_range_t;$/;"	t
+pok_ret_t	include/errno.h	/^} pok_ret_t;$/;"	t	typeref:enum:__anon56
+pok_save_area	arch/ppc/entry.S	/^pok_save_area:$/;"	l
+pok_sched	core/sched.c	/^void pok_sched()$/;"	f
+pok_sched_activate_error_thread	core/sched.c	/^void pok_sched_activate_error_thread (void)$/;"	f
+pok_sched_context_switch	core/sched.c	/^void pok_sched_context_switch (const uint32_t elected_id)$/;"	f
+pok_sched_current_slot	core/sched.c	/^uint8_t           pok_sched_current_slot = 0; \/* Which slot are we executing at this time ?*\/$/;"	v
+pok_sched_end_period	core/sched.c	/^pok_ret_t pok_sched_end_period ()$/;"	f
+pok_sched_get_current	core/sched.c	/^uint32_t pok_sched_get_current(uint32_t *thread_id)$/;"	f
+pok_sched_get_priority_max	core/sched.c	/^uint8_t pok_sched_get_priority_max (const pok_sched_t sched_type)$/;"	f
+pok_sched_get_priority_min	core/sched.c	/^uint8_t pok_sched_get_priority_min (const pok_sched_t sched_type)$/;"	f
+pok_sched_init	core/sched.c	/^void pok_sched_init (void)$/;"	f
+pok_sched_lock_current_thread	core/sched.c	/^void pok_sched_lock_current_thread (void)$/;"	f
+pok_sched_lock_current_thread_timed	core/sched.c	/^void pok_sched_lock_current_thread_timed (const uint64_t time)$/;"	f
+pok_sched_lock_thread	core/sched.c	/^void pok_sched_lock_thread (const uint32_t thread_id)$/;"	f
+pok_sched_next_deadline	core/sched.c	/^uint64_t          pok_sched_next_deadline;$/;"	v
+pok_sched_next_flush	core/sched.c	/^uint64_t          pok_sched_next_flush; \/\/ variable used to handle user defined$/;"	v
+pok_sched_next_major_frame	core/sched.c	/^uint64_t          pok_sched_next_major_frame;$/;"	v
+pok_sched_part_edf	core/sched.c	/^uint32_t pok_sched_part_edf (const uint32_t index_low, const uint32_t index_high,const uint32_t __attribute__((unused)) prev_thread,const uint32_t current_thread) {$/;"	f
+pok_sched_part_prio	core/sched.c	/^uint32_t pok_sched_part_prio (const uint32_t index_low, const uint32_t index_high,const uint32_t prev_thread,const uint32_t current_thread)$/;"	f
+pok_sched_part_rms	core/sched.c	/^uint32_t pok_sched_part_rms (const uint32_t index_low, const uint32_t index_high,const uint32_t __attribute__((unused)) prev_thread,const uint32_t __attribute__((unused)) current_thread)$/;"	f
+pok_sched_part_rr	core/sched.c	/^uint32_t pok_sched_part_rr (const uint32_t index_low, const uint32_t index_high,const uint32_t prev_thread,const uint32_t current_thread)$/;"	f
+pok_sched_part_wrr	core/sched.c	/^uint32_t pok_sched_part_wrr (const uint32_t index_low, const uint32_t index_high,const uint32_t prev_thread,const uint32_t current_thread)$/;"	f
+pok_sched_slots	core/sched.c	/^uint64_t           pok_sched_slots[POK_CONFIG_SCHEDULING_NBSLOTS]$/;"	v
+pok_sched_slots_allocation	core/sched.c	/^uint8_t           pok_sched_slots_allocation[POK_CONFIG_SCHEDULING_NBSLOTS]$/;"	v
+pok_sched_stop_self	core/sched.c	/^void pok_sched_stop_self (void)$/;"	f
+pok_sched_stop_thread	core/sched.c	/^void pok_sched_stop_thread (const uint32_t tid)$/;"	f
+pok_sched_t	include/core/schedvalues.h	/^} pok_sched_t;$/;"	t	typeref:enum:__anon22
+pok_sched_thread_switch	core/sched.c	/^void pok_sched_thread_switch ()$/;"	f
+pok_sched_unlock_thread	core/sched.c	/^void pok_sched_unlock_thread (const uint32_t thread_id)$/;"	f
+pok_sem_id_t	include/types.h	/^typedef uint8_t pok_sem_id_t;$/;"	t
+pok_sem_value_t	include/types.h	/^typedef uint16_t pok_sem_value_t;$/;"	t
+pok_size_t	include/types.h	/^typedef uint8_t pok_size_t;$/;"	t
+pok_space	arch/ppc/space.c	/^struct pok_space$/;"	s	file:
+pok_space	arch/sparc/space.c	/^struct pok_space$/;"	s	file:
+pok_space_base_vaddr	arch/ppc/space.c	/^uint32_t	pok_space_base_vaddr (uint32_t addr)$/;"	f
+pok_space_base_vaddr	arch/sparc/space.c	/^uint32_t pok_space_base_vaddr (uint32_t addr)$/;"	f
+pok_space_base_vaddr	arch/x86/space.c	/^uint32_t	pok_space_base_vaddr (uint32_t addr)$/;"	f
+pok_space_context_create	arch/ppc/space.c	/^uint32_t	pok_space_context_create (uint8_t partition_id,$/;"	f
+pok_space_context_create	arch/sparc/space.c	/^uint32_t pok_space_context_create (uint8_t  id,$/;"	f
+pok_space_context_create	arch/x86/space.c	/^uint32_t	pok_space_context_create (uint8_t  partition_id,$/;"	f
+pok_space_context_restart	arch/x86/space.c	/^void pok_space_context_restart (uint32_t sp, uint32_t entry, uint32_t user_stack)$/;"	f
+pok_space_switch	arch/ppc/space.c	/^pok_ret_t pok_space_switch (uint8_t old_partition_id,$/;"	f
+pok_space_switch	arch/sparc/space.c	/^pok_ret_t pok_space_switch (uint8_t old_partition_id,$/;"	f
+pok_space_switch	arch/x86/space.c	/^pok_ret_t pok_space_switch (uint8_t old_partition_id,$/;"	f
+pok_sparc_isr	arch/sparc/traps.c	/^sparc_traps_handler pok_sparc_isr[256];$/;"	v
+pok_spinlock_t	include/arch/ppc/spinlock.h	/^typedef unsigned int pok_spinlock_t;$/;"	t
+pok_spinlock_t	include/arch/sparc/spinlock.h	/^typedef unsigned int pok_spinlock_t;$/;"	t
+pok_spinlock_t	include/arch/x86/spinlock.h	/^typedef unsigned char pok_spinlock_t;$/;"	t
+pok_stack	arch/ppc/entry.S	/^pok_stack:$/;"	l
+pok_stack_end	arch/ppc/entry.S	/^pok_stack_end:$/;"	l
+pok_start_condition_t	include/core/partition.h	/^}pok_start_condition_t;$/;"	t	typeref:enum:__anon26
+pok_state_t	include/core/sched.h	/^} pok_state_t;$/;"	t	typeref:enum:__anon29
+pok_syscall_args_t	include/core/syscall.h	/^} pok_syscall_args_t;$/;"	t	typeref:struct:__anon39
+pok_syscall_id_t	include/core/syscall.h	/^} pok_syscall_id_t;$/;"	t	typeref:enum:__anon38
+pok_syscall_info_t	include/core/syscall.h	/^}pok_syscall_info_t;$/;"	t	typeref:struct:__anon40
+pok_syscall_init	arch/x86/syscalls.c	/^pok_ret_t pok_syscall_init ()$/;"	f
+pok_syscalls_init	arch/sparc/syscalls.c	/^void pok_syscalls_init(void)$/;"	f
+pok_thread_attr_t	include/core/thread.h	/^} pok_thread_attr_t;$/;"	t	typeref:struct:__anon24
+pok_thread_delayed_start	core/thread.c	/^pok_ret_t pok_thread_delayed_start (const uint32_t id, const uint32_t us)$/;"	f
+pok_thread_get_status	core/thread.c	/^pok_ret_t pok_thread_get_status (const uint32_t id, pok_thread_attr_t *attr)$/;"	f
+pok_thread_init	core/thread.c	/^void pok_thread_init(void)$/;"	f
+pok_thread_insert_sort	core/thread.c	/^void pok_thread_insert_sort(uint16_t index_low, uint16_t index_high)$/;"	f
+pok_thread_restart	core/thread.c	/^pok_ret_t pok_thread_restart (const uint32_t tid)$/;"	f
+pok_thread_resume	core/thread.c	/^pok_ret_t pok_thread_resume (const uint32_t id)$/;"	f
+pok_thread_set_priority	core/thread.c	/^pok_ret_t      pok_thread_set_priority (const uint32_t id, const uint32_t priority)$/;"	f
+pok_thread_sleep	core/thread.c	/^pok_ret_t pok_thread_sleep (uint32_t us)$/;"	f
+pok_thread_sleep_until	core/thread.c	/^pok_ret_t pok_thread_sleep_until (uint32_t us)$/;"	f
+pok_thread_stack_addr	arch/ppc/arch.c	/^uint32_t    pok_thread_stack_addr   (const uint8_t    partition_id,$/;"	f
+pok_thread_stack_addr	arch/sparc/arch.c	/^uint32_t    pok_thread_stack_addr   (const uint8_t    partition_id,$/;"	f
+pok_thread_stack_addr	arch/x86/arch.c	/^uint32_t    pok_thread_stack_addr   (const uint8_t    partition_id,$/;"	f
+pok_thread_start	core/thread.c	/^void pok_thread_start(void (*entry)(), unsigned int id)$/;"	f
+pok_thread_suspend	core/thread.c	/^pok_ret_t pok_thread_suspend (void)$/;"	f
+pok_thread_suspend_target	core/thread.c	/^pok_ret_t pok_thread_suspend_target (const uint32_t id)$/;"	f
+pok_thread_t	include/core/thread.h	/^} pok_thread_t;$/;"	t	typeref:struct:__anon23
+pok_thread_yield	core/thread.c	/^void pok_thread_yield()$/;"	f
+pok_threads	core/thread.c	/^pok_thread_t		         pok_threads[POK_CONFIG_NB_THREADS];$/;"	v
+pok_tick_counter	core/time.c	/^uint64_t pok_tick_counter = 0;$/;"	v
+pok_time_init	core/time.c	/^void pok_time_init (void)$/;"	f
+pok_tss	arch/x86/gdt.c	/^tss_t		pok_tss;$/;"	v
+pok_tss_init	arch/x86/gdt.c	/^int pok_tss_init()$/;"	f
+pok_write	core/cons.c	/^int pok_write (const char *s, size_t length)$/;"	f
+pok_x86_pm_brk	arch/x86/x86-qemu/pm.c	/^uint32_t pok_x86_pm_brk;$/;"	v
+pok_x86_pm_heap_end	arch/x86/x86-qemu/pm.c	/^uint32_t pok_x86_pm_heap_end;$/;"	v
+pok_x86_pm_heap_start	arch/x86/x86-qemu/pm.c	/^uint32_t pok_x86_pm_heap_start;$/;"	v
+pok_x86_qemu_timer_init	arch/x86/x86-qemu/pit.c	/^pok_ret_t pok_x86_qemu_timer_init ()$/;"	f
+pos	libc/printf.c	/^   size_t	pos;$/;"	m	struct:s_file	file:
+ppc_pte_t	arch/ppc/space.c	/^} ppc_pte_t;$/;"	t	typeref:struct:__anon1	file:
+present	arch/x86/event.h	/^  uint32_t	present:1;$/;"	m	struct:__anon7
+present	arch/x86/gdt.h	/^   uint32_t	present:1;$/;"	m	struct:__anon5
+prev_thread	include/core/partition.h	/^   uint32_t              prev_thread;           \/**< member for the scheduler (previous scheduled real thread inside the partition,i.e not the idle thread *\/$/;"	m	struct:__anon27
+print_attr_fn_t	include/core/cons.h	/^typedef void		(*print_attr_fn_t)(uint8_t attr);$/;"	t
+print_base	libc/printf.c	/^static int	print_base(union u_arg* value, struct s_file* file, int flags)$/;"	f	file:
+print_char	libc/printf.c	/^static int	print_char(union u_arg* value, struct s_file* file, int flags)$/;"	f	file:
+print_char_fn_t	include/core/cons.h	/^typedef void		(*print_char_fn_t)(const char c);$/;"	t
+print_int	libc/printf.c	/^static int	print_int (union u_arg* value,$/;"	f	file:
+print_str	libc/printf.c	/^static int	print_str (union u_arg* value, struct s_file* file, int flags)$/;"	f	file:
+printf	libc/printf.c	/^int printf (const char *format, ...)$/;"	f
+priority	include/core/partition.h	/^   uint8_t               priority;     \/**< Priority of the partition (unused at this time *\/$/;"	m	struct:__anon27
+priority	include/core/thread.h	/^	 uint8_t      priority;         \/* Priority is from 0 to 255 *\/$/;"	m	struct:__anon24
+priority	include/core/thread.h	/^	 uint8_t      priority;$/;"	m	struct:__anon23
+program_0700	arch/ppc/entry.S	/^program_0700:$/;"	l
+psr_disable_interupt	arch/sparc/psr.h	/^static inline void psr_disable_interupt(void)$/;"	f
+psr_disable_traps	arch/sparc/psr.h	/^static inline void psr_disable_traps(void)$/;"	f
+psr_enable_interupt	arch/sparc/psr.h	/^static inline void psr_enable_interupt(void)$/;"	f
+psr_enable_traps	arch/sparc/psr.h	/^static inline void psr_enable_traps(void)$/;"	f
+psr_get	arch/sparc/psr.h	/^static inline unsigned int psr_get(void)$/;"	f
+psr_set	arch/sparc/psr.h	/^static inline void psr_set(unsigned int new_psr)$/;"	f
+pt_base	arch/ppc/space.c	/^static uint32_t pt_base;$/;"	v	file:
+pt_mask	arch/ppc/space.c	/^static uint32_t pt_mask;$/;"	v	file:
+ptd	arch/sparc/space.h	/^typedef uint32_t ptd;$/;"	t
+pte	arch/sparc/space.h	/^typedef uint32_t pte;$/;"	t
+ptr	libc/printf.c	/^   void*          ptr;$/;"	m	union:u_arg	file:
+putDebugChar	arch/x86/x86-qemu/debug.c	/^void putDebugChar ()$/;"	f
+queueing_policy	include/core/lockobj.h	/^   pok_queueing_discipline_t  queueing_policy;  $/;"	m	struct:__anon33
+queueing_policy	include/core/lockobj.h	/^   pok_queueing_discipline_t  queueing_policy;$/;"	m	struct:__anon34
+r0	arch/ppc/thread.h	/^  uint32_t r0;$/;"	m	struct:__anon3
+r10	arch/ppc/thread.h	/^  uint32_t r10; \/* 48 *\/$/;"	m	struct:__anon3
+r11	arch/ppc/thread.h	/^  uint32_t r11;$/;"	m	struct:__anon3
+r12	arch/ppc/thread.h	/^  uint32_t r12;$/;"	m	struct:__anon3
+r13	arch/ppc/thread.h	/^  uint32_t r13;$/;"	m	struct:__anon2
+r13	arch/ppc/thread.h	/^  uint32_t r13;$/;"	m	struct:__anon3
+r14	arch/ppc/thread.h	/^  uint32_t r14;$/;"	m	struct:__anon2
+r15	arch/ppc/thread.h	/^  uint32_t r15;$/;"	m	struct:__anon2
+r16	arch/ppc/thread.h	/^  uint32_t r16;$/;"	m	struct:__anon2
+r17	arch/ppc/thread.h	/^  uint32_t r17;$/;"	m	struct:__anon2
+r18	arch/ppc/thread.h	/^  uint32_t r18;$/;"	m	struct:__anon2
+r19	arch/ppc/thread.h	/^  uint32_t r19;$/;"	m	struct:__anon2
+r2	arch/ppc/thread.h	/^  uint32_t r2; \/* 16 *\/$/;"	m	struct:__anon3
+r2	arch/ppc/thread.h	/^  uint32_t r2;$/;"	m	struct:__anon2
+r20	arch/ppc/thread.h	/^  uint32_t r20;$/;"	m	struct:__anon2
+r21	arch/ppc/thread.h	/^  uint32_t r21;$/;"	m	struct:__anon2
+r22	arch/ppc/thread.h	/^  uint32_t r22;$/;"	m	struct:__anon2
+r23	arch/ppc/thread.h	/^  uint32_t r23;$/;"	m	struct:__anon2
+r24	arch/ppc/thread.h	/^  uint32_t r24;$/;"	m	struct:__anon2
+r25	arch/ppc/thread.h	/^  uint32_t r25;$/;"	m	struct:__anon2
+r26	arch/ppc/thread.h	/^  uint32_t r26;$/;"	m	struct:__anon2
+r27	arch/ppc/thread.h	/^  uint32_t r27;$/;"	m	struct:__anon2
+r28	arch/ppc/thread.h	/^  uint32_t r28;$/;"	m	struct:__anon2
+r29	arch/ppc/thread.h	/^  uint32_t r29;$/;"	m	struct:__anon2
+r3	arch/ppc/thread.h	/^  uint32_t r3;$/;"	m	struct:__anon3
+r30	arch/ppc/thread.h	/^  uint32_t r30;$/;"	m	struct:__anon2
+r31	arch/ppc/thread.h	/^  uint32_t r31;$/;"	m	struct:__anon2
+r4	arch/ppc/thread.h	/^  uint32_t r4;$/;"	m	struct:__anon3
+r5	arch/ppc/thread.h	/^  uint32_t r5;$/;"	m	struct:__anon3
+r6	arch/ppc/thread.h	/^  uint32_t r6; \/* 32 *\/$/;"	m	struct:__anon3
+r7	arch/ppc/thread.h	/^  uint32_t r7;$/;"	m	struct:__anon3
+r8	arch/ppc/thread.h	/^  uint32_t r8;$/;"	m	struct:__anon3
+r9	arch/ppc/thread.h	/^  uint32_t r9;$/;"	m	struct:__anon3
+read_serial	arch/x86/x86-qemu/cons.c	/^void read_serial(char * a) {$/;"	f
+ready	include/middleware/port.h	/^	 pok_bool_t                       ready;$/;"	m	struct:__anon52
+recv_buf	include/drivers/rtl8029.h	/^  pok_queue_t	recv_buf[POK_CONFIG_NB_INPUT_VIRTUALPORT];$/;"	m	struct:__anon47
+refresh	include/middleware/port.h	/^	 uint64_t                         refresh;$/;"	m	struct:__anon52
+refresh	include/middleware/port.h	/^	 uint64_t             refresh;$/;"	m	struct:__anon54
+remaining_time_capacity	include/core/thread.h	/^	 uint64_t     remaining_time_capacity;$/;"	m	struct:__anon23
+res0	arch/x86/event.h	/^  uint32_t	res0:8;$/;"	m	struct:__anon7
+res1	arch/x86/event.h	/^  uint32_t	res1:1;$/;"	m	struct:__anon7
+reserved	include/arch/x86/multiboot.h	/^   unsigned int                  reserved;$/;"	m	struct:__anon13
+reserved	include/arch/x86/multiboot.h	/^   unsigned int                  reserved;$/;"	m	struct:__anon17
+reserved_0000	arch/ppc/entry.S	/^reserved_0000:$/;"	l
+reserved_0A00	arch/ppc/entry.S	/^reserved_0A00:$/;"	l
+reserved_0B00	arch/ppc/entry.S	/^reserved_0B00:$/;"	l
+reserved_0E00	arch/ppc/entry.S	/^reserved_0E00:$/;"	l
+reserved_0F00	arch/ppc/entry.S	/^reserved_0F00:$/;"	l
+reserved_1000	arch/ppc/entry.S	/^reserved_1000:$/;"	l
+reserved_1100	arch/ppc/entry.S	/^reserved_1100:$/;"	l
+reserved_1200	arch/ppc/entry.S	/^reserved_1200:$/;"	l
+reserved_1300	arch/ppc/entry.S	/^reserved_1300:$/;"	l
+reserved_1400	arch/ppc/entry.S	/^reserved_1400:$/;"	l
+reserved_1500	arch/ppc/entry.S	/^reserved_1500:$/;"	l
+reserved_1600	arch/ppc/entry.S	/^reserved_1600:$/;"	l
+reserved_1700	arch/ppc/entry.S	/^reserved_1700:$/;"	l
+reserved_1800	arch/ppc/entry.S	/^reserved_1800:$/;"	l
+reserved_1900	arch/ppc/entry.S	/^reserved_1900:$/;"	l
+reserved_1A00	arch/ppc/entry.S	/^reserved_1A00:$/;"	l
+reserved_1B00	arch/ppc/entry.S	/^reserved_1B00:$/;"	l
+reserved_1C00	arch/ppc/entry.S	/^reserved_1C00:$/;"	l
+reserved_1D00	arch/ppc/entry.S	/^reserved_1D00:$/;"	l
+reserved_1E00	arch/ppc/entry.S	/^reserved_1E00:$/;"	l
+reserved_1F00	arch/ppc/entry.S	/^reserved_1F00:$/;"	l
+reserved_2000	arch/ppc/entry.S	/^reserved_2000:$/;"	l
+reserved_2100	arch/ppc/entry.S	/^reserved_2100:$/;"	l
+reserved_2200	arch/ppc/entry.S	/^reserved_2200:$/;"	l
+reserved_2300	arch/ppc/entry.S	/^reserved_2300:$/;"	l
+reserved_2400	arch/ppc/entry.S	/^reserved_2400:$/;"	l
+reserved_2500	arch/ppc/entry.S	/^reserved_2500:$/;"	l
+reserved_2600	arch/ppc/entry.S	/^reserved_2600:$/;"	l
+reserved_2700	arch/ppc/entry.S	/^reserved_2700:$/;"	l
+reserved_2800	arch/ppc/entry.S	/^reserved_2800:$/;"	l
+reserved_2900	arch/ppc/entry.S	/^reserved_2900:$/;"	l
+reserved_2A00	arch/ppc/entry.S	/^reserved_2A00:$/;"	l
+reserved_2B00	arch/ppc/entry.S	/^reserved_2B00:$/;"	l
+reserved_2C00	arch/ppc/entry.S	/^reserved_2C00:$/;"	l
+reserved_2D00	arch/ppc/entry.S	/^reserved_2D00:$/;"	l
+reserved_2E00	arch/ppc/entry.S	/^reserved_2E00:$/;"	l
+reserved_2F00	arch/ppc/entry.S	/^reserved_2F00:$/;"	l
+reserved_end	arch/ppc/entry.S	/^reserved_end:$/;"	l
+reset_FFFC	arch/ppc/entry.S	/^reset_FFFC:$/;"	l
+reset_prehandler	arch/sparc/entry.S	/^reset_prehandler:$/;"	l
+restore_loop	arch/sparc/entry.S	/^restore_loop:$/;"	l
+row	arch/x86/x86-qemu/cons.h	/^  char row;$/;"	m	struct:s_cons
+rpn_flags	arch/ppc/space.c	/^  uint32_t rpn_flags;$/;"	m	struct:__anon1	file:
+rtl8029_clear	drivers/rtl8029.c	/^void rtl8029_clear()$/;"	f
+rtl8029_enqueue	drivers/rtl8029.c	/^void rtl8029_enqueue (pok_packet_t *packet)$/;"	f	file:
+rtl8029_init	drivers/rtl8029.c	/^void rtl8029_init ()$/;"	f
+rtl8029_poll	drivers/rtl8029.c	/^void rtl8029_poll ()$/;"	f
+rtl8029_poll_and_read	drivers/rtl8029.c	/^void rtl8029_poll_and_read (pok_port_id_t port_id, void* data, uint32_t len)$/;"	f
+rtl8029_read	drivers/rtl8029.c	/^void rtl8029_read (pok_port_id_t port_id, void* data, uint32_t len)$/;"	f
+rtl8029_write	drivers/rtl8029.c	/^void rtl8029_write (pok_port_id_t port_id, const void* data, uint32_t len)$/;"	f
+s	arch/x86/gdt.h	/^   uint32_t	s:1;$/;"	m	struct:__anon5
+s_cons	arch/x86/x86-qemu/cons.h	/^struct s_cons$/;"	s
+s_file	libc/printf.c	/^struct		s_file$/;"	s	file:
+s_format	libc/printf.c	/^struct		s_format$/;"	s	file:
+s_ne2000_dev	include/drivers/rtl8029.h	/^} s_ne2000_dev;$/;"	t	typeref:struct:__anon47
+s_ne2000_header	include/drivers/rtl8029.h	/^} __attribute__ ((packed)) s_ne2000_header;$/;"	t	typeref:struct:__anon48
+s_pci_device	include/arch/x86/pci.h	/^} s_pci_device;$/;"	t	typeref:struct:__anon20
+save_loop	arch/sparc/entry.S	/^save_loop:$/;"	l
+sched	include/core/partition.h	/^   pok_sched_t           sched;       \/**< The associated for the partition to schedule its threads *\/$/;"	m	struct:__anon27
+sched_func	include/core/partition.h	/^   uint32_t (*sched_func)(uint32_t low, uint32_t high,uint32_t prev_thread, uint32_t cur_thread); \/**< Scheduling function to scheduler threads *\/$/;"	m	struct:__anon27
+screen_h	arch/x86/x86-qemu/cons.c	/^static const int     screen_h = 25;$/;"	v	file:
+screen_w	arch/x86/x86-qemu/cons.c	/^static const int     screen_w = 80;$/;"	v	file:
+segsel	arch/x86/event.h	/^  uint32_t	segsel:16;$/;"	m	struct:__anon7
+set_debug_serial_port	arch/x86/x86-qemu/debug.c	/^void set_debug_serial_port ()$/;"	f
+set_msr	arch/ppc/arch.c	/^static inline void set_msr (unsigned int val)$/;"	f	file:
+shndx	include/arch/x86/multiboot.h	/^   unsigned int                  shndx;$/;"	m	struct:__anon14
+sint	libc/printf.c	/^   int            sint;$/;"	m	union:u_arg	file:
+size	arch/ppc/space.c	/^  uint32_t size;$/;"	m	struct:pok_space	file:
+size	arch/sparc/space.c	/^    uint32_t size; \/**< Size of the partition. *\/$/;"	m	struct:pok_space	file:
+size	include/arch/x86/multiboot.h	/^   unsigned int                  size;$/;"	m	struct:__anon14
+size	include/arch/x86/multiboot.h	/^   unsigned int                  size;$/;"	m	struct:__anon18
+size	include/core/partition.h	/^   uint32_t              size;         \/**< Size of the allocated memory segment *\/$/;"	m	struct:__anon27
+size	include/drivers/rtl8029.h	/^  unsigned short      size;$/;"	m	struct:__anon48
+size	include/middleware/port.h	/^	 pok_port_size_t                  size;$/;"	m	struct:__anon52
+size	include/middleware/port.h	/^	 pok_port_size_t      size;$/;"	m	struct:__anon53
+size	include/middleware/port.h	/^	 pok_port_size_t      size;$/;"	m	struct:__anon54
+size	include/middleware/queue.h	/^   uint32_t    size;$/;"	m	struct:__anon55
+size_t	arch/x86/types.h	/^typedef unsigned int          size_t;$/;"	t
+size_t	include/arch/sparc/types.h	/^typedef unsigned int          size_t;$/;"	t
+size_t	include/arch/x86/types.h	/^typedef unsigned int          size_t;$/;"	t
+sp	arch/ppc/thread.h	/^  uint32_t sp;$/;"	m	struct:__anon2
+sp	arch/ppc/thread.h	/^  uint32_t sp;$/;"	m	struct:__anon3
+sp	include/core/thread.h	/^	 uint32_t		 sp;$/;"	m	struct:__anon23
+space_context_t	arch/x86/space.h	/^} space_context_t;$/;"	t	typeref:struct:__anon6
+spaces	arch/ppc/space.c	/^struct pok_space spaces[POK_CONFIG_NB_PARTITIONS];$/;"	v	typeref:struct:pok_space
+spaces	arch/sparc/space.c	/^struct pok_space spaces[POK_CONFIG_NB_PARTITIONS];$/;"	v	typeref:struct:pok_space
+sparc_traps_handler	arch/sparc/traps.h	/^typedef void (*sparc_traps_handler)(void);$/;"	t
+special_char	libc/printf.c	/^static int special_char (char fmt,$/;"	f	file:
+spin	include/core/lockobj.h	/^   pok_spinlock_t             spin;$/;"	m	struct:__anon34
+src	include/drivers/rtl8029.h	/^  char		 src[ETH_MAC_LEN];$/;"	m	struct:__anon43
+src	include/drivers/rtl8029.h	/^  unsigned short src;$/;"	m	struct:__anon44
+srr0	arch/ppc/thread.h	/^  uint32_t srr0;$/;"	m	struct:__anon3
+srr1	arch/ppc/thread.h	/^  uint32_t srr1;$/;"	m	struct:__anon3
+ss	arch/x86/tss.h	/^   uint32_t	ss;$/;"	m	struct:__anon11
+ss	include/arch/x86/interrupt.h	/^  uint32_t ss;$/;"	m	struct:__anon19
+ss0	arch/x86/tss.h	/^   uint32_t	ss0;$/;"	m	struct:__anon11
+ss1	arch/x86/tss.h	/^   uint32_t	ss1;$/;"	m	struct:__anon11
+ss2	arch/x86/tss.h	/^   uint32_t	ss2;$/;"	m	struct:__anon11
+stack_size	include/core/thread.h	/^	 uint32_t     stack_size;$/;"	m	struct:__anon24
+start_condition	include/core/partition.h	/^  pok_start_condition_t	start_condition;$/;"	m	struct:__anon27
+start_context_t	arch/x86/thread.h	/^} start_context_t;$/;"	t	typeref:struct:__anon9
+state	include/core/thread.h	/^	 pok_state_t  state;$/;"	m	struct:__anon23
+state	include/core/thread.h	/^	 pok_state_t  state;$/;"	m	struct:__anon24
+status	include/drivers/rtl8029.h	/^  unsigned char       status;$/;"	m	struct:__anon48
+strcmp	libc/strcmp.c	/^int strcmp (const char *s1,$/;"	f
+string	include/arch/x86/multiboot.h	/^   unsigned int                  string;$/;"	m	struct:__anon17
+strlen	libc/strlen.c	/^int strlen (const char* str)$/;"	f
+strncmp	libc/strcmp.c	/^int strncmp (const char *s1,$/;"	f
+strsize	include/arch/x86/multiboot.h	/^   unsigned int                  strsize;$/;"	m	struct:__anon13
+sysdesc_t	arch/x86/sysdesc.h	/^} __attribute__((packed)) sysdesc_t;$/;"	t	typeref:struct:__anon10
+system_call_0C00	arch/ppc/entry.S	/^system_call_0C00:$/;"	l
+system_reset_0100	arch/ppc/entry.S	/^system_reset_0100:$/;"	l
+t_fmtfun	libc/printf.c	/^typedef int (*t_fmtfun)(union u_arg *arg, struct s_file *file, int flags);$/;"	t	file:
+tab_size	arch/x86/x86-qemu/cons.c	/^static const int     tab_size = 8;$/;"	v	file:
+tabsize	include/arch/x86/multiboot.h	/^   unsigned int                  tabsize;$/;"	m	struct:__anon13
+thread	include/core/syscall.h	/^   uint32_t             thread;$/;"	m	struct:__anon40
+thread_error	include/core/partition.h	/^   uint32_t             thread_error;         \/**< The thread identifier used for error handling *\/$/;"	m	struct:__anon27
+thread_index	include/core/partition.h	/^   uint32_t               thread_index;        \/**< The thread index *\/$/;"	m	struct:__anon27
+thread_index_high	include/core/partition.h	/^   uint32_t               thread_index_high;   \/**< The high index in the threads table *\/$/;"	m	struct:__anon27
+thread_index_low	include/core/partition.h	/^   uint32_t               thread_index_low;    \/**< The low index in the threads table *\/$/;"	m	struct:__anon27
+thread_main	include/core/partition.h	/^   uint32_t             thread_main;          \/**< The thread identifier of the main thread (initialization thread) *\/$/;"	m	struct:__anon27
+thread_main_entry	include/core/partition.h	/^   uint32_t             thread_main_entry;    \/**< The entry-point of the main thread (useful for re-init) *\/$/;"	m	struct:__anon27
+thread_state	include/core/lockobj.h	/^   pok_mutex_state_t          thread_state[POK_CONFIG_NB_THREADS + 2];$/;"	m	struct:__anon34
+time	include/core/lockobj.h	/^   uint64_t                   time;$/;"	m	struct:__anon37
+time_capacity	include/core/thread.h	/^	 uint64_t     time_capacity;$/;"	m	struct:__anon23
+time_capacity	include/core/thread.h	/^	 uint64_t     time_capacity;$/;"	m	struct:__anon24
+time_inter	arch/ppc/timer.c	/^static unsigned int time_inter;$/;"	v	file:
+time_last	arch/ppc/timer.c	/^static unsigned long long time_last;$/;"	v	file:
+time_t	include/core/time.h	/^typedef long int time_t;$/;"	t
+timer_isr	arch/sparc/leon3/timer.c	/^void timer_isr(void)$/;"	f
+timespec	include/core/time.h	/^struct timespec$/;"	s
+trace_0D00	arch/ppc/entry.S	/^trace_0D00:$/;"	l
+trace_trap	arch/x86/tss.h	/^   uint16_t	trace_trap;$/;"	m	struct:__anon11
+trap_handler	arch/sparc/traps.c	/^void trap_handler(unsigned int pc,$/;"	f
+trap_prehandler	arch/sparc/entry.S	/^trap_prehandler:$/;"	l
+traps_init	arch/sparc/traps.c	/^pok_ret_t traps_init(void)$/;"	f
+trapvector	arch/sparc/entry.S	/^trapvector:$/;"	l
+tss_set_esp0	arch/x86/gdt.c	/^void tss_set_esp0(uint32_t esp0)$/;"	f
+tss_t	arch/x86/tss.h	/^} __attribute__((packed)) tss_t;$/;"	t	typeref:struct:__anon11
+tv_nsec	include/core/time.h	/^    long int tv_nsec;           \/* Nanoseconds.  *\/$/;"	m	struct:timespec
+tv_sec	include/core/time.h	/^    time_t tv_sec;              \/* Seconds.  *\/$/;"	m	struct:timespec
+type	arch/x86/event.h	/^  uint32_t	type:3;$/;"	m	struct:__anon7
+type	arch/x86/gdt.h	/^   uint32_t	type:4;$/;"	m	struct:__anon5
+type	include/arch/x86/multiboot.h	/^   unsigned int                  type;$/;"	m	struct:__anon18
+u	include/arch/x86/multiboot.h	/^   }                             u;$/;"	m	struct:__anon15	typeref:union:__anon15::__anon16
+u_arg	libc/printf.c	/^union		u_arg$/;"	u	file:
+udp	include/drivers/rtl8029.h	/^  udp_hdr_t	udp;$/;"	m	struct:__anon45
+udp_hdr_t	include/drivers/rtl8029.h	/^} __attribute__ ((__packed__)) udp_hdr_t;$/;"	t	typeref:struct:__anon44
+uint	libc/printf.c	/^   unsigned int	uint;$/;"	m	union:u_arg	file:
+uint16_t	arch/x86/types.h	/^typedef unsigned short        uint16_t;$/;"	t
+uint16_t	include/arch/sparc/types.h	/^typedef unsigned short        uint16_t;$/;"	t
+uint16_t	include/arch/x86/types.h	/^typedef unsigned short        uint16_t;$/;"	t
+uint32_t	arch/x86/types.h	/^typedef unsigned int          uint32_t;$/;"	t
+uint32_t	include/arch/sparc/types.h	/^typedef unsigned int          uint32_t;$/;"	t
+uint32_t	include/arch/x86/types.h	/^typedef unsigned int          uint32_t;$/;"	t
+uint64_t	arch/x86/types.h	/^typedef unsigned long long    uint64_t;$/;"	t
+uint64_t	include/arch/sparc/types.h	/^typedef unsigned long long    uint64_t;$/;"	t
+uint64_t	include/arch/x86/types.h	/^typedef unsigned long long    uint64_t;$/;"	t
+uint8_t	arch/x86/types.h	/^typedef unsigned short        uint8_t;$/;"	t
+uint8_t	include/arch/sparc/types.h	/^typedef unsigned char         uint8_t;$/;"	t
+uint8_t	include/arch/x86/types.h	/^typedef unsigned short        uint8_t;$/;"	t
+unmask_irq	arch/sparc/leon3/irq.h	37;"	d
+unused_lr	arch/ppc/thread.h	/^  uint32_t unused_lr;$/;"	m	struct:__anon2
+unused_lr	arch/ppc/thread.h	/^  uint32_t unused_lr;$/;"	m	struct:__anon3
+update_tss	arch/x86/interrupt.c	/^void update_tss (interrupt_frame* frame)$/;"	f
+user_pc	arch/x86/space.h	/^  uint32_t user_pc;$/;"	m	struct:__anon6
+user_sp	arch/x86/space.h	/^  uint32_t user_sp;$/;"	m	struct:__anon6
+validity	include/middleware/port.h	/^	 bool_t               validity;$/;"	m	struct:__anon54
+value	libc/printf.c	/^   unsigned long	value;$/;"	m	union:u_arg	file:
+vector	arch/x86/exceptions.c	/^  uint16_t	vector;$/;"	m	struct:__anon4	file:
+vendorid	include/arch/x86/pci.h	/^  uint16_t	vendorid;$/;"	m	struct:__anon20
+vga_base	arch/x86/x86-qemu/cons.c	/^static char *const   vga_base = (char *)0xb8000;$/;"	v	file:
+volatile_context_t	arch/ppc/thread.h	/^} volatile_context_t;$/;"	t	typeref:struct:__anon3
+vprintf	libc/printf.c	/^int vprintf (const char* format, va_list args)$/;"	f
+vsid_api	arch/ppc/space.c	/^  uint32_t vsid_api;$/;"	m	struct:__anon1	file:
+waiting_processes	include/middleware/port.h	/^	 uint8_t              waiting_processes;$/;"	m	struct:__anon53
+wakeup_time	include/core/thread.h	/^	 uint64_t     wakeup_time;$/;"	m	struct:__anon23
+weight	include/core/thread.h	/^	 uint8_t      weight; \/\/ used for Weighted Round Robin$/;"	m	struct:__anon23
+weight	include/core/thread.h	/^	 uint8_t      weight; \/\/ used for Weighted Round Robin$/;"	m	struct:__anon24
+wgcd_of_threads	core/sched.c	/^uint32_t wgcd_of_threads(const uint32_t index_low, const uint32_t index_high){$/;"	f
+window_overflow_trap_handler	arch/sparc/regwin.S	/^window_overflow_trap_handler:$/;"	l
+window_underflow_trap_handler	arch/sparc/regwin.S	/^window_underflow_trap_handler:$/;"	l
+wmax_of_thread	core/sched.c	/^uint32_t wmax_of_thread(const uint32_t index_low, const uint32_t index_high){$/;"	f
+write_serial	arch/ppc/prep/cons.c	/^static void write_serial(char a)$/;"	f	file:
+write_serial	arch/sparc/leon3/cons.c	/^static void write_serial(char a)$/;"	f	file:
+write_serial	arch/x86/x86-qemu/cons.c	/^void write_serial(char a) {$/;"	f
+xer	arch/ppc/thread.h	/^  uint32_t xer;$/;"	m	struct:__anon3

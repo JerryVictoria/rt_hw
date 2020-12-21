@@ -120,6 +120,7 @@ void pok_thread_init(void)
    pok_threads[IDLE_THREAD].sp			       = pok_context_create
                                                    (IDLE_THREAD,								             IDLE_STACK_SIZE,
 						   (uint32_t)pok_arch_idle);
+   pok_threads[IDLE_THREAD].if_inqueue = 0;
 
    for (i = 0; i < POK_CONFIG_NB_THREADS; ++i)
    {
@@ -130,6 +131,7 @@ void pok_thread_init(void)
       pok_threads[i].next_activation            = 0;
       pok_threads[i].wakeup_time                = 0;
       pok_threads[i].state                      = POK_STATE_STOPPED;
+      pok_threads[i].if_inqueue 		= 0;
   }
 }
 

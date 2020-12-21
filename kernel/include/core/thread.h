@@ -75,7 +75,8 @@ typedef struct
 	 uint8_t		 partition;
 	 uint32_t		 sp;
 	 uint32_t    init_stack_addr;
-  uint8_t	base_priority;
+  	 uint8_t	base_priority;
+	 uint8_t 	if_inqueue; /* MLFQ: if already in the ready queues */
 	 /* stack pointer
 		* FIXME: this is platform-dependent code, we have to handle that ! */
 } pok_thread_t;

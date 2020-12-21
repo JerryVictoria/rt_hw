@@ -87,6 +87,7 @@ void pok_sched_thread_switch (void);
  *\\brief Init scheduling service
  */
 
+void mlfq_init(void);
 void pok_sched_init (void)
 {
 #ifdef DYNAMIC_PARTITIONS_FIX_MODE
@@ -179,6 +180,9 @@ void pok_sched_init (void)
    }
 #endif
 #endif
+
+   /* For MLFQ */
+   mlfq_init(); 
 
    pok_sched_current_slot        = 0;
    pok_sched_next_major_frame    = POK_CONFIG_SCHEDULING_MAJOR_FRAME;
@@ -448,8 +452,8 @@ void pok_sched()
    if(pok_partitions[pok_current_partition].mode == POK_PARTITION_MODE_NORMAL){
       uint64_t time = POK_GETTICK();
       uint64_t theory_time = POK_GETTICK() / 9219000;
-      printf("time: %d, ", time);
-      printf("now: %d, ", theory_time);
+      printf("time: %u, ", time);
+      printf("now: %u, ", theory_time);
       switch (elected_thread)
       {
          case POK_CONFIG_NB_THREADS-1:
@@ -462,9 +466,6 @@ void pok_sched()
       }
       // printf("elect: %c\n", 'A' + elected_thread - 1); // bugs...
    }
-
-   
-   
    
   pok_sched_context_switch(elected_thread);
 }
@@ -613,6 +614,80 @@ uint32_t wmax_of_thread(const uint32_t index_low, const uint32_t index_high){
       res = MAX(res, pok_threads[i].weight);
    }
    return res;
+}
+
+/* MLFQ sched algorithm */
+#define MLFQ_QUEUE_LEVEL 1
+#define MLFQ_QUEUE_SIZE 512
+uint32_t mlfq_queue_list[MLFQ_QUEUE_LEVEL][MLFQ_QUEUE_SIZE];
+uint32_t head[MLFQ_QUEUE_LEVEL];
+uint32_t tail[MLFQ_QUEUE_LEVEL];
+void mlfq_enqueue(uint32_t level, uint32_t thread)
+{
+	/* Check if full */
+	uint32_t curr_head = head[level];
+	uint32_t curr_tail = tail[level];
+	if ((curr_tail + 1) % MLFQ_QUEUE_SIZE == curr_head){
+		printf("[%s]: mlfq queue is full.\n", __func__);
+		while(1);
+	}
+	/* Do enqueue */
+	mlfq_queue_list[level][curr_tail] = thread;
+	curr_tail = (curr_tail + 1) % MLFQ_QUEUE_SIZE;
+	tail[level] = curr_tail;
+}
+
+uint32_t mlfq_dequeue(uint32_t level)
+{
+	/* Check if empty */
+	uint32_t curr_head = head[level];
+	uint32_t curr_tail = tail[level];
+	if (curr_head == curr_tail){
+		return IDLE_THREAD;
+	}
+	/* Do dequeue */
+	uint32_t res_thread = mlfq_queue_list[level][curr_head]; 
+	curr_head = (curr_head + 1) % MLFQ_QUEUE_SIZE;
+	head[level] = curr_head;
+	return res_thread;
+}
+void mlfq_init(void)
+{
+	for(uint32_t lv = 0; lv < MLFQ_QUEUE_LEVEL; lv++){
+		head[lv] = 0;
+		tail[lv] = 0;
+		for(uint32_t i = 0; i < MLFQ_QUEUE_SIZE; i++){
+			mlfq_queue_list[lv][i] = IDLE_THREAD; 
+		}
+	}
+	printf("[%s]: Done.\n", __func__);
+}
+uint32_t pok_sched_part_mlfq (const uint32_t index_low, const uint32_t index_high,
+		const uint32_t __attribute__((unused))prev_thread,
+		const uint32_t __attribute__((unused)) current_thread)
+{
+   	/* Part 1: scan the whole array to add threads into mlfq_queue */
+   	for(uint32_t idx = index_low; idx <= index_high; idx++){
+		if(pok_threads[idx].state == POK_STATE_RUNNABLE 
+			&& pok_threads[idx].if_inqueue == 0){
+			mlfq_enqueue(0, idx);
+			pok_threads[idx].if_inqueue = 1;
+		}
+   	}
+
+	/* Part 2: Pick next thread from the mlfq queue list */
+	for(uint32_t lv = 0; lv < MLFQ_QUEUE_LEVEL; lv++){
+		uint32_t next_thread = mlfq_dequeue(lv);	
+		if(next_thread != IDLE_THREAD){
+			pok_threads[next_thread].if_inqueue = 0;
+			return next_thread;
+		}
+	}
+
+	
+
+	/* retur IDLE if no thread to sched */
+	return IDLE_THREAD;	
 }
 
 uint32_t pok_sched_part_wrr (const uint32_t index_low, const uint32_t index_high,const uint32_t prev_thread,const uint32_t current_thread)

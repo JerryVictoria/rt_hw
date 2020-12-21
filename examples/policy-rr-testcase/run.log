@@ -1,301 +1,102 @@
-c[?7l[2J[0mSeaBIOS (version 1.13.0-1ubuntu1)
 
-
-iPXE (http://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+07F8CA10+07ECCA10 CA00
-Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
-
-
-Booting from Floppy...
-GRUB Loading stage2............[01;01H[2J
-    GNU GRUB  version 0.94  (639K lower / 129920K upper memory)[04;02H┌───────────────────────────────────────────────────────────────[04;65H[04;66H──────────┐[05;02H│[05;76H│[06;02H│[06;76H│[07;02H│[07;76H│[08;02H│[08;76H│[09;02H│[09;76H│[10;02H│[10;76H│[11;02H│[11;76H│[12;02H│[12;76H│[13;02H│[13;76H│[14;02H│[14;76H│[15;02H│[15;76H│[16;02H│[16;76H│[17;02H└─────────────────────────────────────────────────────────────────────────┘
-      Use the ↑ and ↓ keys to select which entry is highlighted.
-      Press enter to boot the selected OS, 'e' to edit the
-      commands before booting, or 'c' for a command-line.[05;78H [05;03H[0;30;47m PolyORB Kernel                                                          [06;03H[0m                                                                         [07;03H                                                                         [08;03H                                                                         [09;03H                                                                         [10;03H                      [10;24H[10;25H                                                   [11;03H                                                                         [12;03H                                                                         [13;03H                                                                         [14;03H                                                                         [15;03H                                                                         [16;03H                                                                         [16;78H [01;01H[2J  Booting 'PolyORB Kernel'
-
-root   (hd0,0)
- Filesystem type is fat, partition type 0x6
-kernel /pok.elf
-   [Multiboot-elf, <0x100000:0x26b54:0x0>, shtab=0x127488, entry=0x103259
 pok_sched_slots_allocation: 0 
 POK kernel initialized
 [P1] pok_thread_create (1) return=0
 [P1] pok_thread_create (2) return=0
 [P1] pok_thread_create (3) return=0
-in pok_sched_part_rr
-time: 9726045, now: 1, A
-in pok_sched_part_rr
+time: 9827454, now: 1, A
 time: 18438000, now: 2, B
-in pok_sched_part_rr
 time: 27657000, now: 3, B
-in pok_sched_part_rr
 time: 36876000, now: 4, C
-in pok_sched_part_rr
 time: 46095000, now: 5, C
-in pok_sched_part_rr
 time: 55314000, now: 6, C
-in pok_sched_part_rr
 time: 64533000, now: 7, A
-in pok_sched_part_rr
 time: 73752000, now: 8, B
-in pok_sched_part_rr
 time: 82971000, now: 9, B
-in pok_sched_part_rr
 time: 92190000, now: 10, C
-in pok_sched_part_rr
 time: 101409000, now: 11, C
-in pok_sched_part_rr
 time: 110628000, now: 12, C
-in pok_sched_part_rr
 time: 119847000, now: 13, A
-in pok_sched_part_rr
 time: 129066000, now: 14, B
-in pok_sched_part_rr
 time: 138285000, now: 15, B
-in pok_sched_part_rr
 time: 147504000, now: 16, C
-in pok_sched_part_rr
 time: 156723000, now: 17, C
-in pok_sched_part_rr
 time: 165942000, now: 18, C
-in pok_sched_part_rr
 time: 175161000, now: 19, A
-in pok_sched_part_rr
 time: 184380000, now: 20, B
-in pok_sched_part_rr
 time: 193599000, now: 21, B
-in pok_sched_part_rr
 time: 202818000, now: 22, C
-in pok_sched_part_rr
 time: 212037000, now: 23, C
-in pok_sched_part_rr
 time: 221256000, now: 24, C
-in pok_sched_part_rr
 time: 230475000, now: 25, A
-in pok_sched_part_rr
 time: 239694000, now: 26, B
-in pok_sched_part_rr
 time: 248913000, now: 27, B
-in pok_sched_part_rr
 time: 258132000, now: 28, C
-in pok_sched_part_rr
 time: 267351000, now: 29, C
-in pok_sched_part_rr
 time: 276570000, now: 30, C
-in pok_sched_part_rr
 time: 285789000, now: 31, A
-in pok_sched_part_rr
 time: 295008000, now: 32, B
-in pok_sched_part_rr
 time: 304227000, now: 33, B
-in pok_sched_part_rr
 time: 313446000, now: 34, C
-in pok_sched_part_rr
 time: 322665000, now: 35, C
-in pok_sched_part_rr
 time: 331884000, now: 36, C
-in pok_sched_part_rr
 time: 341103000, now: 37, A
-in pok_sched_part_rr
 time: 350322000, now: 38, B
-in pok_sched_part_rr
 time: 359541000, now: 39, B
-in pok_sched_part_rr
 time: 368760000, now: 40, C
-in pok_sched_part_rr
 time: 377979000, now: 41, C
-in pok_sched_part_rr
 time: 387198000, now: 42, C
-in pok_sched_part_rr
 time: 396417000, now: 43, A
-in pok_sched_part_rr
 time: 405636000, now: 44, B
-in pok_sched_part_rr
 time: 414855000, now: 45, B
-in pok_sched_part_rr
 time: 424074000, now: 46, C
-in pok_sched_part_rr
 time: 433293000, now: 47, C
-in pok_sched_part_rr
 time: 442512000, now: 48, C
-in pok_sched_part_rr
 time: 451731000, now: 49, A
-in pok_sched_part_rr
 time: 460950000, now: 50, B
-in pok_sched_part_rr
 time: 470169000, now: 51, B
-in pok_sched_part_rr
 time: 479388000, now: 52, C
-in pok_sched_part_rr
 time: 488607000, now: 53, C
-in pok_sched_part_rr
 time: 497826000, now: 54, C
-in pok_sched_part_rr
 time: 507045000, now: 55, A
-in pok_sched_part_rr
 time: 516264000, now: 56, B
-in pok_sched_part_rr
 time: 525483000, now: 57, B
-in pok_sched_part_rr
 time: 534702000, now: 58, C
-in pok_sched_part_rr
 time: 543921000, now: 59, C
-in pok_sched_part_rr
 time: 553140000, now: 60, C
-in pok_sched_part_rr
 time: 562359000, now: 61, A
-in pok_sched_part_rr
 time: 571578000, now: 62, B
-in pok_sched_part_rr
 time: 580797000, now: 63, B
-in pok_sched_part_rr
 time: 590016000, now: 64, C
-in pok_sched_part_rr
 time: 599235000, now: 65, C
-in pok_sched_part_rr
 time: 608454000, now: 66, C
-in pok_sched_part_rr
 time: 617673000, now: 67, A
-in pok_sched_part_rr
 time: 626892000, now: 68, B
-in pok_sched_part_rr
 time: 636111000, now: 69, B
-in pok_sched_part_rr
 time: 645330000, now: 70, C
-in pok_sched_part_rr
 time: 654549000, now: 71, C
-in pok_sched_part_rr
 time: 663768000, now: 72, C
-in pok_sched_part_rr
 time: 672987000, now: 73, A
-in pok_sched_part_rr
 time: 682206000, now: 74, B
-in pok_sched_part_rr
 time: 691425000, now: 75, B
-in pok_sched_part_rr
 time: 700644000, now: 76, C
-in pok_sched_part_rr
 time: 709863000, now: 77, C
-in pok_sched_part_rr
 time: 719082000, now: 78, C
-in pok_sched_part_rr
 time: 728301000, now: 79, A
-in pok_sched_part_rr
 time: 737520000, now: 80, B
-in pok_sched_part_rr
 time: 746739000, now: 81, B
-in pok_sched_part_rr
 time: 755958000, now: 82, C
-in pok_sched_part_rr
 time: 765177000, now: 83, C
-in pok_sched_part_rr
 time: 774396000, now: 84, C
-in pok_sched_part_rr
 time: 783615000, now: 85, A
-in pok_sched_part_rr
 time: 792834000, now: 86, B
-in pok_sched_part_rr
 time: 802053000, now: 87, B
-in pok_sched_part_rr
 time: 811272000, now: 88, C
-in pok_sched_part_rr
 time: 820491000, now: 89, C
-in pok_sched_part_rr
 time: 829710000, now: 90, C
-in pok_sched_part_rr
 time: 838929000, now: 91, A
-in pok_sched_part_rr
 time: 848148000, now: 92, B
-in pok_sched_part_rr
 time: 857367000, now: 93, B
-in pok_sched_part_rr
 time: 866586000, now: 94, C
-in pok_sched_part_rr
-time: 875805000, now: 95, C
-in pok_sched_part_rr
-time: 885024000, now: 96, C
-in pok_sched_part_rr
-time: 894243000, now: 97, A
-in pok_sched_part_rr
-time: 903462000, now: 98, B
-in pok_sched_part_rr
-time: 912681000, now: 99, B
-in pok_sched_part_rr
-time: 921900000, now: 100, C
-in pok_sched_part_rr
-time: 931119000, now: 101, C
-in pok_sched_part_rr
-time: 940338000, now: 102, C
-in pok_sched_part_rr
-time: 949557000, now: 103, A
-in pok_sched_part_rr
-time: 958776000, now: 104, B
-in pok_sched_part_rr
-time: 967995000, now: 105, B
-in pok_sched_part_rr
-time: 977214000, now: 106, C
-in pok_sched_part_rr
-time: 986433000, now: 107, C
-in pok_sched_part_rr
-time: 995652000, now: 108, C
-in pok_sched_part_rr
-time: 1004871000, now: 109, A
-in pok_sched_part_rr
-time: 1014090000, now: 110, B
-in pok_sched_part_rr
-time: 1023309000, now: 111, B
-in pok_sched_part_rr
-time: 1032528000, now: 112, C
-in pok_sched_part_rr
-time: 1041747000, now: 113, C
-in pok_sched_part_rr
-time: 1050966000, now: 114, C
-in pok_sched_part_rr
-time: 1060185000, now: 115, A
-in pok_sched_part_rr
-time: 1069404000, now: 116, B
-in pok_sched_part_rr
-time: 1078623000, now: 117, B
-in pok_sched_part_rr
-time: 1087842000, now: 118, C
-in pok_sched_part_rr
-time: 1097061000, now: 119, C
-in pok_sched_part_rr
-time: 1106280000, now: 120, C
-in pok_sched_part_rr
-time: 1115499000, now: 121, A
-in pok_sched_part_rr
-time: 1124718000, now: 122, B
-in pok_sched_part_rr
-time: 1133937000, now: 123, B
-in pok_sched_part_rr
-time: 1143156000, now: 124, C
-in pok_sched_part_rr
-time: 1152375000, now: 125, C
-in pok_sched_part_rr
-time: 1161594000, now: 126, C
-in pok_sched_part_rr
-time: 1170813000, now: 127, A
-in pok_sched_part_rr
-time: 1180032000, now: 128, B
-in pok_sched_part_rr
-time: 1189251000, now: 129, B
-in pok_sched_part_rr
-time: 1198470000, now: 130, C
-in pok_sched_part_rr
-time: 1207689000, now: 131, C
-in pok_sched_part_rr
-time: 1216908000, now: 132, C
-in pok_sched_part_rr
-time: 1226127000, now: 133, A
-in pok_sched_part_rr
-time: 1235346000, now: 134, B
-in pok_sched_part_rr
-time: 1244565000, now: 135, B
-in pok_sched_part_rr
-time: 1253784000, now: 136, C
-in pok_sched_part_rr
-time: 1263003000, now: 137, C
-in pok_sched_part_rr
-time: 1272222000, now: 138, C
 QEMU: Terminated
 
