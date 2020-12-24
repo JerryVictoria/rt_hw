@@ -421,12 +421,12 @@ void pok_sched()
   uint32_t elected_thread = 0;
   uint8_t elected_partition = POK_SCHED_CURRENT_PARTITION;
 
-#ifdef POK_NEEDS_SCHED_MLFQ
-	/* if job is not finished */
-	if (pok_threads[current_thread].remaining_time_capacity > 0){
-		pok_threads[current_thread].mlfq_before_level = MLFQ_QUEUE_LEVEL;
-	}
-#endif
+// #ifdef POK_NEEDS_SCHED_MLFQ
+// 	/* if job is not finished */
+// 	if (pok_threads[current_thread].remaining_time_capacity > 0){
+// 		pok_threads[current_thread].mlfq_before_level = MLFQ_QUEUE_LEVEL;
+// 	}
+// #endif
 
 #ifdef POK_NEEDS_SCHED_HFPPS
   uint64_t now = POK_GETTICK();
@@ -674,12 +674,19 @@ void mlfq_init(void)
 
 void mlfq_boost(void)
 {
+   printf("BOOST!!!!!!!!!!!!!!!!!!!!!\n");
 	for(uint32_t lv = 1; lv < MLFQ_QUEUE_LEVEL; lv++){
-		uint32_t thread = mlfq_dequeue(lv);	
-		if(thread != IDLE_THREAD){
-			mlfq_enqueue(0,thread);
-			pok_threads[thread].mlfq_before_level = MLFQ_QUEUE_LEVEL;
-		}
+      int cur_head = head[lv];
+      int cur_tail = tail[lv];
+      while (cur_head <= cur_tail) 
+      {
+         uint32_t thread = mlfq_dequeue(lv);	
+         if(thread != IDLE_THREAD){
+            mlfq_enqueue(0,thread);
+            pok_threads[thread].mlfq_before_level = MLFQ_QUEUE_LEVEL;
+         }
+         cur_head++;
+      }
 	}
 }
 uint32_t pok_sched_part_mlfq (const uint32_t index_low, const uint32_t index_high,
@@ -688,22 +695,22 @@ uint32_t pok_sched_part_mlfq (const uint32_t index_low, const uint32_t index_hig
 {
    	/* Part 1: scan the whole array to add threads into mlfq_queue */
    	for(uint32_t idx = index_low; idx <= index_high; idx++){
-		if(pok_threads[idx].state != POK_STATE_RUNNABLE){
-			continue;
-		}
-		if(pok_threads[idx].if_inqueue != 0){
-			continue;
-		}
-		/* Decide the next level */
-		uint32_t next_level = 0;
-		if(pok_threads[idx].mlfq_before_level != MLFQ_QUEUE_LEVEL){
-			next_level = (pok_threads[idx].mlfq_before_level + 1) 
-					% MLFQ_QUEUE_LEVEL;
-		}
-		/* Do the modification */
-		pok_threads[idx].if_inqueue = 1;
-		pok_threads[idx].mlfq_before_level = next_level;
-		mlfq_enqueue(next_level, idx);
+         if(pok_threads[idx].state != POK_STATE_RUNNABLE){
+            continue;
+         }
+         if(pok_threads[idx].if_inqueue != 0){
+            continue;
+         }
+         /* Decide the next level */
+         uint32_t next_level = 0;
+         // if(pok_threads[idx].mlfq_before_level != MLFQ_QUEUE_LEVEL){
+            next_level = (pok_threads[idx].mlfq_before_level + 1) 
+                  % MLFQ_QUEUE_LEVEL;
+         // }
+         /* Do the modification */
+         pok_threads[idx].if_inqueue = 1;
+         pok_threads[idx].mlfq_before_level = next_level;
+         mlfq_enqueue(next_level, idx);
    	}
 
 	/* Part 2: Pick next thread from the mlfq queue list */

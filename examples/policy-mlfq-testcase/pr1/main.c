@@ -39,7 +39,7 @@ int main ()
   tattr.entry = pinger_job;
   tattr.period   = 20 * ONE_SCHED_TIME;
   tattr.deadline = 10 * ONE_SCHED_TIME;
-  tattr.time_capacity = 1;
+  tattr.time_capacity = 3;
 
   ret = pok_thread_create(&tid , &tattr);
   printf("[P1] pok_thread_create (1) return=%d\n", ret);
@@ -48,7 +48,7 @@ int main ()
   tattr.entry = pinger_job2;
   tattr.period   = 10 * ONE_SCHED_TIME;
   tattr.deadline = 5 * ONE_SCHED_TIME;
-  tattr.time_capacity = 1;
+  tattr.time_capacity = 3;
 
   ret = pok_thread_create(&tid , &tattr);
   printf("[P1] pok_thread_create (2) return=%d\n", ret);
@@ -57,7 +57,7 @@ int main ()
   tattr.entry = pinger_job3;
   tattr.period   = 10 * ONE_SCHED_TIME;
   tattr.deadline = 2 * ONE_SCHED_TIME;
-  tattr.time_capacity = 1;
+  tattr.time_capacity = 3;
 
   ret = pok_thread_create(&tid , &tattr);
   printf("[P1] pok_thread_create (3) return=%d\n", ret);

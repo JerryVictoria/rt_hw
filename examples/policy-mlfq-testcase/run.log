@@ -1,4 +1,21 @@
-POK_NEEDS_SCHED_MLFQ
+c[?7l[2J[0mSeaBIOS (version 1.13.0-1ubuntu1)
+
+
+iPXE (http://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+07F8CA10+07ECCA10 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from Floppy...
+GRUB Loading stage2............[01;01H[2J
+    GNU GRUB  version 0.94  (639K lower / 129920K upper memory)[04;02H┌─────────────────────────────────────────────────────────────────────────┐[05;02H│[05;76H│[06;02H│[06;76H│[07;02H│[07;76H│[08;02H│[08;76H│[09;02H│[09;76H│[10;02H│[10;76H│[11;02H│[11;76H│[12;02H│[12;76H│[13;02H│[13;76H│[14;02H│[14;76H│[15;02H│[15;76H│[16;02H│[16;76H│[17;02H└─────────────────────────────────────────────────────────────────────────┘
+      Use the ↑ and ↓ keys to select which entry i[18;50H[18;51Hs highlighted.
+      Press enter to boot the selected OS, 'e' to edit the
+      commands before booting, or 'c' for a command-line.[05;78H [05;03H[0;30;47m PolyORB Kernel                                                          [06;03H[0m                                                                         [07;03H                                                                         [08;03H                                                                         [09;03H                                                                         [10;03H                                                                         [11;03H                                                                         [12;03H                                                                         [13;03H                                                                         [14;03H                                                                         [15;03H                                                                         [16;03H                                                                         [16;78H [01;01H[2J  Booting 'PolyORB Kernel'
+
+root   (hd0,0)
+ Filesystem type is fat, partition type 0x6
+kernel /pok.elf
+   [Multiboot-elf, <0x100000:0x28c14:0x0>, shtab=0x129488, entry=0x10379cPOK_NEEDS_SCHED_MLFQ
 
 pok_sched_slots_allocation: 0 
 [mlfq_init]: Done.
@@ -6,297 +23,367 @@ POK kernel initialized
 [P1] pok_thread_create (1) return=0
 [P1] pok_thread_create (2) return=0
 [P1] pok_thread_create (3) return=0
-[mlfq_enqueue]: enqueue thread = 1 to level = 0
-[mlfq_enqueue]: enqueue thread = 2 to level = 0
-[mlfq_enqueue]: enqueue thread = 3 to level = 0
-[mlfq_dequeue]: deqeueu thread = 1 from level = 0
-time: 9726045, now: 1, A
-[mlfq_dequeue]: deqeueu thread = 2 from level = 0
+[mlfq_enqueue]: enqueue thread = 1 to level = 1
+[mlfq_enqueue]: enqueue thread = 2 to level = 1
+[mlfq_enqueue]: enqueue thread = 3 to level = 1
+[mlfq_dequeue]: deqeueu thread = 1 from level = 1
+time: 9670731, now: 1, A
+[mlfq_enqueue]: enqueue thread = 1 to level = 2
+[mlfq_dequeue]: deqeueu thread = 2 from level = 1
 time: 18438000, now: 2, B
-[mlfq_dequeue]: deqeueu thread = 3 from level = 0
-time: 27657000, now: 3, C
-time: 36876000, now: 4, IDLE THREAD
-time: 46095000, now: 5, IDLE THREAD
-time: 55314000, now: 6, IDLE THREAD
-time: 64533000, now: 7, IDLE THREAD
-time: 73752000, now: 8, IDLE THREAD
-time: 82971000, now: 9, IDLE THREAD
+[mlfq_enqueue]: enqueue thread = 2 to level = 2
+[mlfq_dequeue]: deqeueu thread = 3 from level = 1
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 1 from level = 2
+[mlfq_enqueue]: enqueue thread = 1 to level = 0
+[mlfq_dequeue]: deqeueu thread = 2 from level = 2
 [mlfq_enqueue]: enqueue thread = 2 to level = 0
-[mlfq_enqueue]: enqueue thread = 3 to level = 0
+time: 27657000, now: 3, C
+[mlfq_enqueue]: enqueue thread = 3 to level = 2
+[mlfq_dequeue]: deqeueu thread = 1 from level = 0
+time: 36876000, now: 4, A
+[mlfq_enqueue]: enqueue thread = 1 to level = 1
 [mlfq_dequeue]: deqeueu thread = 2 from level = 0
-time: 92190000, now: 10, B
+time: 46095000, now: 5, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 1
+[mlfq_dequeue]: deqeueu thread = 1 from level = 1
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 2 from level = 1
+[mlfq_enqueue]: enqueue thread = 2 to level = 0
+[mlfq_dequeue]: deqeueu thread = 3 from level = 2
+[mlfq_enqueue]: enqueue thread = 3 to level = 0
+time: 55314000, now: 6, A
+[mlfq_dequeue]: deqeueu thread = 2 from level = 0
+time: 64533000, now: 7, B
 [mlfq_dequeue]: deqeueu thread = 3 from level = 0
-time: 101409000, now: 11, C
-time: 110628000, now: 12, IDLE THREAD
-time: 119847000, now: 13, IDLE THREAD
-time: 129066000, now: 14, IDLE THREAD
-time: 138285000, now: 15, IDLE THREAD
+time: 73752000, now: 8, C
+[mlfq_enqueue]: enqueue thread = 3 to level = 1
+[mlfq_dequeue]: deqeueu thread = 3 from level = 1
+BOOST!!!!!!!!!!!!!!!!!!!!!
+time: 82971000, now: 9, C
+[mlfq_enqueue]: enqueue thread = 2 to level = 1
+[mlfq_dequeue]: deqeueu thread = 2 from level = 1
+time: 92190000, now: 10, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 2
+[mlfq_enqueue]: enqueue thread = 3 to level = 2
+[mlfq_dequeue]: deqeueu thread = 2 from level = 2
+time: 101409000, now: 11, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 0
+[mlfq_dequeue]: deqeueu thread = 2 from level = 0
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 3 from level = 2
+[mlfq_enqueue]: enqueue thread = 3 to level = 0
+time: 110628000, now: 12, B
+[mlfq_dequeue]: deqeueu thread = 3 from level = 0
+time: 119847000, now: 13, C
+[mlfq_enqueue]: enqueue thread = 3 to level = 1
+[mlfq_dequeue]: deqeueu thread = 3 from level = 1
+time: 129066000, now: 14, C
+[mlfq_enqueue]: enqueue thread = 3 to level = 2
+[mlfq_dequeue]: deqeueu thread = 3 from level = 2
+BOOST!!!!!!!!!!!!!!!!!!!!!
+time: 138285000, now: 15, C
 time: 147504000, now: 16, IDLE THREAD
 time: 156723000, now: 17, IDLE THREAD
+BOOST!!!!!!!!!!!!!!!!!!!!!
 time: 165942000, now: 18, IDLE THREAD
 time: 175161000, now: 19, IDLE THREAD
-[mlfq_enqueue]: enqueue thread = 1 to level = 0
-[mlfq_enqueue]: enqueue thread = 2 to level = 0
+[mlfq_enqueue]: enqueue thread = 1 to level = 2
+[mlfq_enqueue]: enqueue thread = 2 to level = 1
 [mlfq_enqueue]: enqueue thread = 3 to level = 0
-[mlfq_dequeue]: deqeueu thread = 1 from level = 0
-time: 184380000, now: 20, A
-[mlfq_dequeue]: deqeueu thread = 2 from level = 0
+[mlfq_dequeue]: deqeueu thread = 3 from level = 0
+time: 184380000, now: 20, C
+[mlfq_enqueue]: enqueue thread = 3 to level = 1
+[mlfq_dequeue]: deqeueu thread = 2 from level = 1
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 3 from level = 1
+[mlfq_enqueue]: enqueue thread = 3 to level = 0
+[mlfq_dequeue]: deqeueu thread = 1 from level = 2
+[mlfq_enqueue]: enqueue thread = 1 to level = 0
 time: 193599000, now: 21, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 2
 [mlfq_dequeue]: deqeueu thread = 3 from level = 0
 time: 202818000, now: 22, C
-time: 212037000, now: 23, IDLE THREAD
-time: 221256000, now: 24, IDLE THREAD
-time: 230475000, now: 25, IDLE THREAD
-time: 239694000, now: 26, IDLE THREAD
-time: 248913000, now: 27, IDLE THREAD
-time: 258132000, now: 28, IDLE THREAD
-time: 267351000, now: 29, IDLE THREAD
+[mlfq_enqueue]: enqueue thread = 3 to level = 1
+[mlfq_dequeue]: deqeueu thread = 1 from level = 0
+time: 212037000, now: 23, A
+[mlfq_enqueue]: enqueue thread = 1 to level = 1
+[mlfq_dequeue]: deqeueu thread = 3 from level = 1
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 1 from level = 1
+[mlfq_enqueue]: enqueue thread = 1 to level = 0
+[mlfq_dequeue]: deqeueu thread = 2 from level = 2
 [mlfq_enqueue]: enqueue thread = 2 to level = 0
-[mlfq_enqueue]: enqueue thread = 3 to level = 0
+time: 221256000, now: 24, C
+[mlfq_dequeue]: deqeueu thread = 1 from level = 0
+time: 230475000, now: 25, A
+[mlfq_enqueue]: enqueue thread = 1 to level = 1
 [mlfq_dequeue]: deqeueu thread = 2 from level = 0
+time: 239694000, now: 26, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 1
+[mlfq_dequeue]: deqeueu thread = 1 from level = 1
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 2 from level = 1
+[mlfq_enqueue]: enqueue thread = 2 to level = 0
+time: 248913000, now: 27, A
+[mlfq_dequeue]: deqeueu thread = 2 from level = 0
+time: 258132000, now: 28, B
+time: 267351000, now: 29, IDLE THREAD
+[mlfq_enqueue]: enqueue thread = 2 to level = 1
+[mlfq_enqueue]: enqueue thread = 3 to level = 2
+[mlfq_dequeue]: deqeueu thread = 2 from level = 1
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 3 from level = 2
+[mlfq_enqueue]: enqueue thread = 3 to level = 0
 time: 276570000, now: 30, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 2
 [mlfq_dequeue]: deqeueu thread = 3 from level = 0
 time: 285789000, now: 31, C
-time: 295008000, now: 32, IDLE THREAD
-time: 304227000, now: 33, IDLE THREAD
-time: 313446000, now: 34, IDLE THREAD
-time: 322665000, now: 35, IDLE THREAD
+[mlfq_enqueue]: enqueue thread = 3 to level = 1
+[mlfq_dequeue]: deqeueu thread = 3 from level = 1
+time: 295008000, now: 32, C
+[mlfq_enqueue]: enqueue thread = 3 to level = 2
+[mlfq_dequeue]: deqeueu thread = 2 from level = 2
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 3 from level = 2
+[mlfq_enqueue]: enqueue thread = 3 to level = 0
+time: 304227000, now: 33, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 0
+[mlfq_dequeue]: deqeueu thread = 3 from level = 0
+time: 313446000, now: 34, C
+[mlfq_dequeue]: deqeueu thread = 2 from level = 0
+time: 322665000, now: 35, B
+BOOST!!!!!!!!!!!!!!!!!!!!!
 time: 331884000, now: 36, IDLE THREAD
 time: 341103000, now: 37, IDLE THREAD
 time: 350322000, now: 38, IDLE THREAD
+BOOST!!!!!!!!!!!!!!!!!!!!!
 time: 359541000, now: 39, IDLE THREAD
+[mlfq_enqueue]: enqueue thread = 1 to level = 2
+[mlfq_enqueue]: enqueue thread = 2 to level = 1
+[mlfq_enqueue]: enqueue thread = 3 to level = 1
+[mlfq_dequeue]: deqeueu thread = 2 from level = 1
+time: 368760000, now: 40, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 2
+[mlfq_dequeue]: deqeueu thread = 3 from level = 1
+time: 377979000, now: 41, C
+[mlfq_enqueue]: enqueue thread = 3 to level = 2
+[mlfq_dequeue]: deqeueu thread = 1 from level = 2
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 2 from level = 2
+[mlfq_enqueue]: enqueue thread = 2 to level = 0
+[mlfq_dequeue]: deqeueu thread = 3 from level = 2
+[mlfq_enqueue]: enqueue thread = 3 to level = 0
+time: 387198000, now: 42, A
 [mlfq_enqueue]: enqueue thread = 1 to level = 0
-[mlfq_enqueue]: enqueue thread = 2 to level = 0
-[mlfq_enqueue]: enqueue thread = 3 to level = 0
+[mlfq_dequeue]: deqeueu thread = 2 from level = 0
+time: 396417000, now: 43, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 1
+[mlfq_dequeue]: deqeueu thread = 3 from level = 0
+time: 405636000, now: 44, C
+[mlfq_enqueue]: enqueue thread = 3 to level = 1
 [mlfq_dequeue]: deqeueu thread = 1 from level = 0
-time: 368760000, now: 40, A
-[mlfq_dequeue]: deqeueu thread = 2 from level = 0
-time: 377979000, now: 41, B
-[mlfq_dequeue]: deqeueu thread = 3 from level = 0
-time: 387198000, now: 42, C
-time: 396417000, now: 43, IDLE THREAD
-time: 405636000, now: 44, IDLE THREAD
-time: 414855000, now: 45, IDLE THREAD
-time: 424074000, now: 46, IDLE THREAD
-time: 433293000, now: 47, IDLE THREAD
-time: 442512000, now: 48, IDLE THREAD
-time: 451731000, now: 49, IDLE THREAD
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 2 from level = 1
 [mlfq_enqueue]: enqueue thread = 2 to level = 0
+[mlfq_dequeue]: deqeueu thread = 3 from level = 1
 [mlfq_enqueue]: enqueue thread = 3 to level = 0
+time: 414855000, now: 45, A
+[mlfq_enqueue]: enqueue thread = 1 to level = 1
 [mlfq_dequeue]: deqeueu thread = 2 from level = 0
-time: 460950000, now: 50, B
+time: 424074000, now: 46, B
 [mlfq_dequeue]: deqeueu thread = 3 from level = 0
+time: 433293000, now: 47, C
+[mlfq_dequeue]: deqeueu thread = 1 from level = 1
+BOOST!!!!!!!!!!!!!!!!!!!!!
+time: 442512000, now: 48, A
+time: 451731000, now: 49, IDLE THREAD
+[mlfq_enqueue]: enqueue thread = 2 to level = 1
+[mlfq_enqueue]: enqueue thread = 3 to level = 1
+[mlfq_dequeue]: deqeueu thread = 2 from level = 1
+time: 460950000, now: 50, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 2
+[mlfq_dequeue]: deqeueu thread = 3 from level = 1
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 2 from level = 2
+[mlfq_enqueue]: enqueue thread = 2 to level = 0
 time: 470169000, now: 51, C
-time: 479388000, now: 52, IDLE THREAD
-time: 488607000, now: 53, IDLE THREAD
-time: 497826000, now: 54, IDLE THREAD
-time: 507045000, now: 55, IDLE THREAD
+[mlfq_enqueue]: enqueue thread = 3 to level = 2
+[mlfq_dequeue]: deqeueu thread = 2 from level = 0
+time: 479388000, now: 52, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 1
+[mlfq_dequeue]: deqeueu thread = 2 from level = 1
+time: 488607000, now: 53, B
+[mlfq_dequeue]: deqeueu thread = 3 from level = 2
+BOOST!!!!!!!!!!!!!!!!!!!!!
+time: 497826000, now: 54, C
+[mlfq_enqueue]: enqueue thread = 3 to level = 0
+[mlfq_dequeue]: deqeueu thread = 3 from level = 0
+time: 507045000, now: 55, C
 time: 516264000, now: 56, IDLE THREAD
+BOOST!!!!!!!!!!!!!!!!!!!!!
 time: 525483000, now: 57, IDLE THREAD
 time: 534702000, now: 58, IDLE THREAD
 time: 543921000, now: 59, IDLE THREAD
+[mlfq_enqueue]: enqueue thread = 1 to level = 2
+[mlfq_enqueue]: enqueue thread = 2 to level = 2
+[mlfq_enqueue]: enqueue thread = 3 to level = 1
+[mlfq_dequeue]: deqeueu thread = 3 from level = 1
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 1 from level = 2
 [mlfq_enqueue]: enqueue thread = 1 to level = 0
+[mlfq_dequeue]: deqeueu thread = 2 from level = 2
 [mlfq_enqueue]: enqueue thread = 2 to level = 0
-[mlfq_enqueue]: enqueue thread = 3 to level = 0
+time: 553140000, now: 60, C
+[mlfq_enqueue]: enqueue thread = 3 to level = 2
 [mlfq_dequeue]: deqeueu thread = 1 from level = 0
-time: 553140000, now: 60, A
+time: 562359000, now: 61, A
+[mlfq_enqueue]: enqueue thread = 1 to level = 1
 [mlfq_dequeue]: deqeueu thread = 2 from level = 0
-time: 562359000, now: 61, B
-[mlfq_dequeue]: deqeueu thread = 3 from level = 0
-time: 571578000, now: 62, C
-time: 580797000, now: 63, IDLE THREAD
-time: 590016000, now: 64, IDLE THREAD
-time: 599235000, now: 65, IDLE THREAD
-time: 608454000, now: 66, IDLE THREAD
-time: 617673000, now: 67, IDLE THREAD
-time: 626892000, now: 68, IDLE THREAD
-time: 636111000, now: 69, IDLE THREAD
+time: 571578000, now: 62, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 1
+[mlfq_dequeue]: deqeueu thread = 1 from level = 1
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 2 from level = 1
 [mlfq_enqueue]: enqueue thread = 2 to level = 0
+[mlfq_dequeue]: deqeueu thread = 3 from level = 2
 [mlfq_enqueue]: enqueue thread = 3 to level = 0
+time: 580797000, now: 63, A
+[mlfq_enqueue]: enqueue thread = 1 to level = 2
 [mlfq_dequeue]: deqeueu thread = 2 from level = 0
-time: 645330000, now: 70, B
+time: 590016000, now: 64, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 1
 [mlfq_dequeue]: deqeueu thread = 3 from level = 0
-time: 654549000, now: 71, C
-time: 663768000, now: 72, IDLE THREAD
-time: 672987000, now: 73, IDLE THREAD
-time: 682206000, now: 74, IDLE THREAD
-time: 691425000, now: 75, IDLE THREAD
+time: 599235000, now: 65, C
+[mlfq_enqueue]: enqueue thread = 3 to level = 1
+[mlfq_dequeue]: deqeueu thread = 2 from level = 1
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 3 from level = 1
+[mlfq_enqueue]: enqueue thread = 3 to level = 0
+[mlfq_dequeue]: deqeueu thread = 1 from level = 2
+[mlfq_enqueue]: enqueue thread = 1 to level = 0
+time: 608454000, now: 66, B
+[mlfq_dequeue]: deqeueu thread = 3 from level = 0
+time: 617673000, now: 67, C
+[mlfq_dequeue]: deqeueu thread = 1 from level = 0
+time: 626892000, now: 68, A
+BOOST!!!!!!!!!!!!!!!!!!!!!
+time: 636111000, now: 69, IDLE THREAD
+[mlfq_enqueue]: enqueue thread = 2 to level = 2
+[mlfq_enqueue]: enqueue thread = 3 to level = 1
+[mlfq_dequeue]: deqeueu thread = 3 from level = 1
+time: 645330000, now: 70, C
+[mlfq_enqueue]: enqueue thread = 3 to level = 2
+[mlfq_dequeue]: deqeueu thread = 2 from level = 2
+time: 654549000, now: 71, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 0
+[mlfq_dequeue]: deqeueu thread = 2 from level = 0
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 3 from level = 2
+[mlfq_enqueue]: enqueue thread = 3 to level = 0
+time: 663768000, now: 72, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 1
+[mlfq_dequeue]: deqeueu thread = 3 from level = 0
+time: 672987000, now: 73, C
+[mlfq_enqueue]: enqueue thread = 3 to level = 1
+[mlfq_dequeue]: deqeueu thread = 2 from level = 1
+time: 682206000, now: 74, B
+[mlfq_dequeue]: deqeueu thread = 3 from level = 1
+BOOST!!!!!!!!!!!!!!!!!!!!!
+time: 691425000, now: 75, C
 time: 700644000, now: 76, IDLE THREAD
 time: 709863000, now: 77, IDLE THREAD
+BOOST!!!!!!!!!!!!!!!!!!!!!
 time: 719082000, now: 78, IDLE THREAD
 time: 728301000, now: 79, IDLE THREAD
-[mlfq_enqueue]: enqueue thread = 1 to level = 0
-[mlfq_enqueue]: enqueue thread = 2 to level = 0
-[mlfq_enqueue]: enqueue thread = 3 to level = 0
-[mlfq_dequeue]: deqeueu thread = 1 from level = 0
+[mlfq_enqueue]: enqueue thread = 1 to level = 1
+[mlfq_enqueue]: enqueue thread = 2 to level = 2
+[mlfq_enqueue]: enqueue thread = 3 to level = 2
+[mlfq_dequeue]: deqeueu thread = 1 from level = 1
 time: 737520000, now: 80, A
-[mlfq_dequeue]: deqeueu thread = 2 from level = 0
+[mlfq_enqueue]: enqueue thread = 1 to level = 2
+[mlfq_dequeue]: deqeueu thread = 2 from level = 2
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 3 from level = 2
+[mlfq_enqueue]: enqueue thread = 3 to level = 0
+[mlfq_dequeue]: deqeueu thread = 1 from level = 2
+[mlfq_enqueue]: enqueue thread = 1 to level = 0
 time: 746739000, now: 81, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 0
 [mlfq_dequeue]: deqeueu thread = 3 from level = 0
 time: 755958000, now: 82, C
-time: 765177000, now: 83, IDLE THREAD
-time: 774396000, now: 84, IDLE THREAD
-time: 783615000, now: 85, IDLE THREAD
-time: 792834000, now: 86, IDLE THREAD
-time: 802053000, now: 87, IDLE THREAD
-time: 811272000, now: 88, IDLE THREAD
+[mlfq_enqueue]: enqueue thread = 3 to level = 1
+[mlfq_dequeue]: deqeueu thread = 1 from level = 0
+time: 765177000, now: 83, A
+[mlfq_enqueue]: enqueue thread = 1 to level = 1
+[mlfq_dequeue]: deqeueu thread = 2 from level = 0
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 3 from level = 1
+[mlfq_enqueue]: enqueue thread = 3 to level = 0
+[mlfq_dequeue]: deqeueu thread = 1 from level = 1
+[mlfq_enqueue]: enqueue thread = 1 to level = 0
+time: 774396000, now: 84, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 1
+[mlfq_dequeue]: deqeueu thread = 3 from level = 0
+time: 783615000, now: 85, C
+[mlfq_enqueue]: enqueue thread = 3 to level = 1
+[mlfq_dequeue]: deqeueu thread = 1 from level = 0
+time: 792834000, now: 86, A
+[mlfq_dequeue]: deqeueu thread = 2 from level = 1
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 3 from level = 1
+[mlfq_enqueue]: enqueue thread = 3 to level = 0
+time: 802053000, now: 87, B
+[mlfq_dequeue]: deqeueu thread = 3 from level = 0
+time: 811272000, now: 88, C
 time: 820491000, now: 89, IDLE THREAD
+[mlfq_enqueue]: enqueue thread = 2 to level = 2
+[mlfq_enqueue]: enqueue thread = 3 to level = 1
+[mlfq_dequeue]: deqeueu thread = 3 from level = 1
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 2 from level = 2
 [mlfq_enqueue]: enqueue thread = 2 to level = 0
+time: 829710000, now: 90, C
+[mlfq_enqueue]: enqueue thread = 3 to level = 2
+[mlfq_dequeue]: deqeueu thread = 2 from level = 0
+time: 838929000, now: 91, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 1
+[mlfq_dequeue]: deqeueu thread = 2 from level = 1
+time: 848148000, now: 92, B
+[mlfq_enqueue]: enqueue thread = 2 to level = 2
+[mlfq_dequeue]: deqeueu thread = 3 from level = 2
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 2 from level = 2
+[mlfq_enqueue]: enqueue thread = 2 to level = 0
+time: 857367000, now: 93, C
 [mlfq_enqueue]: enqueue thread = 3 to level = 0
 [mlfq_dequeue]: deqeueu thread = 2 from level = 0
-time: 829710000, now: 90, B
+time: 866586000, now: 94, B
 [mlfq_dequeue]: deqeueu thread = 3 from level = 0
-time: 838929000, now: 91, C
-time: 848148000, now: 92, IDLE THREAD
-time: 857367000, now: 93, IDLE THREAD
-time: 866586000, now: 94, IDLE THREAD
-time: 875805000, now: 95, IDLE THREAD
+time: 875805000, now: 95, C
+BOOST!!!!!!!!!!!!!!!!!!!!!
 time: 885024000, now: 96, IDLE THREAD
 time: 894243000, now: 97, IDLE THREAD
 time: 903462000, now: 98, IDLE THREAD
+BOOST!!!!!!!!!!!!!!!!!!!!!
 time: 912681000, now: 99, IDLE THREAD
-[mlfq_enqueue]: enqueue thread = 1 to level = 0
-[mlfq_enqueue]: enqueue thread = 2 to level = 0
-[mlfq_enqueue]: enqueue thread = 3 to level = 0
-[mlfq_dequeue]: deqeueu thread = 1 from level = 0
+[mlfq_enqueue]: enqueue thread = 1 to level = 1
+[mlfq_enqueue]: enqueue thread = 2 to level = 1
+[mlfq_enqueue]: enqueue thread = 3 to level = 1
+[mlfq_dequeue]: deqeueu thread = 1 from level = 1
 time: 921900000, now: 100, A
-[mlfq_dequeue]: deqeueu thread = 2 from level = 0
+[mlfq_enqueue]: enqueue thread = 1 to level = 2
+[mlfq_dequeue]: deqeueu thread = 2 from level = 1
 time: 931119000, now: 101, B
-[mlfq_dequeue]: deqeueu thread = 3 from level = 0
+[mlfq_enqueue]: enqueue thread = 2 to level = 2
+[mlfq_dequeue]: deqeueu thread = 3 from level = 1
+BOOST!!!!!!!!!!!!!!!!!!!!!
+[mlfq_dequeue]: deqeueu thread = 1 from level = 2
+[mlfq_enqueue]: enqueue thread = 1 to level = 0
+[mlfq_dequeue]: deqeueu thread = 2 from level = 2
+[mlfq_enqueue]: enqueue thread = 2 to level = 0
 time: 940338000, now: 102, C
-time: 949557000, now: 103, IDLE THREAD
-time: 958776000, now: 104, IDLE THREAD
-time: 967995000, now: 105, IDLE THREAD
-time: 977214000, now: 106, IDLE THREAD
-time: 986433000, now: 107, IDLE THREAD
-time: 995652000, now: 108, IDLE THREAD
-time: 1004871000, now: 109, IDLE THREAD
-[mlfq_enqueue]: enqueue thread = 2 to level = 0
-[mlfq_enqueue]: enqueue thread = 3 to level = 0
-[mlfq_dequeue]: deqeueu thread = 2 from level = 0
-time: 1014090000, now: 110, B
-[mlfq_dequeue]: deqeueu thread = 3 from level = 0
-time: 1023309000, now: 111, C
-time: 1032528000, now: 112, IDLE THREAD
-time: 1041747000, now: 113, IDLE THREAD
-time: 1050966000, now: 114, IDLE THREAD
-time: 1060185000, now: 115, IDLE THREAD
-time: 1069404000, now: 116, IDLE THREAD
-time: 1078623000, now: 117, IDLE THREAD
-time: 1087842000, now: 118, IDLE THREAD
-time: 1097061000, now: 119, IDLE THREAD
-[mlfq_enqueue]: enqueue thread = 1 to level = 0
-[mlfq_enqueue]: enqueue thread = 2 to level = 0
-[mlfq_enqueue]: enqueue thread = 3 to level = 0
+[mlfq_enqueue]: enqueue thread = 3 to level = 2
 [mlfq_dequeue]: deqeueu thread = 1 from level = 0
-time: 1106280000, now: 120, A
-[mlfq_dequeue]: deqeueu thread = 2 from level = 0
-time: 1115499000, now: 121, B
-[mlfq_dequeue]: deqeueu thread = 3 from level = 0
-time: 1124718000, now: 122, C
-time: 1133937000, now: 123, IDLE THREAD
-time: 1143156000, now: 124, IDLE THREAD
-time: 1152375000, now: 125, IDLE THREAD
-time: 1161594000, now: 126, IDLE THREAD
-time: 1170813000, now: 127, IDLE THREAD
-time: 1180032000, now: 128, IDLE THREAD
-time: 1189251000, now: 129, IDLE THREAD
-[mlfq_enqueue]: enqueue thread = 2 to level = 0
-[mlfq_enqueue]: enqueue thread = 3 to level = 0
-[mlfq_dequeue]: deqeueu thread = 2 from level = 0
-time: 1198470000, now: 130, B
-[mlfq_dequeue]: deqeueu thread = 3 from level = 0
-time: 1207689000, now: 131, C
-time: 1216908000, now: 132, IDLE THREAD
-time: 1226127000, now: 133, IDLE THREAD
-time: 1235346000, now: 134, IDLE THREAD
-time: 1244565000, now: 135, IDLE THREAD
-time: 1253784000, now: 136, IDLE THREAD
-time: 1263003000, now: 137, IDLE THREAD
-time: 1272222000, now: 138, IDLE THREAD
-time: 1281441000, now: 139, IDLE THREAD
-[mlfq_enqueue]: enqueue thread = 1 to level = 0
-[mlfq_enqueue]: enqueue thread = 2 to level = 0
-[mlfq_enqueue]: enqueue thread = 3 to level = 0
-[mlfq_dequeue]: deqeueu thread = 1 from level = 0
-time: 1290660000, now: 140, A
-[mlfq_dequeue]: deqeueu thread = 2 from level = 0
-time: 1299879000, now: 141, B
-[mlfq_dequeue]: deqeueu thread = 3 from level = 0
-time: 1309098000, now: 142, C
-time: 1318317000, now: 143, IDLE THREAD
-time: 1327536000, now: 144, IDLE THREAD
-time: 1336755000, now: 145, IDLE THREAD
-time: 1345974000, now: 146, IDLE THREAD
-time: 1355193000, now: 147, IDLE THREAD
-time: 1364412000, now: 148, IDLE THREAD
-time: 1373631000, now: 149, IDLE THREAD
-[mlfq_enqueue]: enqueue thread = 2 to level = 0
-[mlfq_enqueue]: enqueue thread = 3 to level = 0
-[mlfq_dequeue]: deqeueu thread = 2 from level = 0
-time: 1382850000, now: 150, B
-[mlfq_dequeue]: deqeueu thread = 3 from level = 0
-time: 1392069000, now: 151, C
-time: 1401288000, now: 152, IDLE THREAD
-time: 1410507000, now: 153, IDLE THREAD
-time: 1419726000, now: 154, IDLE THREAD
-time: 1428945000, now: 155, IDLE THREAD
-time: 1438164000, now: 156, IDLE THREAD
-time: 1447383000, now: 157, IDLE THREAD
-time: 1456602000, now: 158, IDLE THREAD
-time: 1465821000, now: 159, IDLE THREAD
-[mlfq_enqueue]: enqueue thread = 1 to level = 0
-[mlfq_enqueue]: enqueue thread = 2 to level = 0
-[mlfq_enqueue]: enqueue thread = 3 to level = 0
-[mlfq_dequeue]: deqeueu thread = 1 from level = 0
-time: 1475040000, now: 160, A
-[mlfq_dequeue]: deqeueu thread = 2 from level = 0
-time: 1484259000, now: 161, B
-[mlfq_dequeue]: deqeueu thread = 3 from level = 0
-time: 1493478000, now: 162, C
-time: 1502697000, now: 163, IDLE THREAD
-time: 1511916000, now: 164, IDLE THREAD
-time: 1521135000, now: 165, IDLE THREAD
-time: 1530354000, now: 166, IDLE THREAD
-time: 1539573000, now: 167, IDLE THREAD
-time: 1548792000, now: 168, IDLE THREAD
-time: 1558011000, now: 169, IDLE THREAD
-[mlfq_enqueue]: enqueue thread = 2 to level = 0
-[mlfq_enqueue]: enqueue thread = 3 to level = 0
-[mlfq_dequeue]: deqeueu thread = 2 from level = 0
-time: 1567230000, now: 170, B
-[mlfq_dequeue]: deqeueu thread = 3 from level = 0
-time: 1576449000, now: 171, C
-time: 1585668000, now: 172, IDLE THREAD
-time: 1594887000, now: 173, IDLE THREAD
-time: 1604106000, now: 174, IDLE THREAD
-time: 1613325000, now: 175, IDLE THREAD
-time: 1622544000, now: 176, IDLE THREAD
-time: 1631763000, now: 177, IDLE THREAD
-time: 1640982000, now: 178, IDLE THREAD
-time: 1650201000, now: 179, IDLE THREAD
-[mlfq_enqueue]: enqueue thread = 1 to level = 0
-[mlfq_enqueue]: enqueue thread = 2 to level = 0
-[mlfq_enqueue]: enqueue thread = 3 to level = 0
-[mlfq_dequeue]: deqeueu thread = 1 from level = 0
-time: 1659420000, now: 180, A
-[mlfq_dequeue]: deqeueu thread = 2 from level = 0
-time: 1668639000, now: 181, B
-[mlfq_dequeue]: deqeueu thread = 3 from level = 0
-time: 1677858000, now: 182, C
-time: 1687077000, now: 183, IDLE THREAD
-time: 1696296000, now: 184, IDLE THREAD
-time: 1705515000, now: 185, IDLE THREAD
-time: 1714734000, now: 186, IDLE THREAD
-time: 1723953000, now: 187, IDLE THREAD
-time: 1733172000, now: 188, IDLE THREAD
-time: 1742391000, now: 189, IDLE THREAD
-[mlfq_enqueue]: enqueue thread = 2 to level = 0
-[mlfq_enqueue]: enqueue thread = 3 to level = 0
-[mlfq_dequeue]: deqeueu thread = 2 from level = 0
-time: 1751610000, now: 190, B
-[mlfq_dequeue]: deqeueu thread = 3 from level = 0
-time: 1760829000, now: 191, C
-time: 1770048000, now: 192, IDLE THREAD
 QEMU: Terminated
 
