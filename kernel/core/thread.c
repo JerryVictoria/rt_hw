@@ -133,7 +133,7 @@ void pok_thread_init(void)
       pok_threads[i].wakeup_time                = 0;
       pok_threads[i].state                      = POK_STATE_STOPPED;
       pok_threads[i].if_inqueue 		= 0;
-      pok_threads[i].mlfq_before_level		= MLFQ_QUEUE_LEVEL;
+      pok_threads[i].mlfq_before_level		= -1;
   }
 }
 

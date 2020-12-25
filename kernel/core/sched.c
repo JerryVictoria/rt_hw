@@ -423,7 +423,7 @@ void pok_sched()
 
 // #ifdef POK_NEEDS_SCHED_MLFQ
 // 	/* if job is not finished */
-// 	if (pok_threads[current_thread].remaining_time_capacity > 0){
+// 	if (pok_threads[current_thread].remaining_time_capacity <= 0){
 // 		pok_threads[current_thread].mlfq_before_level = MLFQ_QUEUE_LEVEL;
 // 	}
 // #endif
@@ -704,8 +704,14 @@ uint32_t pok_sched_part_mlfq (const uint32_t index_low, const uint32_t index_hig
          /* Decide the next level */
          uint32_t next_level = 0;
          // if(pok_threads[idx].mlfq_before_level != MLFQ_QUEUE_LEVEL){
+         if (pok_threads[idx].mlfq_before_level == MLFQ_QUEUE_LEVEL - 1) {
+            next_level = MLFQ_QUEUE_LEVEL - 1;
+         } else if (pok_threads[idx].mlfq_before_level != MLFQ_QUEUE_LEVEL)
+         {
             next_level = (pok_threads[idx].mlfq_before_level + 1) 
                   % MLFQ_QUEUE_LEVEL;
+         }
+            
          // }
          /* Do the modification */
          pok_threads[idx].if_inqueue = 1;
